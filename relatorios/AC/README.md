@@ -1,22 +1,34 @@
-# Relatório completo do Acre
+# Acre - habilitação por mesário e ano de nascimento
 
-[Leia o relatório completo](RELATORIO_COMPLETO_AC.md).
+[Relatório revisado](RELATORIO_COMPLETO_AC.md), com totais, proporções, sequências e tempos. Data: 01/11/2026.
 
-Análise documental dos 2.270 logs públicos, segundo turno de 25/10/2026. Versão fixada: motor 3.0, fingerprint 7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb, commit de execução 83d6bed1523a4ec20d9a55dce4e7aaa49646023d. A análise não certifica fraude, regularidade integral nem acurácia de 99,9%.
+## Resultados centrais
 
-## Anexos completos
+- 37.979 votações concluídas no conjunto: 22.654 com registros de mesário e 15.325 com confirmação de ano de nascimento.
+- 41 seções com proporção elevada do conjunto, contendo 2.458 dessas votações.
+- 1.620 conclusões em até dez segundos, incluindo 114 após espera por identificação de pelo menos cinco minutos.
+- Totais e casos isolados são avaliados; pertencer a uma sequência não é requisito de seleção.
 
-- [Sete interrupções, com linhas dos logs](anexos/01_interrupcoes.csv).
-- [Dez seções em quarentena](anexos/02_quarentena.csv).
-- [39 seções com múltiplos blocos](anexos/03_multiplos_blocos.csv).
-- [Blocos do dia e identificadores de equipamento](anexos/04_blocos_do_dia.csv).
-- [Resumo dos 22 municípios](anexos/05_resumo_municipal.csv).
-- [53 itens de alerta em 45 seções](anexos/06_alertas_integrais.csv).
-- [Referências da comparação estatística](anexos/07_referencias_comparacao.csv).
-- [Evidências e metadados do relatório](evidencias_relatorio.json).
+Os números delimitam um universo de conferência, não uma contagem de fraudes ou de eleitores ausentes. O relatório explica os critérios, as diferenças entre as medidas de tempo e os documentos necessários para investigação.
 
-O pacote integral publicado, incluindo todas as 2.270 linhas de perfil de seção, séries e originais selecionados, está em [AC-tentativa1.zip](https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/download/auditoria-v3-41263277696/AC-tentativa1.zip).
+## Dados completos
 
-## Reprodução da apresentação
+[Baixar o pacote de dados e anexos](Dados_Acre_Habilitacoes_e_Tempos.zip).
 
-A fonte de geração é `gerar_relatorio.py`. Para reproduzir a apresentação, coloque o pacote publicado no mesmo diretório do script com o nome `AC-publicado.zip`, extraia seu conteúdo para `dados/` e disponibilize `fonte_publicada.json`. Execute a partir de uma cópia do repositório com Python, ReportLab e fontes DejaVu em Linux. O script confere os hashes do manifesto e gera Markdown, PDF e os anexos em `output/`. A versão em texto deste diretório é o resultado publicado; a aparência do PDF não constitui uma validação adicional dos dados.
+O pacote contém a relação integral das 37.979 votações do conjunto, com horários, procedimento e referências ao log; os totais das 2.270 seções; as 41 seções selecionadas por proporção; os recortes de duração e espera; as sequências concluídas; e os anexos de interrupções e múltiplos históricos. Os checksums estão incluídos no ZIP.
+
+### Anexos de consulta direta
+
+- [41 seções com proporção elevada](anexos/10_secoes_proporcao_elevada.csv).
+- [Referências da comparação conjunta](anexos/11_referencias_proporcao_combinada.csv).
+- [Resumo municipal por votos concluídos](anexos/16_resumo_municipal_por_votos.csv).
+- [Sete interrupções](anexos/01_interrupcoes.csv).
+- [Dez seções separadas da comparação](anexos/02_quarentena.csv).
+- [39 seções com múltiplos históricos](anexos/03_multiplos_blocos.csv).
+- [Metadados e indicadores completos](evidencias_relatorio_revisado.json).
+
+A fonte operacional permanece [AC-tentativa1.zip](https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/download/auditoria-v3-41263277696/AC-tentativa1.zip), da execução 41263277696. Os tempos foram apurados adicionalmente no pacote bruto oficial, conferido por SHA-256. A contagem por seção foi reconciliada com a fonte publicada.
+
+## Reprodução
+
+Os scripts complementares estão em `revisao/`: `analisar_tempos.py`, `complementar_analise.py`, `conferir_esperas.py` e `gerar_relatorio_revisado.py`. Para reproduzir, obtenha o pacote publicado e extraia-o para `dados/` neste diretório; mantenha o pacote oficial AC em `downloads/` na raiz do repositório e o motor de fingerprint indicado nos metadados. Execute os quatro scripts nessa ordem. A apresentação PDF requer ReportLab e fontes DejaVu em Linux. A análise usa a biblioteca padrão do Python.

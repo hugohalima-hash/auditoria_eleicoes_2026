@@ -43,4 +43,4 @@ O workflow [Auditoria nacional v3](.github/workflows/auditoria-nacional.yml) pro
 
 ## Relatórios estaduais
 
-- [Acre: relatório completo e anexos](relatorios/AC/README.md), com cobertura, sete interrupções, 39 seções com múltiplos blocos e dez em quarentena. A análise é documental e não certifica fraude ou regularidade integral.
+- [Acre: habilitação por mesário e ano de nascimento](relatorios/AC/README.md), com totais, concentrações, sequências, tempos e dados integrais das 37.979 votações do conjunto. O relatório seleciona ocorrências para conferência documental, sem classificar o universo como fraude.

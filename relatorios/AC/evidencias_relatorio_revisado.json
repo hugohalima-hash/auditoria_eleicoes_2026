@@ -1,0 +1,152 @@
+{
+  "data_relatorio": "2026-11-01",
+  "escopo": "Acre, segundo turno de 25/10/2026",
+  "fonte": {
+    "release_url": "https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/tag/auditoria-v3-41263277696",
+    "asset": {
+      "id": 697053160,
+      "name": "AC-tentativa1.zip",
+      "size": 18238596,
+      "updated_at": "2026-11-01T02:02:54Z",
+      "browser_download_url": "https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/download/auditoria-v3-41263277696/AC-tentativa1.zip",
+      "digest": "sha256:e72a82e0720f62bfc7a682946f4cda37fcbeb94aa22bf94e06d6fb7ed5ab1d95"
+    },
+    "sha256_download": "e72a82e0720f62bfc7a682946f4cda37fcbeb94aa22bf94e06d6fb7ed5ab1d95"
+  },
+  "motor_sha256": "7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb",
+  "totais_votos": {
+    "com_evento_mesario": 22654,
+    "com_ano_nascimento": 15325,
+    "conjunto": 37979,
+    "total_concluidas": 453654
+  },
+  "tempos": {
+    "motor_sha256": "7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb",
+    "logs": 2270,
+    "totais": {
+      "mesario": 22654,
+      "biometrica": 415675,
+      "ano_nascimento": 15325
+    },
+    "contagens_tempos": {
+      "mesario": {
+        "duracao_ate_5": 0,
+        "duracao_ate_10": 965,
+        "duracao_ate_15": 6175,
+        "duracao_ate_20": 11904,
+        "duracao_ate_30": 17559,
+        "intervalo_habilitacoes_ate_15": 0,
+        "intervalo_habilitacoes_ate_30": 0,
+        "intervalo_habilitacoes_ate_60": 0,
+        "pausa_anterior_ge_300": 3581,
+        "pausa_ge_300_e_duracao_ate_10": 136,
+        "pausa_anterior_ge_600": 941,
+        "pausa_ge_600_e_duracao_ate_10": 37
+      },
+      "biometrica": {
+        "duracao_ate_5": 15,
+        "duracao_ate_10": 19414,
+        "duracao_ate_15": 169671,
+        "duracao_ate_20": 290437,
+        "duracao_ate_30": 369599
+      },
+      "ano_nascimento": {
+        "duracao_ate_5": 0,
+        "duracao_ate_10": 655,
+        "duracao_ate_15": 5321,
+        "duracao_ate_20": 9696,
+        "duracao_ate_30": 12860,
+        "intervalo_habilitacoes_ate_15": 0,
+        "intervalo_habilitacoes_ate_30": 3,
+        "intervalo_habilitacoes_ate_60": 1505,
+        "pausa_anterior_ge_300": 2171,
+        "pausa_ge_300_e_duracao_ate_10": 73,
+        "pausa_anterior_ge_600": 661,
+        "pausa_ge_600_e_duracao_ate_10": 26
+      }
+    },
+    "ciclos_com_intervalo_anterior_avaliavel": {
+      "mesario": 22501,
+      "ano_nascimento": 15282
+    },
+    "distribuicao_duracao": {
+      "mesario": {
+        "n": 22654,
+        "minimo": 6,
+        "p10": 12.0,
+        "mediana": 20.0,
+        "p90": 45.0,
+        "maximo": 618
+      },
+      "todos": {
+        "n": 453654,
+        "minimo": 4,
+        "p10": 12.0,
+        "mediana": 17.0,
+        "p90": 33.0,
+        "maximo": 1013
+      },
+      "biometrica": {
+        "n": 415675,
+        "minimo": 4,
+        "p10": 12.0,
+        "mediana": 17,
+        "p90": 32.0,
+        "maximo": 1013
+      },
+      "ano_nascimento": {
+        "n": 15325,
+        "minimo": 6,
+        "p10": 12.0,
+        "mediana": 18,
+        "p90": 38.0,
+        "maximo": 426
+      }
+    },
+    "observacao": "Intervalos são diferenças entre mensagens do log, em segundos inteiros. Não demonstram presença do eleitor, identidade, escolha ou fraude. Intervalos entre ciclos não cruzam origens, equipamentos ou ciclos sem voto computado."
+  },
+  "esperas": {
+    "votacoes_com_tempos_identificador": 37977,
+    "aguardo_identificador_ge_5min_e_duracao_ate_10": 114,
+    "secoes_nesse_recorte": 106,
+    "por_grupo": {
+      "mesario": 66,
+      "ano_nascimento": 48
+    },
+    "definicao": "Diferença entre a última mensagem de espera por identificador e a digitação do identificador da tentativa que gerou a habilitação. Não comprova ausência física de eleitor ou ociosidade da mesa."
+  },
+  "indicadores": {
+    "votacoes_conjunto": 37979,
+    "secoes_com_votacoes_conjunto": 2270,
+    "secoes_proporcao_elevada": 41,
+    "votacoes_conjunto_nessas_secoes": 2458,
+    "votacoes_totais_nessas_secoes": 8702,
+    "ate_10_segundos": 1620,
+    "ate_10_segundos_apos_pausa_5min": 209,
+    "secoes_com_caso_apos_pausa": 190,
+    "secoes_com_concentracao_e_caso_apos_pausa": 12,
+    "casos_apos_pausa_nas_secoes_concentradas": 15,
+    "sequencias": {
+      "mesario": {
+        "ge2": 1316,
+        "ge3": 103,
+        "ge5": 2,
+        "maximo": 6
+      },
+      "conjunto": {
+        "ge2": 3580,
+        "ge3": 557,
+        "ge5": 31,
+        "maximo": 10
+      }
+    }
+  },
+  "secoes_concentradas_com_espera_e_votacao_curta": 10,
+  "definicao": "Universo de verificação e indicadores descritivos; não contagem de fraudes ou de eleitores ausentes.",
+  "sha256_scripts_complementares": {
+    "analisar_tempos.py": "6fdc93fc6ffa4708f4e957327c811715ef0b0eb49267b8fae4ecb7a0663ca287",
+    "complementar_analise.py": "90ba7a3d1d8777293466670645c4d0fdc74df323c5001fa276775ab586d827c0",
+    "conferir_esperas.py": "4bd04e8bab9262625c9a3839071310a5de79179fa717d507150692987f72a1e4",
+    "gerar_relatorio_revisado.py": "9f7e78fb42985c8d1e1f09a94156ebefa3f258591e418fc41bcfc1efe5af2ea8"
+  }
+}

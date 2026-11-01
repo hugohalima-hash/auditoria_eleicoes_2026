@@ -1,374 +1,299 @@
-# Relatório completo do Acre
+# Acre - habilitação por mesário e ano de nascimento
 
-> Análise documental dos logs públicos - segundo turno de 25/10/2026. Motor 3.0. Não há certificação de acurácia de 99,9%.
+> Relatório de auditoria dos registros de votação. Segundo turno de 25/10/2026. Versão revisada de 01/11/2026.
 
-## 1. Síntese executiva
+## 1. Resultado principal
 
-Relatório técnico documental dos logs públicos do Acre, segundo turno de 25/10/2026. Documento datado de 31/10/2026. Motor 3.0, execução GitHub Actions 41263277696. Não é perícia de hardware, certificação de software nem validação da identidade de votantes.
+Auditoria dos registros de votação do Acre - segundo turno de 25 de outubro de 2026. Relatório emitido em 1º de novembro de 2026.
+
+Objetivo: dimensionar as votações liberadas por mesário ou com confirmação do ano de nascimento e identificar concentrações e padrões de tempo que justifiquem conferência. A hipótese examinada é o uso indevido desses procedimentos para votar em nome de eleitores que não compareceram.
 
 | Indicador | Resultado |
 | --- | --- |
-| Logs processados / lista principal oficial | 2.270 / 2.270 (100%) |
-| Municípios abrangidos | 22 |
-| Habilitações / votos computados | 453.714 / 453.654 |
-| Erros de leitura / categorias indefinidas | 0 / 0 |
-| Comparação estatística com pares | 2.200 seções; nenhum alerta pelos critérios aplicados |
-| Conferência independente de contagens | 2.231 logs; nenhuma divergência |
-| Interrupções pendentes | 7 ciclos em 7 seções |
-| Seções com vários blocos no pacote | 39; quatro com duas origens no dia analisado |
-| Quarentena / seções admitidas | 10 / 2.260 |
-| Alertas técnicos / seções distintas | 53 itens / 45 seções |
+| Votações concluídas no estado | 453.654 |
+| Com registros de liberação por mesário | 22.654 (4,99%) |
+| Com confirmação do ano de nascimento | 15.325 (3,38%) |
+| Total dos dois procedimentos | 37.979 (8,37%) |
+| Seções com proporção elevada do conjunto | 41, contendo 2.458 dessas votações |
+| Votações do conjunto concluídas em até 10 segundos | 1.620 |
+| Dessas, após espera de pelo menos 5 minutos por identificação | 114, distribuídas em 106 seções |
 
-O achado de maior prioridade para conferência técnica é Rodrigues Alves, zona 0004, seção 0368: há erro explícito de voto não registrado e desligamentos sucessivos. Sena Madureira, zona 0003, seção 0084, apresenta um ciclo prolongado com confirmação de cargo, tentativas de suspensão e posterior desligamento. Os outros cinco casos não têm justificativa explícita de desligamento no intervalo examinado; em um deles há tecla indevida pouco antes.
+As 37.979 votações constituem o universo de verificação, incluindo ocorrências isoladas e distribuídas ao longo do dia. A seleção não depende de haver uma sequência de liberações. Os dois procedimentos também integram o atendimento regular ao eleitor; sua ocorrência, sozinha, não permite classificar uma votação como fraudulenta.
 
-Não foram sinalizadas proporções elevadas de eventos de mesário nem volumes elevados de habilitações entre as seções efetivamente comparadas. Isso não comprova regularidade de todos os aspectos da eleição. Os 53 itens são sinais de registro e contexto, não 53 votos suspeitos ou 53 fraudes. Não há acurácia semântica de 99,9% certificada.
+O principal achado para conferência documental é a concentração dos dois procedimentos em 41 seções. A maior proporção observada nesse grupo foi de 49,51%, em Assis Brasil, zona 0006, seção 0150: 101 de 204 votações concluídas.
 
-Todos os números se referem ao pacote publicado do AC, e não à execução antiga do motor 2.1. As classificações antigas e os alertas nacionais derivados delas permanecem retirados de uso para conclusões até reprocessamento.
+Quanto ao ritmo, houve registros curtos e ocorrências após períodos de espera. Entretanto, a duração de até dez segundos também aparece em votações identificadas por biometria. Nas maiores sequências do conjunto, os intervalos médios entre liberações foram superiores a um minuto.
 
-## 2. Escopo, fontes e cobertura efetivamente avaliada
+Os logs registram operações, mas não comprovam a presença física de cada eleitor. A apuração de eventual voto em nome de ausente exige confrontar os casos selecionados com os registros de comparecimento, os documentos da seção e as ocorrências técnicas.
 
-Fonte primária: pacote de arquivos do TSE do segundo turno do Acre; fonte operacional desta análise: AC-tentativa1.zip da Release auditoria-v3-41263277696. O ativo publicado foi baixado novamente para este relatório e conferido contra o digest do GitHub, os 129 itens de SHA256SUMS.txt e os sete arquivos do manifesto estadual. O commit registrado no pacote é 83d6bed1523a4ec20d9a55dce4e7aaa49646023d.
+## 2. O que está sendo contado
 
-A configuração oficial lista 2.270 seções principais e 141 agregadas. A cobertura de 100% compara os logs com as seções principais; não transforma as agregadas em outras 141 urnas independentes nem certifica o conjunto da eleição. Não há seção principal ausente, seção processada fora da configuração ou erro de leitura registrado.
+Uma votação concluída é identificada pela mensagem de voto computado após a liberação do eleitor. Trata-se da conclusão do atendimento daquele eleitor, não da soma de votos por cargo. Uma liberação que terminou em suspensão ou interrupção não foi contada como voto concluído.
 
-| Camada de avaliação | Seções / logs | Interpretação |
+| Procedimento registrado | Votações concluídas | % do estado |
 | --- | --- | --- |
-| Leitura e contagens do motor | 2.270 | Inventário completo da lista principal |
-| Portão de qualidade | 2.260 aceitas; 10 excluídas | Quarentena não é declaração de fraude |
-| Critério de tamanho mínimo | 2.215 aceitas com >=100 habilitações | 45 aceitas têm menos de 100 |
-| Comparação entre pares | 2.200 em 22 grupos | 15 elegíveis de Assis Brasil não formam grupo mínimo de 20 |
-| Conferência por leitor independente | 2.231 | 39 com múltiplos blocos históricos não foram presumidos comparáveis |
+| Autorização explícita de mesário | 15.680 | 3,46% |
+| Digital de mesário com indicação de nova gravação | 4.076 | 0,90% |
+| Digital de mesário sem associação nominal no log | 2.898 | 0,64% |
+| Subtotal com registros de mesário | 22.654 | 4,99% |
+| Confirmação do ano de nascimento | 15.325 | 3,38% |
+| Total em análise | 37.979 | 8,37% |
+| Identificação biométrica | 415.675 | 91,63% |
 
-As 70 seções fora da comparação com pares se dividem em dez por qualidade, 45 por tamanho inferior a cem habilitações e 15 por grupo comparável menor que vinte seções. Assim, ausência de alerta estatístico não equivale a teste estatístico individual das 2.270 seções.
+A confirmação de ano de nascimento foi identificada sem mensagem biométrica reconhecida naquela tentativa. O dado não informa, por si só, se o eleitor tinha biometria cadastrada. Os dois grupos são separados na classificação e podem ser somados sem duplicar votações.
 
-Datas e horários são reproduzidos como registrados nos equipamentos, sem normalização de fuso ou demonstração de sincronização externa dos relógios. Um horário isolado não foi tratado como prova de abertura antecipada ou votação fora do período permitido.
+Foram registradas 37.990 liberações com os dois procedimentos, mas onze não terminaram em mensagem de voto computado. Por isso, o total de votos em análise é 37.979, e não 37.990.
 
-## 3. Contagens, categorias e balanços
+Seções com maior quantidade absoluta de votações do conjunto:
 
-| Classificação do motor | Habilitações | Com voto vinculado | Sem voto vinculado |
-| --- | --- | --- | --- |
-| Biométrica | 415.724 | 415.675 | 49 |
-| Autorização explícita de mesário | 15.686 | 15.680 | 6 |
-| Captura de digital de mesário com indicação de nova gravação | 4.076 | 4.076 | 0 |
-| Digital de mesário sem associação nominal no log | 2.899 | 2.898 | 1 |
-| Ano de nascimento sem evento biométrico reconhecido | 15.329 | 15.325 | 4 |
-| Outros tipos | 0 | 0 | 0 |
-| Indefinidas | 0 | 0 | 0 |
-| TOTAL | 453.714 | 453.654 | 60 |
+| Município | Zona / seção | Mesário | Ano | Total | % da seção |
+| --- | --- | --- | --- | --- | --- |
+| ASSIS BRASIL | 0006 / 0150 | 22 | 79 | 101 | 49,51% |
+| RIO BRANCO | 0009 / 0453 | 5 | 92 | 97 | 35,79% |
+| RIO BRANCO | 0001 / 0824 | 4 | 92 | 96 | 38,55% |
+| BUJARI | 0009 / 0441 | 15 | 76 | 91 | 36,84% |
+| RIO BRANCO | 0001 / 0820 | 5 | 85 | 90 | 35,16% |
+| RIO BRANCO | 0009 / 0449 | 9 | 74 | 83 | 32,3% |
+| EPITACIOLÂNDIA | 0006 / 0151 | 4 | 73 | 77 | 38,31% |
+| RIO BRANCO | 0001 / 0821 | 5 | 67 | 72 | 28,69% |
+| TARAUACÁ | 0005 / 0134 | 33 | 38 | 71 | 33,02% |
+| RIO BRANCO | 0001 / 0826 | 11 | 59 | 70 | 30,04% |
 
-Neste relatório, votos computados são mensagens de conclusão do ciclo do eleitor. Não são a soma dos votos por cargo, nem uma contagem de votos de candidatos específicos. Confirmações de cargos e conclusão do ciclo são eventos diferentes.
+## 3. Totais dos 22 municípios
 
-As categorias são mutuamente exclusivas na classificação. A categoria de nova digital conserva o nome técnico do motor; sua evidência é a captura seguida da mensagem de que a digital será salva, não uma verificação pericial da gravação física. A classificação é feita ao fechar o ciclo, aceitando evidência tardia; conflitos e casos não suportados não são presumidos como mesário.
+| Município | Votações concluídas | Mesário | Ano de nascimento | Conjunto | % |
+| --- | --- | --- | --- | --- | --- |
+| ACRELÂNDIA | 7.713 | 560 | 148 | 708 | 9,18% |
+| ASSIS BRASIL | 5.460 | 397 | 273 | 670 | 12,27% |
+| BRASILÉIA | 15.016 | 694 | 661 | 1.355 | 9,02% |
+| BUJARI | 7.914 | 398 | 286 | 684 | 8,64% |
+| CAPIXABA | 5.785 | 323 | 230 | 553 | 9,56% |
+| CRUZEIRO DO SUL | 47.282 | 2.905 | 1.355 | 4.260 | 9,01% |
+| EPITACIOLÂNDIA | 10.968 | 530 | 438 | 968 | 8,83% |
+| FEIJÓ | 16.190 | 873 | 837 | 1.710 | 10,56% |
+| JORDÃO | 3.925 | 392 | 76 | 468 | 11,92% |
+| MANOEL URBANO | 6.133 | 383 | 269 | 652 | 10,63% |
+| MARECHAL THAUMATURGO | 7.051 | 254 | 453 | 707 | 10,03% |
+| MÂNCIO LIMA | 10.732 | 796 | 489 | 1.285 | 11,97% |
+| PLÁCIDO DE CASTRO | 8.945 | 453 | 332 | 785 | 8,78% |
+| PORTO ACRE | 10.790 | 531 | 408 | 939 | 8,70% |
+| PORTO WALTER | 4.792 | 431 | 266 | 697 | 14,55% |
+| RIO BRANCO | 209.645 | 8.833 | 5.708 | 14.541 | 6,94% |
+| RODRIGUES ALVES | 8.741 | 481 | 340 | 821 | 9,39% |
+| SANTA ROSA DO PURUS | 2.820 | 127 | 71 | 198 | 7,02% |
+| SENA MADUREIRA | 20.888 | 1.020 | 978 | 1.998 | 9,57% |
+| SENADOR GUIOMARD | 14.049 | 634 | 436 | 1.070 | 7,62% |
+| TARAUACÁ | 19.112 | 1.195 | 946 | 2.141 | 11,20% |
+| XAPURI | 9.703 | 444 | 325 | 769 | 7,93% |
 
-O grupo com eventos de mesário reúne 22.661 habilitações (4,99% do total), das quais 22.654 têm evento de voto vinculado. O grupo ampliado sem evento biométrico reconhecido soma 37.990 (8,37%), já incluindo as 22.661 e acrescentando 15.329 confirmações de ano de nascimento. Esses dois totais não devem ser somados. O grupo ampliado não informa se havia biometria cadastrada nem equivale ao indicador de biometria não reconhecida do BU.
+Os totais municipais incluem as ocorrências de todas as seções, inclusive as separadas da comparação estatística por problemas de continuidade dos registros. São quantidades observadas, não estimativas de fraude.
 
-Balanço das habilitações: 453.714 = 453.654 com voto computado + 53 suspensões explícitas sem voto + 0 cancelamentos explícitos nessa categoria de desfecho + 7 ciclos interrompidos pendentes. O resíduo é zero. Balanço dos votos computados: 453.654 = 453.654 vinculados + 0 sem habilitação associada. O resíduo também é zero.
+O anexo 08 apresenta os números de cada uma das 2.270 seções. O anexo 09 contém as 37.979 votações do conjunto, com horários, procedimento de liberação e referências ao log de origem.
 
-Há 51 mensagens de suspensão parcial, contabilizadas separadamente; não são outros 51 votos a acrescentar ao total. Há 3.065 eventos de cancelamento antes da habilitação; representam etapas de tentativa, não 3.065 votos computados ou necessariamente 3.065 pessoas diferentes. Cancelamento antes da habilitação e suspensão de eleitor já habilitado são situações distintas.
+## 4. Seções com proporção elevada
 
-## 4. Resumo integral dos 22 municípios
+Foram comparadas 2.200 seções com pelo menos cem votações concluídas e registros adequados à comparação. Cada seção foi confrontada com as do mesmo município e zona. As 41 seções abaixo ultrapassaram a referência local para a soma dos dois procedimentos. Elas reúnem 2.458 votações do conjunto, dentro de 8.702 votações concluídas nessas seções.
 
-| Município | Logs | Habilit. | Votos | Mesário | % mes. | Susp. | Pend. | Quar. |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ACRELÂNDIA | 45 | 7.713 | 7.713 | 560 | 7,26% | 0 | 0 | 0 |
-| ASSIS BRASIL | 28 | 5.460 | 5.460 | 397 | 7,27% | 0 | 0 | 0 |
-| BRASILÉIA | 74 | 15.017 | 15.016 | 694 | 4,62% | 1 | 0 | 0 |
-| BUJARI | 41 | 7.915 | 7.914 | 398 | 5,03% | 1 | 0 | 1 |
-| CAPIXABA | 34 | 5.785 | 5.785 | 323 | 5,58% | 0 | 0 | 0 |
-| CRUZEIRO DO SUL | 256 | 47.291 | 47.282 | 2.906 | 6,14% | 8 | 1 | 2 |
-| EPITACIOLÂNDIA | 54 | 10.969 | 10.968 | 530 | 4,83% | 1 | 0 | 0 |
-| FEIJÓ | 88 | 16.193 | 16.190 | 873 | 5,39% | 3 | 0 | 0 |
-| JORDÃO | 24 | 3.925 | 3.925 | 392 | 9,99% | 0 | 0 | 0 |
-| MANOEL URBANO | 31 | 6.134 | 6.133 | 383 | 6,24% | 1 | 0 | 0 |
-| MARECHAL THAUMATURGO | 47 | 7.051 | 7.051 | 254 | 3,60% | 0 | 0 | 0 |
-| MÂNCIO LIMA | 57 | 10.733 | 10.732 | 797 | 7,43% | 1 | 0 | 0 |
-| PLÁCIDO DE CASTRO | 54 | 8.945 | 8.945 | 453 | 5,06% | 0 | 0 | 0 |
-| PORTO ACRE | 60 | 10.796 | 10.790 | 533 | 4,94% | 5 | 1 | 1 |
-| PORTO WALTER | 34 | 4.792 | 4.792 | 431 | 8,99% | 0 | 0 | 0 |
-| RIO BRANCO | 908 | 209.666 | 209.645 | 8.835 | 4,21% | 19 | 2 | 2 |
-| RODRIGUES ALVES | 55 | 8.742 | 8.741 | 481 | 5,50% | 0 | 1 | 1 |
-| SANTA ROSA DO PURUS | 16 | 2.822 | 2.820 | 128 | 4,54% | 2 | 0 | 0 |
-| SENA MADUREIRA | 120 | 20.895 | 20.888 | 1.020 | 4,88% | 5 | 2 | 2 |
-| SENADOR GUIOMARD | 81 | 14.051 | 14.049 | 634 | 4,51% | 2 | 0 | 1 |
-| TARAUACÁ | 110 | 19.115 | 19.112 | 1.195 | 6,25% | 3 | 0 | 0 |
-| XAPURI | 53 | 9.704 | 9.703 | 444 | 4,58% | 1 | 0 | 0 |
+| Município | Zona | Seção | Votações | Mesário | Ano | Conjunto | % |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ASSIS BRASIL | 0006 | 0150 | 204 | 22 | 79 | 101 | 49,51% |
+| PORTO WALTER | 0004 | 0447 | 117 | 2 | 46 | 48 | 41,03% |
+| RIO BRANCO | 0001 | 0824 | 249 | 4 | 92 | 96 | 38,55% |
+| EPITACIOLÂNDIA | 0006 | 0151 | 201 | 4 | 73 | 77 | 38,31% |
+| BUJARI | 0009 | 0441 | 247 | 15 | 76 | 91 | 36,84% |
+| RIO BRANCO | 0009 | 0453 | 271 | 5 | 92 | 97 | 35,79% |
+| RIO BRANCO | 0001 | 0820 | 256 | 5 | 85 | 90 | 35,16% |
+| SENADOR GUIOMARD | 0008 | 0268 | 168 | 11 | 46 | 57 | 33,93% |
+| TARAUACÁ | 0005 | 0133 | 146 | 13 | 36 | 49 | 33,56% |
+| TARAUACÁ | 0005 | 0134 | 215 | 33 | 38 | 71 | 33,02% |
+| RIO BRANCO | 0009 | 0449 | 257 | 9 | 74 | 83 | 32,3% |
+| TARAUACÁ | 0005 | 0130 | 205 | 12 | 53 | 65 | 31,71% |
+| MANOEL URBANO | 0003 | 0154 | 182 | 16 | 41 | 57 | 31,32% |
+| RIO BRANCO | 0001 | 0826 | 233 | 11 | 59 | 70 | 30,04% |
+| SENA MADUREIRA | 0003 | 0155 | 167 | 16 | 33 | 49 | 29,34% |
+| RIO BRANCO | 0001 | 0821 | 251 | 5 | 67 | 72 | 28,69% |
+| RIO BRANCO | 0001 | 0829 | 200 | 6 | 51 | 57 | 28,5% |
+| BRASILÉIA | 0006 | 0152 | 224 | 9 | 54 | 63 | 28,12% |
+| RIO BRANCO | 0001 | 0822 | 226 | 4 | 59 | 63 | 27,88% |
+| RODRIGUES ALVES | 0004 | 0455 | 212 | 27 | 32 | 59 | 27,83% |
+| PORTO ACRE | 0001 | 0621 | 166 | 12 | 34 | 46 | 27,71% |
+| RIO BRANCO | 0001 | 0823 | 235 | 12 | 53 | 65 | 27,66% |
+| RIO BRANCO | 0009 | 0431 | 217 | 11 | 49 | 60 | 27,65% |
+| FEIJÓ | 0007 | 0069 | 104 | 12 | 16 | 28 | 26,92% |
+| CAPIXABA | 0002 | 0107 | 187 | 17 | 33 | 50 | 26,74% |
+| RIO BRANCO | 0009 | 0445 | 251 | 4 | 59 | 63 | 25,1% |
+| RIO BRANCO | 0001 | 0813 | 261 | 16 | 48 | 64 | 24,52% |
+| RIO BRANCO | 0009 | 0450 | 248 | 6 | 54 | 60 | 24,19% |
+| EPITACIOLÂNDIA | 0006 | 0147 | 203 | 7 | 42 | 49 | 24,14% |
+| EPITACIOLÂNDIA | 0006 | 0156 | 169 | 17 | 22 | 39 | 23,08% |
+| EPITACIOLÂNDIA | 0006 | 0148 | 223 | 4 | 47 | 51 | 22,87% |
+| RIO BRANCO | 0001 | 0816 | 180 | 13 | 28 | 41 | 22,78% |
+| RIO BRANCO | 0009 | 0443 | 273 | 6 | 54 | 60 | 21,98% |
+| RIO BRANCO | 0001 | 0835 | 207 | 4 | 41 | 45 | 21,74% |
+| RIO BRANCO | 0009 | 0448 | 253 | 4 | 51 | 55 | 21,74% |
+| RIO BRANCO | 0009 | 0432 | 200 | 9 | 34 | 43 | 21,5% |
+| RIO BRANCO | 0001 | 0191 | 141 | 20 | 10 | 30 | 21,28% |
+| RIO BRANCO | 0009 | 0429 | 243 | 12 | 39 | 51 | 20,99% |
+| EPITACIOLÂNDIA | 0006 | 0142 | 167 | 2 | 32 | 34 | 20,36% |
+| RIO BRANCO | 0009 | 0456 | 238 | 11 | 37 | 48 | 20,17% |
+| RIO BRANCO | 0009 | 0446 | 305 | 6 | 55 | 61 | 20% |
 
-Mesário: habilitações com eventos do grupo de mesário, não acusação de intervenção irregular. Susp.: suspensões explícitas sem voto. Pend.: ciclos sem desfecho de voto explicado pelo motor. Quar.: seções fora da comparação estatística. Percentuais usam todas as habilitações do município, inclusive as de seções em quarentena; são descritivos, não testes estatísticos municipais.
+A concentração define prioridade de conferência. Diferenças no cadastramento biométrico e problemas de equipamento precisam ser verificados antes de atribuir a proporção elevada a conduta irregular. A relação integral está no anexo 10.
 
-## 5. As sete interrupções: visão geral
+## 5. Tempo entre a liberação e a conclusão
 
-| Município | Zona / seção | Habilitação | Desliga | Intervalo |
+A duração abaixo vai da mensagem de liberação do eleitor à mensagem de voto computado. Não inclui a conferência de documentos e a identificação anteriores à liberação. Os horários têm precisão de um segundo.
+
+| Identificação | Votações | Mínimo | Mediana | 90% até | Até 10 s | % até 10 s |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mesário | 22.654 | 6 s | 20 s | 45 s | 965 | 4,26% |
+| Ano de nascimento | 15.325 | 6 s | 18 s | 38 s | 655 | 4,27% |
+| Conjunto em análise | 37.979 | 6 s | 19 s | 42 s | 1.620 | 4,27% |
+| Biométrica | 415.675 | 4 s | 17 s | 32 s | 19.414 | 4,67% |
+
+Mediana é o valor que divide as durações ao meio. A coluna “90% até” indica a duração que não foi ultrapassada em 90% das ocorrências. O recorte de até dez segundos é descritivo: não representa um tempo mínimo obrigatório de votação.
+
+No conjunto em análise, 4,27% das votações duraram até dez segundos; entre as biométricas, foram 4,67%. Assim, uma duração curta isolada não diferencia, neste recorte, uma votação regular de um possível uso indevido da liberação.
+
+Exemplos de menor duração no conjunto, com desempate por arquivo e horário:
+
+| Município | Zona / seção | Liberação | Forma | Duração |
 | --- | --- | --- | --- | --- |
-| PORTO ACRE | 0001 / 0608 | 10:54:13 | 10:54:30 | 17 s |
-| CRUZEIRO DO SUL | 0004 / 0482 | 08:25:35 | 08:25:52 | 17 s |
-| RODRIGUES ALVES | 0004 / 0368 | 09:31:44 | 09:35:06 | 202 s |
-| RIO BRANCO | 0001 / 0554 | 12:28:05 | 12:28:19 | 14 s |
-| RIO BRANCO | 0009 / 0053 | 14:30:19 | 14:30:25 | 6 s |
-| SENA MADUREIRA | 0003 / 0001 | 08:55:20 | 08:55:44 | 24 s |
-| SENA MADUREIRA | 0003 / 0084 | 09:39:13 | 10:10:29 | 1876 s |
+| MÂNCIO LIMA | 0004 / 0364 | 08:30:39 | Mesário | 6 s |
+| MÂNCIO LIMA | 0004 / 0439 | 09:14:56 | Ano de nascimento | 6 s |
+| JORDÃO | 0005 / 0032 | 07:25:37 | Mesário | 6 s |
+| RIO BRANCO | 0001 / 0485 | 08:12:46 | Mesário | 6 s |
+| RIO BRANCO | 0001 / 0515 | 10:09:23 | Ano de nascimento | 6 s |
+| RIO BRANCO | 0001 / 0538 | 12:22:06 | Ano de nascimento | 6 s |
+| RIO BRANCO | 0009 / 0417 | 06:26:55 | Mesário | 6 s |
+| PLÁCIDO DE CASTRO | 0008 / 0114 | 13:33:40 | Ano de nascimento | 6 s |
+| SENADOR GUIOMARD | 0008 / 0268 | 13:04:19 | Ano de nascimento | 6 s |
+| MARECHAL THAUMATURGO | 0004 / 0073 | 06:18:36 | Ano de nascimento | 7 s |
+| BRASILÉIA | 0006 / 0020 | 09:23:31 | Mesário | 7 s |
+| BRASILÉIA | 0006 / 0155 | 12:32:52 | Ano de nascimento | 7 s |
 
-Todos os sete avisos estaduais são do tipo ciclo_interrompida. Isso significa que um ciclo aberto foi interrompido antes de uma mensagem de voto computado associada, não que os votos anteriores da seção foram perdidos. A causa operacional da interrupção e o desfecho do atendimento ao eleitor são questões diferentes: é possível conhecer o desligamento sem saber se o eleitor foi atendido novamente.
+Não houve duração de até cinco segundos entre as 37.979 votações do conjunto. A lista completa das 1.620 ocorrências de até dez segundos está no anexo 12, sem limitação às sequências sucessivas.
 
-A mensagem de desligamento pela chave não identifica a pessoa que acionou o mecanismo. O relatório não atribui autoria nem intenção. Nas seis primeiras ocorrências abaixo, o horário de retomada indica a volta à espera por identificação, não o retorno comprovado do mesmo eleitor.
+## 6. Votações sucessivas e intervalo entre liberações
 
-Prioridade de esclarecimento: (a) Rodrigues Alves 0368, pela falha explícita e reinícios sucessivos; (b) Sena Madureira 0084, pela interação prolongada, confirmação parcial e mudança de identificador de equipamento; (c) os outros cinco, pela necessidade de justificativa e acompanhamento do atendimento na ata. É prioridade documental, não escala de fraude.
+Uma sequência reúne votações concluídas consecutivas do procedimento examinado, sem outra forma de identificação entre elas. A análise também separa o tempo entre duas liberações sucessivas do tempo que cada eleitor levou após ser liberado.
 
-## 6.1. Evidências das interrupções
-
-PORTO ACRE - zona 0001, seção 0608
-
-Habilitação 10:54:13; desligamento 10:54:30; intervalo 17 segundos. Desligamento após habilitação biométrica, sem justificativa explícita no intervalo.
-
-A última habilitação ocorre às 10:54:13; o desligamento aparece 17 segundos depois. Não há evento de voto computado entre esses registros.
-
-Após a intervenção, retorno observado à espera por identificação: 10:58:25. Verificar a ata e o atendimento dado ao eleitor após o reinício. O retorno à espera por identificação não identifica quem voltou a votar.
-
-Referência: o03221ac0102300010608-log.jez; origem raiz!logd.dat; habilitação na linha 7597 e desligamento na linha 7598.
-
-CRUZEIRO DO SUL - zona 0004, seção 0482
-
-Habilitação 08:25:35; desligamento 08:25:52; intervalo 17 segundos. Desligamento após habilitação biométrica, sem justificativa explícita no intervalo.
-
-O eleitor foi habilitado às 08:25:35 e o desligamento ocorre 17 segundos depois. O trecho não informa a decisão que motivou o acionamento da chave.
-
-Após a intervenção, retorno observado à espera por identificação: 08:31:02. Confrontar a ocorrência com a ata e os registros de atendimento técnico, sem atribuir intenção a partir do desligamento.
-
-Referência: o03221ac0107400040482-log.jez; origem raiz!logd.dat; habilitação na linha 6778 e desligamento na linha 6779.
-
-RODRIGUES ALVES - zona 0004, seção 0368
-
-Habilitação 09:31:44; desligamento 09:35:06; intervalo 202 segundos. Erro explícito informando que o voto não foi registrado, seguido de desligamentos.
-
-Às 09:34:45, há erro 5362 com orientação para desligar e ligar a urna; às 09:34:46 aparece ERROR -44. Após o primeiro desligamento, o histórico registra outros às 09:42:14, 09:50:33 e 10:02:43.
-
-Após a intervenção, retorno observado à espera por identificação: 10:11:42. Priorizar a conferência do atendimento ao eleitor e da intervenção técnica. O erro informa falha de registro daquele ciclo; não comprova perda dos votos anteriores.
-
-Referência: o03221ac0108200040368-log.jez; origem raiz!logd.dat; habilitação na linha 5261 e desligamento na linha 5264.
-
-## 6.2. Evidências das interrupções
-
-RIO BRANCO - zona 0001, seção 0554
-
-Habilitação 12:28:05; desligamento 12:28:19; intervalo 14 segundos. Tecla indevida registrada antes do desligamento; causa do acionamento não explicitada.
-
-A habilitação ocorre às 12:28:05, há tecla indevida às 12:28:17 e desligamento às 12:28:19. A proximidade temporal não demonstra que a tecla causou ou justificou a decisão.
-
-Após a intervenção, retorno observado à espera por identificação: 12:32:50. Verificar o relato na ata; não converter sequência temporal em causa comprovada.
-
-Referência: o03221ac0139200010554-log.jez; origem raiz!logd.dat; habilitação na linha 9282 e desligamento na linha 9284.
-
-RIO BRANCO - zona 0009, seção 0053
-
-Habilitação 14:30:19; desligamento 14:30:25; intervalo 6 segundos. Desligamento seis segundos após habilitação biométrica, sem justificativa explícita no intervalo.
-
-A habilitação ocorre às 14:30:19 e a chave é desligada às 14:30:25, sem mensagem de voto computado entre os dois eventos.
-
-Após a intervenção, retorno observado à espera por identificação: 14:35:48. Conferir motivo e destino do atendimento ao eleitor. A duração curta não comprova que houve voto registrado ou intenção irregular.
-
-Referência: o03221ac0139200090053-log.jez; origem raiz!logd.dat; habilitação na linha 9507 e desligamento na linha 9508.
-
-## 6.3. Evidências das interrupções
-
-SENA MADUREIRA - zona 0003, seção 0001
-
-Habilitação 08:55:20; desligamento 08:55:44; intervalo 24 segundos. Desligamento 24 segundos após habilitação biométrica, sem justificativa explícita no intervalo.
-
-O eleitor é habilitado às 08:55:20 e o desligamento é registrado às 08:55:44, sem voto computado associado antes da interrupção.
-
-Após a intervenção, retorno observado à espera por identificação: 09:00:58. Confrontar ata, atendimento técnico e retomada do atendimento, preservando o sigilo do voto.
-
-Referência: o03221ac0145700030001-log.jez; origem raiz!logd.dat; habilitação na linha 7274 e desligamento na linha 7275.
-
-SENA MADUREIRA - zona 0003, seção 0084
-
-Habilitação 09:39:13; desligamento 10:10:29; intervalo 1876 segundos. Interação prolongada, confirmação de um cargo e tentativas de suspensão antes do desligamento.
-
-A habilitação ocorre às 09:39:13; há confirmação de Governador às 09:39:22, teclas indevidas e períodos sem atividade. O log registra retorno à digitação durante tentativas de suspensão às 09:42:26, 09:49:41 e 10:07:51. O desligamento ocorre 31 minutos e 16 segundos após a habilitação.
-
-Após a intervenção, retorno observado à espera por identificação: Não fixado neste relatório. Verificar ata, contingência e reconciliação com BU/RDV. Confirmar um cargo não foi tratado como prova de voto computado do ciclo. A continuidade entre equipamentos não é presumida pelo analisador.
-
-Referência: o03221ac0145700030084-log.jez; origem raiz!0204652225102026101640-01.jez!logd.dat; habilitação na linha 6719 e desligamento na linha 6755.
-
-## 7. Relação integral das 39 seções com múltiplos blocos
-
-O pacote contém 2.231 logs com um bloco, 36 com dois e três com três. Ter vários blocos não demonstra voto duplicado ou troca de equipamento durante a votação. Em 35 das 39 seções, somente uma origem tem registros do dia analisado; em quatro, há duas. Não foram removidas linhas por deduplicação neste estado.
-
-| Município | Zona | Seção | Blocos no pacote | Origens no dia | Quarentena |
-| --- | --- | --- | --- | --- | --- |
-| BUJARI | 0009 | 0002 | 2 | 2 | Sim |
-| BUJARI | 0009 | 0437 | 2 | 1 | Não |
-| BUJARI | 0009 | 0476 | 3 | 1 | Não |
-| CAPIXABA | 0002 | 0079 | 2 | 1 | Não |
-| CAPIXABA | 0002 | 0093 | 2 | 1 | Não |
-| PORTO ACRE | 0001 | 0797 | 2 | 1 | Não |
-| BRASILÉIA | 0006 | 0033 | 2 | 1 | Não |
-| BRASILÉIA | 0006 | 0099 | 2 | 1 | Não |
-| CRUZEIRO DO SUL | 0004 | 0198 | 2 | 1 | Não |
-| CRUZEIRO DO SUL | 0004 | 0308 | 2 | 1 | Não |
-| CRUZEIRO DO SUL | 0004 | 0394 | 2 | 2 | Sim |
-| RODRIGUES ALVES | 0004 | 0148 | 2 | 1 | Não |
-| RODRIGUES ALVES | 0004 | 0349 | 2 | 1 | Não |
-| MÂNCIO LIMA | 0004 | 0090 | 2 | 1 | Não |
-| MÂNCIO LIMA | 0004 | 0346 | 3 | 1 | Não |
-| JORDÃO | 0005 | 0125 | 2 | 1 | Não |
-| ACRELÂNDIA | 0008 | 0072 | 2 | 1 | Não |
-| ACRELÂNDIA | 0008 | 0205 | 2 | 1 | Não |
-| FEIJÓ | 0007 | 0004 | 2 | 1 | Não |
-| FEIJÓ | 0007 | 0075 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0097 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0441 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0500 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0551 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0685 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0770 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0852 | 2 | 1 | Não |
-| RIO BRANCO | 0001 | 0863 | 2 | 1 | Não |
-| RIO BRANCO | 0009 | 0082 | 2 | 1 | Não |
-| RIO BRANCO | 0009 | 0104 | 2 | 1 | Não |
-| RIO BRANCO | 0009 | 0308 | 2 | 1 | Não |
-| RIO BRANCO | 0009 | 0403 | 2 | 1 | Não |
-| SENA MADUREIRA | 0003 | 0002 | 2 | 1 | Não |
-| SENA MADUREIRA | 0003 | 0008 | 2 | 1 | Não |
-| SENA MADUREIRA | 0003 | 0084 | 2 | 2 | Sim |
-| TARAUACÁ | 0005 | 0010 | 2 | 1 | Não |
-| TARAUACÁ | 0005 | 0015 | 2 | 1 | Não |
-| SENADOR GUIOMARD | 0008 | 0082 | 3 | 2 | Sim |
-| MANOEL URBANO | 0003 | 0126 | 2 | 1 | Não |
-
-## 8. Quatro seções com duas origens no dia da votação
-
-A leitura dos originais preservados mostra dois identificadores de equipamento diferentes em cada uma dessas quatro seções. A tabela reproduz registros do dia e contagens literais por bloco. Não pressupõe que o intervalo entre blocos seja a duração exata de uma paralisação.
-
-| Município / seção | ID equipamento | Primeiro / último registro | Habilit. | Votos |
+| Conjunto | Sequências com 2 ou mais | Com 3 ou mais | Com 5 ou mais | Maior sequência |
 | --- | --- | --- | --- | --- |
-| BUJARI / 0002 | 02257895 | 03:53:51 / 04:31:55 | 0 | 0 |
-| BUJARI / 0002 | 02047711 | 04:39:55 / 15:06:10 | 232 | 232 |
-| CRUZEIRO DO SUL / 0394 | 02278553 | 05:19:50 / 13:27:43 | 208 | 207 |
-| CRUZEIRO DO SUL / 0394 | 02276040 | 13:33:01 / 15:04:04 | 23 | 23 |
-| SENA MADUREIRA / 0084 | 02046886 | 05:56:00 / 10:10:38 | 82 | 81 |
-| SENA MADUREIRA / 0084 | 02046522 | 10:15:10 / 15:04:32 | 99 | 99 |
-| SENADOR GUIOMARD / 0082 | 02019031 | 05:30:34 / 08:43:59 | 67 | 67 |
-| SENADOR GUIOMARD / 0082 | 02044974 | 08:48:52 / 15:06:46 | 137 | 137 |
+| Somente mesário | 1.316 | 103 | 2 | 6 |
+| Mesário ou ano de nascimento | 3.580 | 557 | 31 | 10 |
 
-Bujari 0002: o primeiro identificador não tem habilitações nem votos computados; a mudança aparece em registros anteriores ao atendimento de eleitores. Não há base para qualificá-la como substituição durante um voto. Cruzeiro do Sul 0394, Sena Madureira 0084 e Senador Guiomard 0082 têm votos computados nos dois blocos. A ata e os registros de contingência devem explicar as transições.
+As faixas se sobrepõem e não devem ser somadas. As maiores sequências concluídas foram:
 
-Em Cruzeiro do Sul 0394, o primeiro bloco tem 208 habilitações e 207 votos computados; essa diferença não gerou ciclo pendente e integra o balanço de suspensões explícitas. Em Sena Madureira 0084, a diferença de uma habilitação no primeiro bloco corresponde ao ciclo interrompido já descrito. Não se presume que uma habilitação do bloco novo seja a continuação do mesmo eleitor.
+| Município / seção | Procedimento | Votações | Início / última liberação | Intervalo médio |
+| --- | --- | --- | --- | --- |
+| JORDÃO / 0122 | Mesário | 6 | 07:04:52 / 07:19:02 | 170 s |
+| PLÁCIDO DE CASTRO / 0024 | Mesário | 5 | 09:12:46 / 09:28:31 | 236,25 s |
+| ASSIS BRASIL / 0150 | Conjunto | 10 | 11:28:55 / 11:49:58 | 140,33 s |
+| RIO BRANCO / 0824 | Conjunto | 8 | 10:51:27 / 11:00:04 | 73,86 s |
 
-A existência dos blocos não prova, por si só, que a transferência de votos foi correta ou incorreta. É necessário reconciliar registros de contingência, BU, RDV, configurações e ata. Esta versão não realizou essa reconciliação de conteúdo dos votos.
+Na sequência de seis liberações por mesário, em Jordão, o menor intervalo entre liberações foi de 125 segundos. Na sequência de dez do conjunto, em Assis Brasil, foi de setenta segundos. As maiores sequências, portanto, não apresentam liberações em intervalos de poucos segundos.
 
-## 9. As dez seções em quarentena
+Em toda a análise, o menor intervalo até uma liberação por mesário foi de 64 segundos; até uma liberação por ano de nascimento, 25 segundos. Houve três intervalos de até trinta segundos, todos com ano de nascimento na segunda votação:
 
-| Município | Zona / seção | Motivo de exclusão |
-| --- | --- | --- |
-| BUJARI | 0009 / 0002 | Duas origens no dia |
-| PORTO ACRE | 0001 / 0608 | Um ciclo interrompido |
-| CRUZEIRO DO SUL | 0004 / 0394 | Duas origens no dia |
-| CRUZEIRO DO SUL | 0004 / 0482 | Um ciclo interrompido |
-| RODRIGUES ALVES | 0004 / 0368 | Um ciclo interrompido |
-| RIO BRANCO | 0001 / 0554 | Um ciclo interrompido |
-| RIO BRANCO | 0009 / 0053 | Um ciclo interrompido |
-| SENA MADUREIRA | 0003 / 0001 | Um ciclo interrompido |
-| SENA MADUREIRA | 0003 / 0084 | Um ciclo interrompido; Duas origens no dia |
-| SENADOR GUIOMARD | 0008 / 0082 | Duas origens no dia |
-
-Sete seções têm ciclo interrompido; quatro têm duas origens no dia. Sena Madureira 0084 pertence aos dois grupos. Assim, 7 + 4 - 1 = 10 seções distintas, e não onze. Quarentena é uma barreira de avaliação do programa; não significa voto anulado, seção não apurada ou fraude.
-
-Os 53 itens de alerta se decompõem em 39 registros de múltiplos blocos, sete avisos e sete itens de ciclo pendente. Os últimos dois conjuntos se referem aos mesmos sete casos. Como uma dessas seções também tem múltiplos blocos, são 45 seções distintas com algum item de contexto ou alerta técnico.
-
-O relatório preserva os casos excluídos em vez de transformá-los em zero ou eliminá-los da documentação. O ZIP publicado contém os originais das seções em quarentena e controles determinísticos, acompanhados de hashes. Os identificadores pessoais eventualmente presentes em mensagens não são reproduzidos neste relatório.
-
-## 10. Critérios estatísticos, séries e ausência de alertas
-
-A comparação usa seções do mesmo município e zona: mínimo de vinte seções aceitas, cada uma com pelo menos cem habilitações. O limite exploratório é Q3 + 3 vezes o intervalo interquartil. Exige-se também diferença superior a dez pontos percentuais da mediana para proporção de mesário ou a cinquenta habilitações para volume. A própria seção participa da referência. Não é p-valor, probabilidade de fraude ou ajuste por biometria cadastrada e eleitores aptos.
-
-| Grupo | Séries >=2 | >=3 | >=5 | >=10 | >=20 |
-| --- | --- | --- | --- | --- | --- |
-| Eventos de mesário | 1.316 | 104 | 2 | 0 | 0 |
-| Grupo ampliado | 3.580 | 558 | 31 | 1 | 0 |
-
-São séries máximas de habilitações; uma série de dez aparece nas faixas de dois, três, cinco e dez. As colunas não podem ser somadas. A maior série de mesário tem seis habilitações, abaixo do limiar fixo de dez da triagem. A maior do grupo ampliado tem dez; esse grupo também inclui confirmação de ano de nascimento, e não apenas intervenção de mesário.
-
-| Grupo / município | Zona / seção | Série | Início / fim |
+| Município / seção | Liberação | Identificação anterior | Intervalo |
 | --- | --- | --- | --- |
-| Mesário / JORDÃO | 0005 / 0122 | 6 | 07:04:52 / 07:19:02 |
-| Mesário / PLÁCIDO DE CASTRO | 0008 / 0024 | 5 | 09:12:46 / 09:28:31 |
-| Ampliado / ASSIS BRASIL | 0006 / 0150 | 10 | 11:28:55 / 11:49:58 |
+| CRUZEIRO DO SUL / 0360 | 10:55:29 | Biométrica | 29 s |
+| RIO BRANCO / 0443 | 13:29:11 | Biométrica | 25 s |
+| RIO BRANCO / 0443 | 13:29:41 | Ano de nascimento | 30 s |
 
-Essas maiores séries são referências descritivas, não novas suspeitas. Não houve alerta de proporção elevada nem de volume elevado entre as 2.200 seções comparadas. O detector de intervalo médio inferior a trinta segundos só examina séries de mesário com dez ou mais habilitações; como nenhuma atingiu esse tamanho, ele não fornece uma avaliação global da velocidade de votação no Acre. Também não houve análise de votação por candidato.
+Foi possível comparar a liberação com uma votação anterior concluída em 37.783 casos. Os 196 restantes não tinham um par anterior adequado. Não foram unidos registros de equipamentos ou origens diferentes. A lista de sequências concluídas está no anexo 15.
 
-## 11. Referências completas da comparação com pares
+## 7. Ocorrências isoladas após períodos de espera
 
-As proporções abaixo são expressas em porcentagem; os limites de volume estão em habilitações. Cada linha resume um grupo município/zona. O limiar adicional de diferença da mediana, descrito na seção anterior, também precisa ser satisfeito para gerar alerta.
+A verificação de eventos dispersos foi feita em todas as votações do conjunto, e não apenas nas sequências. A informação de espera foi medida entre a mensagem de que o sistema aguardava o identificador e a digitação que precedeu a liberação.
 
-| Município / zona | N | Mediana mes. | Limite mes. | Mediana vol. | Limite vol. |
+| Recorte observado | Mesário | Ano | Total |
+| --- | --- | --- | --- |
+| Até 10 s após espera de pelo menos 5 minutos por identificação | 66 | 48 | 114 |
+| Até 10 s após intervalo de pelo menos 5 minutos desde o voto anterior | 136 | 73 | 209 |
+
+Os dois recortes não devem ser somados. O primeiro localiza esperas antes da identificação; o segundo inclui também o tempo gasto com identificação, conferência e eventuais dificuldades. Nenhum deles comprova, sozinho, que a mesa estava ociosa ou que o eleitor estava ausente.
+
+Os 114 casos do primeiro recorte estão em 106 seções. O limite de cinco minutos serve apenas para organizar a conferência: votações após pausas menores continuam incluídas na relação integral das 37.979 ocorrências.
+
+Exemplos com maior espera por identificação entre os casos concluídos em até dez segundos:
+
+| Município | Zona / seção | Liberação | Espera | Identificação | Votação |
 | --- | --- | --- | --- | --- | --- |
-| ACRELÂNDIA / 0008 | 44 | 6,48% | 26,23% | 172,0 | 310,0 |
-| ASSIS BRASIL / 0006 | 26 | 5,48% | 29,62% | 205,0 | 312,2 |
-| BRASILÉIA / 0006 | 74 | 4,27% | 13,83% | 207,0 | 349,0 |
-| BUJARI / 0009 | 40 | 4,82% | 15,00% | 199,0 | 463,0 |
-| CAPIXABA / 0002 | 33 | 5,66% | 16,58% | 175,0 | 301,0 |
-| CRUZEIRO DO SUL / 0004 | 242 | 5,79% | 17,40% | 195,0 | 326,0 |
-| EPITACIOLÂNDIA / 0006 | 54 | 4,54% | 15,34% | 212,0 | 313,2 |
-| FEIJÓ / 0007 | 86 | 5,30% | 17,03% | 188,0 | 395,2 |
-| JORDÃO / 0005 | 23 | 9,77% | 41,09% | 165,0 | 309,0 |
-| MANOEL URBANO / 0003 | 30 | 6,05% | 23,67% | 204,5 | 315,8 |
-| MARECHAL THAUMATURGO / 0004 | 46 | 2,60% | 16,07% | 149,5 | 270,5 |
-| MÂNCIO LIMA / 0004 | 55 | 6,77% | 27,12% | 199,0 | 310,0 |
-| PLÁCIDO DE CASTRO / 0008 | 50 | 4,49% | 14,43% | 172,5 | 280,5 |
-| PORTO ACRE / 0001 | 59 | 4,89% | 17,93% | 183,0 | 291,5 |
-| PORTO WALTER / 0004 | 28 | 8,12% | 26,07% | 153,5 | 286,0 |
-| RIO BRANCO / 0001 | 474 | 4,26% | 15,49% | 229,0 | 432,0 |
-| RIO BRANCO / 0009 | 432 | 3,65% | 12,45% | 249,0 | 388,0 |
-| RODRIGUES ALVES / 0004 | 52 | 5,08% | 15,23% | 160,0 | 286,8 |
-| SENA MADUREIRA / 0003 | 115 | 4,61% | 17,03% | 177,0 | 287,0 |
-| SENADOR GUIOMARD / 0008 | 79 | 4,26% | 14,25% | 171,0 | 345,5 |
-| TARAUACÁ / 0005 | 106 | 5,90% | 16,16% | 183,0 | 322,0 |
-| XAPURI / 0002 | 52 | 4,17% | 14,01% | 188,5 | 280,2 |
+| RIO BRANCO | 0001 / 0529 | 08:52:39 | 30m 42s | Mesário | 10 s |
+| PORTO ACRE | 0001 / 0621 | 14:08:18 | 30m 24s | Ano de nascimento | 8 s |
+| CRUZEIRO DO SUL | 0004 / 0449 | 12:24:15 | 29m 00s | Mesário | 10 s |
+| CRUZEIRO DO SUL | 0004 / 0449 | 10:50:04 | 22m 39s | Ano de nascimento | 9 s |
+| CRUZEIRO DO SUL | 0004 / 0167 | 11:46:24 | 22m 22s | Mesário | 9 s |
+| CAPIXABA | 0002 / 0087 | 12:57:39 | 20m 14s | Ano de nascimento | 9 s |
+| PORTO WALTER | 0004 / 0447 | 12:37:38 | 19m 34s | Ano de nascimento | 10 s |
+| SENADOR GUIOMARD | 0008 / 0226 | 14:00:05 | 19m 29s | Ano de nascimento | 9 s |
+| XAPURI | 0002 / 0009 | 12:57:05 | 19m 05s | Mesário | 8 s |
+| FEIJÓ | 0007 / 0058 | 09:53:55 | 18m 12s | Mesário | 9 s |
 
-Assis Brasil tem quinze seções elegíveis e não atinge o mínimo de vinte, portanto não entra nessa comparação. Os CSVs anexos preservam as referências com precisão completa; valores da tabela foram arredondados apenas para leitura.
+Os tempos de espera puderam ser medidos em 37.977 das 37.979 votações do conjunto. Os dois casos sem os registros necessários não receberam valor presumido. Os anexos 13 e 14 apresentam integralmente os dois recortes, com horários e linhas dos logs.
 
-## 12. Conclusões e verificações pendentes
+## 8. Ocorrências operacionais relevantes
 
-- A cobertura de leitura da lista principal está completa e não há divergência nas contagens literais dos 2.231 logs comparáveis pelo leitor independente. Isso não certifica a classificação semântica ou a autenticidade criptográfica dos dados.
+Foram encontradas sete liberações interrompidas antes de um registro de voto computado. Elas não integram o total de 37.979 votações concluídas. A ocorrência é relevante para verificar o atendimento ao eleitor afetado, mas não demonstra perda dos votos anteriores da seção.
 
-- Não foram encontrados alertas pelos critérios de proporção elevada de eventos de mesário ou volume elevado nas 2.200 seções comparadas. Ausência de alerta nesses critérios não certifica todos os aspectos das seções.
+| Município | Zona / seção | Desligamento | Registro anterior |
+| --- | --- | --- | --- |
+| PORTO ACRE | 0001 / 0608 | 10:54:30 | Sem motivo explícito no intervalo |
+| CRUZEIRO DO SUL | 0004 / 0482 | 08:25:52 | Sem motivo explícito no intervalo |
+| RODRIGUES ALVES | 0004 / 0368 | 09:35:06 | Erro de voto não registrado; desligamentos sucessivos |
+| RIO BRANCO | 0001 / 0554 | 12:28:19 | Tecla indevida antes do desligamento |
+| RIO BRANCO | 0009 / 0053 | 14:30:25 | Sem motivo explícito no intervalo |
+| SENA MADUREIRA | 0003 / 0001 | 08:55:44 | Sem motivo explícito no intervalo |
+| SENA MADUREIRA | 0003 / 0084 | 10:10:29 | Interação prolongada e tentativas de suspensão |
 
-- Sete ciclos foram interrompidos e dez seções ficaram fora da comparação. Os eventos não foram convertidos em votos extras, votos anulados ou fraudes presumidas. O motivo do acionamento da chave e a identidade de quem o acionou não são demonstrados pela mensagem de desligamento.
+Em Rodrigues Alves, seção 0368, há erro que orienta desligar e ligar a urna. Em Sena Madureira, seção 0084, houve confirmação de um cargo e tentativas de suspensão antes do desligamento. A mensagem de chave desligada não informa quem acionou o mecanismo. As atas e os atendimentos técnicos devem esclarecer esses casos.
 
-- Os votos dos eleitores anteriores não podem ser considerados perdidos apenas por haver desligamento. Por outro lado, este relatório não verificou a persistência nem a transferência de cada voto com BU/RDV e documentos de contingência. A igualdade de contagens de log não substitui essa verificação.
+Houve 39 seções com múltiplos blocos de histórico. Quatro tinham duas origens com identificadores de equipamento diferentes no dia. Elas são: Bujari 0009/0002; Cruzeiro do Sul 0004/0394; Sena Madureira 0003/0084; Senador Guiomard 0008/0082. Em Bujari, o primeiro bloco não tinha votações registradas.
 
-- Próximo passo documental: obter atas das sete seções com ciclos interrompidos e das quatro com transição de identificador; conferir motivo, equipe responsável, horários, equipamentos e atendimento ao eleitor afetado. Sena Madureira 0084 consta nos dois conjuntos.
+Dez seções foram separadas da comparação estatística: sete por interrupção e quatro por duas origens no dia, com uma seção comum aos dois grupos. Os totais dessas seções permanecem no universo estadual; a exclusão afeta apenas a comparação com pares. A relação completa e os motivos constam dos anexos 01 a 04.
 
-- Próximo passo técnico: reconciliar BU/RDV, relatórios de contingência e dados transmitidos, mantendo a distinção entre voto por cargo, ciclo do eleitor e mensagem de voto computado. Uma mensagem de confirmação de Governador, isoladamente, não resolve essa reconciliação.
+Não houve erro de leitura, classificação indefinida ou mensagem de voto computado sem liberação associada. A diferença entre as 453.714 liberações e as 453.654 votações concluídas fecha em 53 suspensões explícitas sem voto e sete interrupções.
 
-- Não é possível identificar o retorno do mesmo eleitor por mera sequência de horários, nem revelar suas escolhas. Não há base de referência independente suficiente para certificar acurácia de 99,9%. A análise não verifica hardware, software instalado, assinaturas criptográficas ou presença física dos votantes.
+## 9. Conclusão e conferências recomendadas
 
-Conclusão do escopo: há leitura integral da lista principal, balanços internos fechados e pontos técnicos localizados para esclarecimento. Não há neste material demonstração de fraude, nem demonstração pericial de regularidade integral da eleição do Acre.
+O Acre registra 37.979 votações concluídas com liberação por mesário ou confirmação do ano de nascimento. O total é relevante para delimitar a verificação de possível votação em nome de ausentes, inclusive em ocorrências isoladas.
 
-## 13. Proveniência, reprodução e anexos
+A análise localizou concentração dos dois procedimentos em 41 seções, com 2.458 votações do conjunto. Foram identificadas também 1.620 conclusões em até dez segundos, incluindo 114 após espera de pelo menos cinco minutos por identificação. Esses conjuntos se sobrepõem; não representam números de fraudes a serem somados.
 
-| Objeto | Identificador |
-| --- | --- |
-| Motor e executor - SHA-256 | 7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb |
-| Commit congelado da execução | 83d6bed1523a4ec20d9a55dce4e7aaa49646023d |
-| Pacote oficial TSE - SHA-256 | 7e58076367c9a0d8002b7918fe33183a2aee8aaf562d32555cf62ce10d188dc5 |
-| Pacote AC publicado - SHA-256 | e72a82e0720f62bfc7a682946f4cda37fcbeb94aa22bf94e06d6fb7ed5ab1d95 |
-| Contagem independente - SHA-256 | 7726d5f166909f02dcc928d07343596d59673967536452c375996d9fef540343 |
+As maiores sequências não mostraram intervalos de poucos segundos entre as liberações. A conclusão curta, isoladamente, também ocorre entre eleitores identificados por biometria. Os dados permitem selecionar ocorrências para conferência, mas não demonstram quem estava fisicamente na seção.
 
-Pacote publicado: AC-tentativa1.zip; ativo GitHub 697053160; atualização informada pela fonte: 01/11/2026 02:02:54 UTC, correspondente a 31/10/2026 23:02:54 em Brasília. Todas as contagens do relatório são dessa versão fixada. A verificação de SHA-256 demonstra identidade dos bytes conferidos, não autentica uma assinatura do TSE.
+A investigação deve priorizar:
 
-Arquivos do pacote utilizados: resultados/AC/resumo.json, urnas.csv, sequencias.csv, avisos.csv, config_oficial.json e manifesto.json; triagem/resumo.json, alertas.csv, quarentena.csv e referencias_comparacao.csv; conferencias/AC/conferencia.json e execucao.json; originais/AC/*.jez e manifesto_amostras.json. O arquivo urnas.csv contém todas as 2.270 seções. O pacote inclui também a referência de contagem independente e os checksums.
+- As 41 seções com concentração elevada, confrontando o comparecimento registrado e o perfil de cadastramento biométrico do eleitorado.
 
-Reprodução: obter o commit congelado; executar o motor para AC e a conferência de contagens com o pacote oficial; verificar o manifesto; executar anomalias.py. O script executar_estado.py automatiza essas etapas. Para uma reprodução exata de bytes, preservar o pacote publicado, pois duração e horário de execução mudam em uma nova rodada.
+- Os registros de espera e conclusão curta, verificando se há justificativa operacional e correspondência com o atendimento efetivamente realizado.
 
-F1 - Pacote publicado e dados completos: https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/download/auditoria-v3-41263277696/AC-tentativa1.zip
+- As assinaturas nos casos em que são exigidas, as atas e os registros técnicos, para esclarecer utilização de procedimentos complementares e eventuais falhas de leitor.
 
-F2 - Execução persistente: https://github.com/hugohalima-hash/auditoria_eleicoes_2026/actions/runs/41263277696
+- As sete interrupções e as mudanças de identificador de equipamento, verificando continuidade, motivo da intervenção e destino do atendimento ao eleitor afetado.
 
-F3 - Configuração oficial das seções: https://resultados.tse.jus.br/oficial/ele2026/arquivo-urna/3221/config/ac/ac-p003221-cs.json
+A confirmação de fraude por voto em nome de ausente exige demonstrar que uma pessoa registrada como votante não compareceu e que houve uso indevido de sua habilitação. Essa demonstração não pode ser obtida apenas pela quantidade de liberações, pelo tempo ou por sequências anônimas do log.
 
-F4 - Pacote bruto oficial do TSE: https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_AC.zip
+## 10. Fontes e método
 
-F5 - Regras de contingência e recuperação de 2026: https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-751-de-26-de-fevereiro-de-2026
+Foram examinados 2.270 logs, correspondentes às 2.270 seções principais da configuração oficial do Acre. A análise de tempos foi refeita sobre o pacote bruto do TSE, conferindo as contagens por seção e preservando a referência de origem e linha de cada votação.
 
-Anexos estruturados deste relatório: 01_interrupcoes.csv (sete casos e linhas); 02_quarentena.csv (dez seções); 03_multiplos_blocos.csv (39 seções); 04_blocos_do_dia.csv (oito blocos das quatro seções); 05_resumo_municipal.csv (22 municípios); 06_alertas_integrais.csv (53 itens); 07_referencias_comparacao.csv (44 referências para 22 grupos). Eles não substituem os dados completos do pacote F1.
+A comparação de proporções utilizou seções do mesmo município e zona, com pelo menos cem votações concluídas e grupo mínimo de vinte seções. O limite foi o terceiro quartil mais três vezes o intervalo interquartil, exigindo também diferença superior a dez pontos percentuais da mediana. É um critério de triagem, sem ajuste individual pelo cadastramento biométrico. Foram comparadas 2.200 seções. Santa Rosa do Purus não atingiu o tamanho mínimo de grupo.
+
+A duração foi calculada entre liberação e voto computado. O intervalo entre liberações e a espera por identificação foram tratados separadamente. Os horários foram reproduzidos como constam nos equipamentos, sem conversão de fuso e sem presumir sincronização externa dos relógios.
+
+Os dados não identificam o candidato escolhido e não foram usados para atribuir voto individual. A análise não realizou perícia de hardware, validação criptográfica de assinaturas nem conferência dos cadernos de votação. Os arquivos de dados permitem reproduzir os recortes sem depender dos exemplos apresentados nas tabelas.
+
+Fonte de resultados e originais selecionados: https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/download/auditoria-v3-41263277696/AC-tentativa1.zip
+
+Pacote bruto oficial: https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_AC.zip
+
+Configuração oficial: https://resultados.tse.jus.br/oficial/ele2026/arquivo-urna/3221/config/ac/ac-p003221-cs.json
+
+Execução e código: https://github.com/hugohalima-hash/auditoria_eleicoes_2026/actions/runs/41263277696. Commit de origem: 83d6bed1523a4ec20d9a55dce4e7aaa49646023d.
+
+Integridade do pacote publicado - SHA-256: e72a82e0720f62bfc7a682946f4cda37fcbeb94aa22bf94e06d6fb7ed5ab1d95
+
+Anexos: totais das 2.270 seções; registros das 37.979 votações do conjunto; 41 seções com proporção elevada; referências de comparação; votações curtas; ocorrências após pausas e esperas; sequências concluídas; e relações das interrupções e dos históricos múltiplos. Cada linha de votação contém arquivo, origem e linhas do log para conferência.
