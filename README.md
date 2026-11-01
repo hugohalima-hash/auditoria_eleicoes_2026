@@ -11,7 +11,7 @@ As demais UFs permanecem pendentes no consolidado. A existência de sequências 
 ## Organização do trabalho
 
 - Código e documentação: arquivos deste repositório.
-- Resultados completos do checkpoint: arquivo `resultados_auditoria_2026.zip` a ser publicado como anexo de uma versão (Release).
+- Resultados completos do checkpoint: arquivo `resultados_auditoria_2026.zip` disponível na [versão publicada](https://github.com/hugohalima-hash/auditoria_eleicoes_2026/releases/tag/checkpoint-2026-10-31), junto da cópia do programa e dos hashes SHA-256.
 - Documentação técnica: [LEIA-ME.md](LEIA-ME.md).
 - Relatório parcial: [RELATORIO_PARCIAL.md](RELATORIO_PARCIAL.md).
 - Estado de retomada: [STATUS.json](STATUS.json).
