@@ -1,7 +1,7 @@
 {
   "versao_motor": "3.0",
   "sha256_motor": "7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb",
-  "status_execucao": "execucao_nacional_preparada",
+  "status_execucao": "em_execucao_no_github",
   "acuracia_certificada": null,
   "validacao_independente": "pendente",
   "ufs_reprocessadas_atuais": [],
@@ -19,10 +19,11 @@
     "testes_aprovados": 31,
     "testes_pulados": 1
   },
-  "arquivos_reprocessados_motor_atual": 8157,
+  "arquivos_reprocessados_motor_atual": 0,
   "ufs_pendentes_reprocessamento": [
     "AC",
     "AL",
+    "AM",
     "AP",
     "BA",
     "CE",
@@ -49,21 +50,6 @@
     "TO",
     "ZZ"
   ],
-  "reprocessamento_AM": {
-    "habilitacoes": 2192230,
-    "votos_computados": 2192059,
-    "indefinida": 0,
-    "avisos": 17,
-    "suspensas_sem_voto": 154,
-    "ciclos_sem_desfecho_explicado": 17,
-    "arquivos_admissiveis_estatistica": 8125,
-    "arquivos_em_quarentena": 32
-  },
-  "conferencia_independente_AM": {
-    "logs": 8036,
-    "divergencias": 0,
-    "tipo": "contagem literal de habilitações e votos; não acurácia semântica"
-  },
   "pacote_integral_v3_publicado_em_release": false,
   "executor": "GitHub Actions, ubuntu-24.04 público, 2 UFs simultâneas",
   "ufs_solicitadas": [
@@ -96,5 +82,36 @@
     "TO",
     "ZZ"
   ],
-  "observacao_execucao": "Novo fingerprint por exportação de séries em fluxo; todas as 28 unidades serão processadas no commit congelado da execução. Resultados por UF serão anexados à Release da execução."
+  "observacao_execucao": "Novo fingerprint por exportação de séries em fluxo; todas as 28 unidades serão processadas no commit congelado da execução. Resultados por UF serão anexados à Release da execução.",
+  "historico_AM_fingerprint_anterior": {
+    "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9",
+    "arquivos_reprocessados": 8157,
+    "reprocessamento": {
+      "habilitacoes": 2192230,
+      "votos_computados": 2192059,
+      "indefinida": 0,
+      "avisos": 17,
+      "suspensas_sem_voto": 154,
+      "ciclos_sem_desfecho_explicado": 17,
+      "arquivos_admissiveis_estatistica": 8125,
+      "arquivos_em_quarentena": 32
+    },
+    "conferencia": {
+      "logs": 8036,
+      "divergencias": 0,
+      "tipo": "contagem literal de habilitações e votos; não acurácia semântica"
+    }
+  },
+  "execucao_github": {
+    "run_id": 41263277696,
+    "url": "https://github.com/hugohalima-hash/auditoria_eleicoes_2026/actions/runs/41263277696",
+    "commit_fonte": "83d6bed1523a4ec20d9a55dce4e7aaa49646023d",
+    "estado_observado": "preparação e testes concluídos; executores AC e AL iniciados; demais unidades enfileiradas",
+    "observacao": "O progresso ao vivo e os resultados por UF ficam na execução e na Release; este JSON é um registro do início."
+  },
+  "testes_execucao_nacional": {
+    "executados": 33,
+    "aprovados": 32,
+    "pulados": 1
+  }
 }
