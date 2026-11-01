@@ -4,9 +4,13 @@ Programa em Python para análise exploratória dos logs públicos das urnas do T
 
 ## Situação atual
 
-**Auditoria nacional incompleta.** O último consolidado preservado contém **252.925 arquivos de log**, referentes a **AC, AP, BA, CE, MG, PA, PE, PR, RJ, RR, RS e exterior (ZZ)**.
+**Auditoria nacional incompleta.** O último consolidado preservado contém **260.026 arquivos de log**, referentes a **AC, AL, AP, BA, CE, MG, PA, PE, PR, RJ, RR, RS e exterior (ZZ)**.
 
 As demais UFs permanecem pendentes no consolidado. A existência de sequências longas não comprova fraude. Os arquivos públicos não confirmam a identidade ou a presença física de cada eleitor, e este programa não autentica assinaturas criptográficas nem faz perícia física nos equipamentos.
+
+O checkpoint da Release original contém 252.925 logs de 12 unidades. O resultado posterior de AL e o consolidado de 13 unidades estão documentados no relatório e no status; o novo pacote integral ainda não foi anexado à Release original.
+
+A triagem ampliada está em [METODOLOGIA_ALERTAS.md](METODOLOGIA_ALERTAS.md), com resumo e comparações em `triagem/`. Execute `python anomalias.py --resultados resultados --saida alertas`. Os alertas não são conclusões de fraude.
 
 ## Organização do trabalho
 
