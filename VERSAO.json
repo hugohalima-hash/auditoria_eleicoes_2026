@@ -6,5 +6,6 @@
   "resultados_v21": "retirados de uso para conclusões; reprocessamento obrigatório",
   "documentacao": "VALIDACAO_V3.md",
   "escopo": "Classificação de logs; sem autenticação de assinaturas, identificação de eleitores ou confirmação de fraude",
-  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9"
+  "sha256_motor": "7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb",
+  "ajuste_execucao": "Exportação de séries por log; classificação do motor 3.0 preservada; cache antigo invalidado pelo novo fingerprint."
 }

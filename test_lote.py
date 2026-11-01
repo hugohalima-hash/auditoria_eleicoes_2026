@@ -13,6 +13,29 @@ class Response(io.BytesIO):
         self.headers=headers or {}
 
 class DownloadTests(unittest.TestCase):
+    def test_streamed_export_preserves_events_and_reuses_only_matching_cache(self):
+        from test_motor import archive,line,DAY
+        from integridade import verified
+        from motor import ENGINE_SHA256
+        import csv
+        text='\n'.join(line(f'08:0{i}:0{j}',msg) for i in range(2)
+            for j,msg in enumerate(['Mesário 123 habilitou o eleitor','Eleitor foi habilitado','O voto do eleitor foi computado']))
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp);source=p/'estado.zip';out=p/'resultado'
+            with zipfile.ZipFile(source,'w') as z:
+                for sec in ['0001','0002']:
+                    z.writestr('o03221ac010070001'+sec+'-log.jez',archive(text))
+            result=lote.process_archive(source,out,DAY,uf='LOCAL')
+            self.assertEqual(result['habilitacoes'],4)
+            self.assertEqual(result['votos_computados'],4)
+            with (out/'sequencias.csv').open(encoding='utf-8-sig') as f:
+                runs=list(csv.DictReader(f))
+            self.assertEqual(len(runs),4)
+            self.assertTrue(all(r['tamanho']=='2' and r['votos_vinculados']=='2' for r in runs))
+            self.assertTrue(verified(out,ENGINE_SHA256))
+            with patch.object(lote,'analyze',side_effect=AssertionError('cache compatível deveria ser reutilizado')):
+                self.assertEqual(lote.process_archive(source,out,DAY,uf='LOCAL')['habilitacoes'],4)
+
     def test_parallel_ranges_reconstruct_zip_and_cache_final_file(self):
         buf=io.BytesIO()
         with zipfile.ZipFile(buf,'w',zipfile.ZIP_STORED) as z:

@@ -1,12 +1,10 @@
 {
   "versao_motor": "3.0",
-  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9",
-  "status_execucao": "revisao_e_reprocessamento",
+  "sha256_motor": "7c0a3a5dd412d61bedf77aba11c9e4df4a8574b52718e502e9a5d45c7d5a70cb",
+  "status_execucao": "execucao_nacional_preparada",
   "acuracia_certificada": null,
   "validacao_independente": "pendente",
-  "ufs_reprocessadas_atuais": [
-    "AM"
-  ],
+  "ufs_reprocessadas_atuais": [],
   "alertas_v21_retirados_de_uso": {
     "proporcao_mesario_acima_pares": 422,
     "volume_habilitacoes_acima_pares": 64
@@ -66,5 +64,37 @@
     "divergencias": 0,
     "tipo": "contagem literal de habilitações e votos; não acurácia semântica"
   },
-  "pacote_integral_v3_publicado_em_release": false
+  "pacote_integral_v3_publicado_em_release": false,
+  "executor": "GitHub Actions, ubuntu-24.04 público, 2 UFs simultâneas",
+  "ufs_solicitadas": [
+    "AC",
+    "AL",
+    "AM",
+    "AP",
+    "BA",
+    "CE",
+    "DF",
+    "ES",
+    "GO",
+    "MA",
+    "MG",
+    "MS",
+    "MT",
+    "PA",
+    "PB",
+    "PE",
+    "PI",
+    "PR",
+    "RJ",
+    "RN",
+    "RO",
+    "RR",
+    "RS",
+    "SC",
+    "SE",
+    "SP",
+    "TO",
+    "ZZ"
+  ],
+  "observacao_execucao": "Novo fingerprint por exportação de séries em fluxo; todas as 28 unidades serão processadas no commit congelado da execução. Resultados por UF serão anexados à Release da execução."
 }

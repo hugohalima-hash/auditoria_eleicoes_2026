@@ -230,15 +230,24 @@ def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
             pool.shutdown()
         con.commit()
         names={i.filename if i else path.name for i in infos}
-        rows=[];runs=[];warnings=[];errors=[]
-        for name,row,rs,ws in con.execute('SELECT name,row,runs,warnings FROM results WHERE version=? AND day=?',(CACHE_VERSION,day)):
-            if name in names:
-                rows.append(json.loads(row));runs.extend(json.loads(rs))
-                warnings.extend({'arquivo':name,**w} for w in json.loads(ws))
+        rows=[];warnings=[];errors=[]
+        # Séries podem somar milhões de registros em SP. Exporta por log,
+        # sem manter todas as séries do estado simultaneamente na memória.
+        run_fields=['arquivo','grupo','tamanho','inicio','fim','duracao_seg',
+            'min_intervalo_seg','max_intervalo_seg','votos_vinculados',
+            'indice_inicio','indice_fim','origem_inicio','linha_inicio',
+            'origem_fim','linha_fim','categorias']
+        import csv
+        with (out/'sequencias.csv').open('w',encoding='utf-8-sig',newline='') as stream:
+            writer=csv.DictWriter(stream,fieldnames=run_fields)
+            writer.writeheader()
+            for name,row,rs,ws in con.execute('SELECT name,row,runs,warnings FROM results WHERE version=? AND day=? ORDER BY name',(CACHE_VERSION,day)):
+                if name in names:
+                    rows.append(json.loads(row));writer.writerows(json.loads(rs))
+                    warnings.extend({'arquivo':name,**w} for w in json.loads(ws))
         errors=[{'arquivo':n,'erro':m} for n,m in con.execute('SELECT name,message FROM errors') if n in names]
         rows.sort(key=lambda r:r['arquivo'])
         write_csv(out/'urnas.csv',rows)
-        write_csv(out/'sequencias.csv',sorted(runs,key=lambda x:(-x['tamanho'],x['arquivo'],x['grupo'])))
         write_csv(out/'avisos.csv',warnings,['arquivo','codigo','origem','linha'])
         write_csv(out/'erros.csv',errors,['arquivo','erro'])
         result=summarize(rows,errors,day)

@@ -1,0 +1,44 @@
+test_alternative_mesario_categories (test_motor.MotorTests.test_alternative_mesario_categories) ... ok
+test_cancelled_attempt_does_not_leak_category (test_motor.MotorTests.test_cancelled_attempt_does_not_leak_category) ... ok
+test_expected_starts_against_enumeration (test_motor.MotorTests.test_expected_starts_against_enumeration) ... ok
+test_nested_duplicates_preserve_multiplicity (test_motor.MotorTests.test_nested_duplicates_preserve_multiplicity) ... ok
+test_recursive_reader_releases_text_without_cyclic_gc (test_motor.MotorTests.test_recursive_reader_releases_text_without_cyclic_gc) ... ok
+test_unknown_interrupts_run (test_motor.MotorTests.test_unknown_interrupts_run) ... ok
+test_uploaded_log_reconciliation (test_motor.MotorTests.test_uploaded_log_reconciliation) ... skipped 'amostra externa não disponível'
+test_parallel_ranges_reconstruct_zip_and_cache_final_file (test_lote.DownloadTests.test_parallel_ranges_reconstruct_zip_and_cache_final_file) ... AC: download 0.02 GB, 0/2 blocos existentes
+ok
+test_server_ignoring_range_is_rejected_before_read (test_lote.DownloadTests.test_server_ignoring_range_is_rejected_before_read) ... AC: download 0.00 GB, 0/1 blocos existentes
+ok
+test_streamed_export_preserves_events_and_reuses_only_matching_cache (test_lote.DownloadTests.test_streamed_export_preserves_events_and_reuses_only_matching_cache) ... LOCAL: analisando 2 logs
+LOCAL: FINALIZADO logs=2 erros=0 cobertura=NA% mesario=4 indefinidas=0 maior_serie_mesario=2
+LOCAL: analisando 2 logs
+LOCAL: FINALIZADO logs=2 erros=0 cobertura=NA% mesario=4 indefinidas=0 maior_serie_mesario=2
+ok
+test_biometric_evidence_after_habilitation (test_validacao.LifecycleTests.test_biometric_evidence_after_habilitation) ... ok
+test_clock_regression_cannot_link_vote (test_validacao.LifecycleTests.test_clock_regression_cannot_link_vote) ... ok
+test_conflicting_evidence_is_quarantined (test_validacao.LifecycleTests.test_conflicting_evidence_is_quarantined) ... ok
+test_device_transition_cannot_carry_evidence (test_validacao.LifecycleTests.test_device_transition_cannot_carry_evidence) ... ok
+test_device_transition_cannot_link_vote (test_validacao.LifecycleTests.test_device_transition_cannot_link_vote) ... ok
+test_distinct_blocks_never_join_cycles_or_drop_isolated_lines (test_validacao.LifecycleTests.test_distinct_blocks_never_join_cycles_or_drop_isolated_lines) ... ok
+test_duplicate_whole_blocks_keep_intrablock_multiplicity (test_validacao.LifecycleTests.test_duplicate_whole_blocks_keep_intrablock_multiplicity) ... ok
+test_explicit_suspension_is_explained_without_vote (test_validacao.LifecycleTests.test_explicit_suspension_is_explained_without_vote) ... ok
+test_generated_mixed_outcomes_conserve_counts (test_validacao.LifecycleTests.test_generated_mixed_outcomes_conserve_counts) ... ok
+test_invalid_timestamp_does_not_crash_or_bridge_cycle (test_validacao.LifecycleTests.test_invalid_timestamp_does_not_crash_or_bridge_cycle) ... ok
+test_late_mesario_evidence (test_validacao.LifecycleTests.test_late_mesario_evidence) ... ok
+test_negated_or_quoted_authorization_is_not_evidence (test_validacao.LifecycleTests.test_negated_or_quoted_authorization_is_not_evidence) ... ok
+test_new_attempt_cannot_receive_previous_vote (test_validacao.LifecycleTests.test_new_attempt_cannot_receive_previous_vote) ... ok
+test_other_day_cannot_bridge_cycle (test_validacao.LifecycleTests.test_other_day_cannot_bridge_cycle) ... ok
+test_partial_suspension_never_invents_vote (test_validacao.LifecycleTests.test_partial_suspension_never_invents_vote) ... ok
+test_partial_suspension_waits_for_computed_event (test_validacao.LifecycleTests.test_partial_suspension_waits_for_computed_event) ... ok
+test_pre_habilitation_cancel_does_not_count_as_voter (test_validacao.LifecycleTests.test_pre_habilitation_cancel_does_not_count_as_voter) ... ok
+test_real_regression_excerpts (test_validacao.LifecycleTests.test_real_regression_excerpts) ... ok
+test_reboot_closes_cycle (test_validacao.LifecycleTests.test_reboot_closes_cycle) ... ok
+test_truncated_archive_fails_closed (test_validacao.LifecycleTests.test_truncated_archive_fails_closed) ... ok
+test_unknown_type_excluded (test_validacao.LifecycleTests.test_unknown_type_excluded) ... ok
+test_old_version_and_unresolved_sections_cannot_enter_peer_analysis (test_validacao.QualityGateTests.test_old_version_and_unresolved_sections_cannot_enter_peer_analysis) ... ok
+test_tampered_or_incomplete_result_is_rejected (test_validacao.QualityGateTests.test_tampered_or_incomplete_result_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 8.279s
+
+OK (skipped=1)

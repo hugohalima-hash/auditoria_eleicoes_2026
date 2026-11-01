@@ -36,3 +36,7 @@ Resultados antigos, de outro fingerprint ou sem manifesto íntegro são recusado
 Para repetir a verificação do corpus, baixe o pacote do AM da fonte registrada e use `preparar_amostra.py`; depois execute `python validar_corpus.py`. A comparação antiga exige o arquivo de referência preservado em `validacao/`.
 
 [Documentação de execução](LEIA-ME.md). [Relatório histórico, aguardando reprocessamento](RELATORIO_PARCIAL.md). GitHub preserva os arquivos; o processamento depende dos recursos do computador ou servidor executor.
+
+## Execução nacional persistente
+
+O workflow [Auditoria nacional v3](.github/workflows/auditoria-nacional.yml) processa as 28 unidades em executores padrão do repositório público, com duas simultâneas. Cada estado gera um pacote em uma Release da execução, inclusive diagnóstico em falha. A consolidação nacional só roda após sucesso das 28 unidades. Consulte [EXECUCAO_NACIONAL.md](EXECUCAO_NACIONAL.md). A exportação estadual de séries agora é feita por arquivo para reduzir memória; o ranking nacional continua ordenado por tamanho. Essa mudança gera novo fingerprint e invalida caches anteriores.
