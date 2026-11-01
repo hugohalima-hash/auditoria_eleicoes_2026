@@ -1,0 +1,11 @@
+{
+  "logs_na_referencia": 8157,
+  "logs_aplicaveis": 8036,
+  "sha256_pacote": "93f5b19750880217fdbf777b11e3d6e5caad359d79c3859f57247a5c97fffe88",
+  "sha256_leitor_independente": "9e1e28f804493d5f634e280a2105b91063db5e4bb5f7a484b7a3e51a59bb0f84",
+  "sha256_referencia": "7dcd6ecd474dfb474447caa7bf7d2d3f249452ee0203437e4626309048b6ffbe",
+  "comparacao_executada": true,
+  "divergencias": [],
+  "acuracia_semantica_certificada": null,
+  "limite": "A contagem é independente do leitor do motor e compara eventos literais apenas em logs com um único bloco distinto; não certifica classificação de biometria nem vínculo individual."
+}

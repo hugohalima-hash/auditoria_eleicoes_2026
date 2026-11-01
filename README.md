@@ -16,6 +16,10 @@ A amostra de desenvolvimento tem 48.473 habilitações: os 15 registros antes in
 
 Os 422 alertas de proporção elevada e os 64 de volume elevado são **históricos e não validados**. Não devem ser usados como lista de irregularidades. Os arquivos da Release `checkpoint-2026-10-31` preservam a execução antiga; não são uma validação da versão 3.0.
 
+## Reprocessamento com a versão corrigida
+
+Amazonas: 8.157 logs, zero erros de leitura e zero indefinidas; 154 suspensões sem voto separadas de 17 ciclos não resolvidos. Foram colocadas 32 seções em quarentena. A conferência independente de contagens em 8.036 logs não encontrou divergência. Isso não certifica acurácia semântica de 99,9%. Consulte [as evidências](VALIDACAO_V3.md). As outras unidades aguardam reprocessamento.
+
 ## Executar
 
 Mantenha todos os módulos Python juntos. Reprocesse em uma pasta nova e preserve os pacotes originais durante a validação:

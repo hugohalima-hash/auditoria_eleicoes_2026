@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9",
+  "arquivos": {
+    "resumo.json": "954d2398cb5940b00e25f5b227edd6979d964e0e649d5ff0ced4b95ce5588c12",
+    "urnas.csv": "4a594e2e3a5b2c14759bf1f6939e213ab06dc517edacfb347d4afa308eca36b4",
+    "sequencias.csv": "3be61adc64f5dbc2398ce8dc6789cf54c1984d93c7496066c7ecd114a78e590f",
+    "avisos.csv": "5d41f16eeb8cfcbb947e83ef403781bdc23c50ce71c47635de0cf4ba79cd7cf8",
+    "erros.csv": "294080e5158529793397d1f5d086997f5ff896eb8c672995e4c8badc7b047f9b",
+    "lacunas_cobertura.csv": "3910eda4cbe23f8617e84acdfad87fa7e64f5abd4de2392a45825e2fecc988f0",
+    "config_oficial.json": "54b8a8ec2c8b57e32d086e18d9de220b05d2fd0431262864417a33863587506a"
+  }
+}

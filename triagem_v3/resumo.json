@@ -1,0 +1,26 @@
+{
+  "versao_motor": "3.0",
+  "ufs_incluidas": [
+    "AM"
+  ],
+  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9",
+  "sha256_triagem": "4af5a219c360fd0c20b2649746bbfe7ac93b4377164c38299369e3e2509590bb",
+  "sha256_manifestos_entrada": {
+    "AM": "47593ed6c0cdcea8d376efdbee6b1c97c8b23dafd48131d5294b2c5dff39b19b"
+  },
+  "ufs_excluidas_versao_antiga": [],
+  "ufs_excluidas_integridade": [],
+  "secoes_em_quarentena": 32,
+  "acuracia_certificada": null,
+  "validacao_independente": "pendente",
+  "alertas": 165,
+  "secoes_com_alerta": 152,
+  "por_tipo": {
+    "multiplos_blocos_log": 121,
+    "avisos": 12,
+    "ciclos_sem_desfecho_explicado": 12,
+    "proporcao_mesario_acima_pares": 10,
+    "volume_habilitacoes_acima_pares": 10
+  },
+  "ressalva": "Triagem exploratória, sem conclusão de fraude. Múltiplos alertas podem pertencer à mesma seção."
+}

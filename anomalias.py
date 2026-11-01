@@ -2,6 +2,7 @@
 import argparse
 import csv
 import json
+import hashlib
 from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import median, quantiles
@@ -23,6 +24,7 @@ def scan(root, out):
     excluded_versions = []
     excluded_integrity = []
     quarantine = []
+    input_manifests = {}
     for folder in sorted(root.iterdir()):
         if not (folder / 'resumo.json').exists() or not (folder / 'urnas.csv').exists():
             continue
@@ -36,6 +38,7 @@ def scan(root, out):
         if summary.get('arquivos_processados') != summary.get('logs_no_pacote'):
             continue
         completed.append(folder.name)
+        input_manifests[folder.name]=hashlib.sha256((folder/'manifesto.json').read_bytes()).hexdigest()
         with (folder / 'urnas.csv').open(encoding='utf-8-sig') as f:
             rows = list(csv.DictReader(f))
         groups = defaultdict(list)
@@ -62,8 +65,16 @@ def scan(root, out):
                 if total >= 100:
                     groups[(row['municipio'], row['zona'])].append(row)
             else:
-                quarantine.append(dict(uf=folder.name, arquivo=row['arquivo'],
-                    motivo='Seção com registros não resolvidos, fronteiras de origem, relógio ou avisos; excluída da triagem estatística.'))
+                reasons=[]
+                for key in ('indefinida','tipo_outro','avisos','ciclos_sem_desfecho_explicado',
+                            'votos_sem_habilitacao','linhas_dia_malformadas',
+                            'regressoes_relogio','eventos_ajuste_relogio'):
+                    if n(key):reasons.append(f'{key}={n(key)}')
+                if n('blocos_distintos')>1:reasons.append(f"blocos_distintos={n('blocos_distintos')}")
+                quarantine.append(dict(uf=folder.name,municipio=row.get('municipio',''),
+                    municipio_nome=names.get(row.get('municipio',''),''),
+                    zona=row.get('zona',''),secao=row.get('secao',''),arquivo=row['arquivo'],
+                    motivo='; '.join(reasons) or 'Qualidade não demonstrada; critério ausente ou falso.'))
             for key in ('eventos_ajuste_relogio', 'linhas_dia_malformadas', 'indefinida', 'avisos'):
                 if n(key):
                     emit(row, key, n(key), context='Alerta técnico; pode exigir revisão do analisador ou do registro.')
@@ -115,11 +126,15 @@ def scan(root, out):
                         f"Série de {count}; {run['inicio']} a {run['fim']}; linhas {run['linha_inicio']}–{run['linha_fim']}. Não mede o tempo de cada voto.")
     fields = ['uf', 'municipio', 'municipio_nome', 'zona', 'secao', 'arquivo', 'alerta', 'valor', 'referencia', 'contexto']
     write_csv(out / 'alertas.csv', alerts, fields)
-    write_csv(out / 'quarentena.csv', quarantine, ['uf','arquivo','motivo'])
+    write_csv(out / 'quarentena.csv', quarantine,
+        ['uf','municipio','municipio_nome','zona','secao','arquivo','motivo'])
     write_csv(out / 'referencias_comparacao.csv', stats,
         ['uf', 'municipio', 'zona', 'metrica', 'secoes', 'mediana', 'limite_superior'])
     counts = Counter(r['alerta'] for r in alerts)
     result = {'versao_motor': VERSION, 'ufs_incluidas': completed,
+        'sha256_motor':ENGINE_SHA256,
+        'sha256_triagem':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'sha256_manifestos_entrada':input_manifests,
         'ufs_excluidas_versao_antiga': excluded_versions,
         'ufs_excluidas_integridade':excluded_integrity,
         'secoes_em_quarentena':len(quarantine), 'acuracia_certificada':None,

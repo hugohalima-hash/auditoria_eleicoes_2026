@@ -34,6 +34,6 @@ test_old_version_and_unresolved_sections_cannot_enter_peer_analysis (test_valida
 test_tampered_or_incomplete_result_is_rejected (test_validacao.QualityGateTests.test_tampered_or_incomplete_result_is_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 32 tests in 8.565s
+Ran 32 tests in 8.906s
 
 OK (skipped=1)

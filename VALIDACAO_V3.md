@@ -52,3 +52,11 @@ O relatório eleitoral final só deverá usar alertas recalculados depois do rep
 ## Fonte técnica
 
 A documentação oficial [Formato dos arquivos de log do TSE (2022)](https://www.tse.jus.br/eleicoes/eleicoes-2022/arquivos/formato-dos-arquivos-de-log-17-9-22/@@download/file/formato-arquivos-log.pdf) descreve arquivos internos e pacotes arquivados. É referência estrutural, não um dicionário completo ou certificação das mensagens de 2026. As correções semânticas acima foram baseadas nas mensagens observadas nos originais de 2026, cujos hashes e linhas estão preservados.
+
+## Reprocessamento integral do Amazonas com o motor final
+
+Foram reprocessados 8.157 logs com o fingerprint final, sem erro de leitura e com cobertura de 100% da lista principal de seções. Habilitações: 2.192.230; votos computados: 2.192.059; indefinidas: zero (eram 99 na versão 2.1). Os avisos passaram de 171 para 17. A diferença de 171 se decompõe em 154 suspensões explícitas sem voto e 17 ciclos não resolvidos. Os 17 ciclos estão em 12 seções; não se presume um voto onde não há evento de voto computado. Os balanços fecham com resíduo zero.
+
+O portão de qualidade admitiu 8.125 seções e colocou 32 em quarentena, incluindo fronteiras de origem e vínculos não resolvidos. Isso é cobertura de aceitação, não estimativa de acurácia. O leitor independente conferiu eventos literais e hashes em 8.036 dos 8.157 arquivos, sem divergência; 121 com múltiplos blocos distintos no histórico completo não foram presumidos comparáveis por esse leitor.
+
+A triagem exploratória recalculada do AM aponta dez seções por proporção elevada de eventos de mesário e dez por volume elevado, que podem se sobrepor. Esses alertas continuam exploratórios, não constituem classificação de fraude e não certificam 99,9%. As listas e exclusões estão em `triagem_v3/`; os avisos técnicos com linhas e origens estão em `validacao/avisos_AM.csv`. As outras 27 unidades ainda precisam ser reprocessadas com o motor final. O pacote integral de resultados v3 ainda não foi anexado a uma Release; o resumo, o manifesto e as evidências de validação estão no repositório.

@@ -1,0 +1,33 @@
+﻿uf,municipio,municipio_nome,zona,secao,arquivo,motivo
+AM,02291,EIRUNEPÉ,0011,0063,o03221am0229100110063-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02410,ITACOATIARA,0003,0230,o03221am0241000030230-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02518,LÁBREA,0012,0110,o03221am0251800120110-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0001,0666,o03221am0255000010666-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0001,0728,o03221am0255000010728-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02550,MANAUS,0001,0934,o03221am0255000010934-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02550,MANAUS,0002,0578,o03221am0255000020578-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0002,0595,o03221am0255000020595-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0002,0799,o03221am0255000020799-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0031,0507,o03221am0255000310507-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0032,0861,o03221am0255000320861-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0037,0728,o03221am0255000370728-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02550,MANAUS,0040,0434,o03221am0255000400434-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0040,0504,o03221am0255000400504-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0058,1055,o03221am0255000581055-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0059,0563,o03221am0255000590563-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0059,0617,o03221am0255000590617-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0059,0618,o03221am0255000590618-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0063,0511,o03221am0255000630511-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0063,0755,o03221am0255000630755-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0065,0250,o03221am0255000650250-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0065,0433,o03221am0255000650433-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0065,0544,o03221am0255000650544-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02550,MANAUS,0065,0608,o03221am0255000650608-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0068,0631,o03221am0255000680631-log.jez,blocos_distintos=2
+AM,02550,MANAUS,0070,0662,o03221am0255000700662-log.jez,blocos_distintos=2
+AM,02690,PARINTINS,0004,0167,o03221am0269000040167-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02798,TAPAUÁ,0038,0040,o03221am0279800380040-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0072,o03221am0283600190072-log.jez,avisos=3; ciclos_sem_desfecho_explicado=3; blocos_distintos=2
+AM,02879,URUCURITUBA,0003,0262,o03221am0287900030262-log.jez,avisos=4; ciclos_sem_desfecho_explicado=4
+AM,02895,ALVARÃES,0060,0001,o03221am0289500600001-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AM,98353,IRANDUBA,0056,0061,o03221am9835300560061-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1

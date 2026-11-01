@@ -1,0 +1,166 @@
+﻿uf,municipio,municipio_nome,zona,secao,arquivo,alerta,valor,referencia,contexto
+AM,02020,GUAJARÁ,0045,0016,o03221am0202000450016-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02038,ANORI,0033,0019,o03221am0203800330019-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02038,ANORI,0033,0040,o03221am0203800330040-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02054,ATALAIA DO NORTE,0042,0006,o03221am0205400420006-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02070,AUTAZES,0035,0005,o03221am0207000350005-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02070,AUTAZES,0035,0051,o03221am0207000350051-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02119,BARREIRINHA,0026,0044,o03221am0211900260044-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02119,BARREIRINHA,0026,0045,o03221am0211900260045-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02259,COARI,0008,0053,o03221am0225900080053-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02259,COARI,0008,0174,o03221am0225900080174-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02291,EIRUNEPÉ,0011,0063,o03221am0229100110063-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02291,EIRUNEPÉ,0011,0063,o03221am0229100110063-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02330,FONTE BOA,0010,0047,o03221am0233000100047-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02356,HUMAITÁ,0017,0102,o03221am0235600170102-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02399,IPIXUNA,0045,0063,o03221am0239900450063-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02410,ITACOATIARA,0003,0132,o03221am0241000030132-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02410,ITACOATIARA,0003,0208,o03221am0241000030208-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02410,ITACOATIARA,0003,0230,o03221am0241000030230-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02410,ITACOATIARA,0003,0230,o03221am0241000030230-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02437,ITAPIRANGA,0024,0003,o03221am0243700240003-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02496,JUTAÍ,0041,0011,o03221am0249600410011-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02518,LÁBREA,0012,0042,o03221am0251800120042-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02518,LÁBREA,0012,0073,o03221am0251800120073-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02518,LÁBREA,0012,0106,o03221am0251800120106-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02518,LÁBREA,0012,0110,o03221am0251800120110-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02534,MANACAPURU,0006,0142,o03221am0253400060142-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02534,MANACAPURU,0006,0307,o03221am0253400060307-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0666,o03221am0255000010666-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0728,o03221am0255000010728-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02550,MANAUS,0001,0728,o03221am0255000010728-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02550,MANAUS,0001,0729,o03221am0255000010729-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0744,o03221am0255000010744-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0869,o03221am0255000010869-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0924,o03221am0255000010924-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0001,0934,o03221am0255000010934-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02550,MANAUS,0001,0934,o03221am0255000010934-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02550,MANAUS,0001,0945,o03221am0255000010945-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0002,0578,o03221am0255000020578-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0002,0595,o03221am0255000020595-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0002,0599,o03221am0255000020599-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0002,0656,o03221am0255000020656-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0002,0799,o03221am0255000020799-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0031,0507,o03221am0255000310507-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0031,0668,o03221am0255000310668-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0031,0737,o03221am0255000310737-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0031,0739,o03221am0255000310739-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0714,o03221am0255000320714-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0719,o03221am0255000320719-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0739,o03221am0255000320739-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0797,o03221am0255000320797-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0815,o03221am0255000320815-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0848,o03221am0255000320848-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0032,0861,o03221am0255000320861-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0500,o03221am0255000370500-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0626,o03221am0255000370626-log.jez,multiplos_blocos_log,3,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0627,o03221am0255000370627-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0654,o03221am0255000370654-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0657,o03221am0255000370657-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0037,0728,o03221am0255000370728-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02550,MANAUS,0037,0728,o03221am0255000370728-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02550,MANAUS,0040,0434,o03221am0255000400434-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0040,0502,o03221am0255000400502-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0040,0504,o03221am0255000400504-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0040,0582,o03221am0255000400582-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0040,0591,o03221am0255000400591-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0058,0779,o03221am0255000580779-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0058,0849,o03221am0255000580849-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0058,0974,o03221am0255000580974-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0058,0988,o03221am0255000580988-log.jez,multiplos_blocos_log,3,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0058,1055,o03221am0255000581055-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0544,o03221am0255000590544-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0563,o03221am0255000590563-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0565,o03221am0255000590565-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0617,o03221am0255000590617-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0618,o03221am0255000590618-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0653,o03221am0255000590653-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0663,o03221am0255000590663-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0679,o03221am0255000590679-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0059,0694,o03221am0255000590694-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0062,0511,o03221am0255000620511-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0062,0633,o03221am0255000620633-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0511,o03221am0255000630511-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0546,o03221am0255000630546-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0560,o03221am0255000630560-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0590,o03221am0255000630590-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0597,o03221am0255000630597-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0615,o03221am0255000630615-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0644,o03221am0255000630644-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0649,o03221am0255000630649-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0664,o03221am0255000630664-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0743,o03221am0255000630743-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0063,0755,o03221am0255000630755-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0250,o03221am0255000650250-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0424,o03221am0255000650424-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0433,o03221am0255000650433-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0456,o03221am0255000650456-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0522,o03221am0255000650522-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0544,o03221am0255000650544-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02550,MANAUS,0065,0544,o03221am0255000650544-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02550,MANAUS,0065,0560,o03221am0255000650560-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0580,o03221am0255000650580-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0608,o03221am0255000650608-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0613,o03221am0255000650613-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0618,o03221am0255000650618-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0675,o03221am0255000650675-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0065,0677,o03221am0255000650677-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0068,0631,o03221am0255000680631-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0068,0656,o03221am0255000680656-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0068,0657,o03221am0255000680657-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0068,0789,o03221am0255000680789-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0070,0662,o03221am0255000700662-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0070,0680,o03221am0255000700680-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02550,MANAUS,0070,0705,o03221am0255000700705-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02577,MANICORÉ,0016,0074,o03221am0257700160074-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02577,MANICORÉ,0016,0086,o03221am0257700160086-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02577,MANICORÉ,0016,0116,o03221am0257700160116-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02615,MAUÉS,0005,0021,o03221am0261500050021-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02690,PARINTINS,0004,0167,o03221am0269000040167-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02690,PARINTINS,0004,0167,o03221am0269000040167-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02771,SILVES,0024,0061,o03221am0277100240061-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02798,TAPAUÁ,0038,0040,o03221am0279800380040-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02798,TAPAUÁ,0038,0040,o03221am0279800380040-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02810,TEFÉ,0009,0014,o03221am0281000090014-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02810,TEFÉ,0009,0026,o03221am0281000090026-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02810,TEFÉ,0009,0047,o03221am0281000090047-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02810,TEFÉ,0009,0128,o03221am0281000090128-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0069,o03221am0283600190069-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0072,o03221am0283600190072-log.jez,avisos,3,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0072,o03221am0283600190072-log.jez,ciclos_sem_desfecho_explicado,3,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0072,o03221am0283600190072-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0107,o03221am0283600190107-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02879,URUCURITUBA,0003,0262,o03221am0287900030262-log.jez,avisos,4,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02879,URUCURITUBA,0003,0262,o03221am0287900030262-log.jez,ciclos_sem_desfecho_explicado,4,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02895,ALVARÃES,0060,0001,o03221am0289500600001-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,02895,ALVARÃES,0060,0001,o03221am0289500600001-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,02917,AMATURÁ,0022,0064,o03221am0291700220064-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02950,BERURI,0054,0016,o03221am0295000540016-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02950,BERURI,0054,0024,o03221am0295000540024-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02992,CAAPIRANGA,0006,0248,o03221am0299200060248-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,98353,IRANDUBA,0056,0061,o03221am9835300560061-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AM,98353,IRANDUBA,0056,0061,o03221am9835300560061-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AM,98396,MANAQUIRI,0023,0160,o03221am9839600230160-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0032,o03221am9841800510032-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0068,o03221am9841800510068-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,98477,TABATINGA,0036,0052,o03221am9847700360052-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AM,02054,ATALAIA DO NORTE,0042,0037,o03221am0205400420037-log.jez,proporcao_mesario_acima_pares,0.226562,0.096916,32 seções com >=100 habilitações no mesmo município e zona; mediana=0.031919. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02372,SANTA ISABEL DO RIO NEGRO,0030,0031,o03221am0237200300031-log.jez,volume_habilitacoes_acima_pares,305,286.0,30 seções com >=100 habilitações no mesmo município e zona; mediana=199.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02399,IPIXUNA,0045,0034,o03221am0239900450034-log.jez,proporcao_mesario_acima_pares,0.185897,0.167647,36 seções com >=100 habilitações no mesmo município e zona; mediana=0.044830. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02399,IPIXUNA,0045,0037,o03221am0239900450037-log.jez,proporcao_mesario_acima_pares,0.220779,0.167647,36 seções com >=100 habilitações no mesmo município e zona; mediana=0.044830. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02496,JUTAÍ,0041,0043,o03221am0249600410043-log.jez,volume_habilitacoes_acima_pares,363,352.0,43 seções com >=100 habilitações no mesmo município e zona; mediana=267.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02534,MANACAPURU,0006,0122,o03221am0253400060122-log.jez,proporcao_mesario_acima_pares,0.153409,0.149732,230 seções com >=100 habilitações no mesmo município e zona; mediana=0.041296. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02550,MANAUS,0058,0793,o03221am0255000580793-log.jez,proporcao_mesario_acima_pares,0.176991,0.176952,315 seções com >=100 habilitações no mesmo município e zona; mediana=0.053797. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02550,MANAUS,0059,0613,o03221am0255000590613-log.jez,volume_habilitacoes_acima_pares,424,422.0,289 seções com >=100 habilitações no mesmo município e zona; mediana=315.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02577,MANICORÉ,0016,0114,o03221am0257700160114-log.jez,proporcao_mesario_acima_pares,0.151163,0.147316,105 seções com >=100 habilitações no mesmo município e zona; mediana=0.043860. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02615,MAUÉS,0005,0168,o03221am0261500050168-log.jez,proporcao_mesario_acima_pares,0.174603,0.171397,113 seções com >=100 habilitações no mesmo município e zona; mediana=0.047619. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02631,NHAMUNDÁ,0043,0047,o03221am0263100430047-log.jez,proporcao_mesario_acima_pares,0.236364,0.146687,50 seções com >=100 habilitações no mesmo município e zona; mediana=0.044649. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02836,SÃO GABRIEL DA CACHOEIRA,0019,0090,o03221am0283600190090-log.jez,proporcao_mesario_acima_pares,0.162651,0.104261,101 seções com >=100 habilitações no mesmo município e zona; mediana=0.019531. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02879,URUCURITUBA,0003,0246,o03221am0287900030246-log.jez,proporcao_mesario_acima_pares,0.162393,0.138503,46 seções com >=100 habilitações no mesmo município e zona; mediana=0.053503. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02879,URUCURITUBA,0003,0321,o03221am0287900030321-log.jez,volume_habilitacoes_acima_pares,303,290.5,46 seções com >=100 habilitações no mesmo município e zona; mediana=209.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,02895,ALVARÃES,0060,0022,o03221am0289500600022-log.jez,volume_habilitacoes_acima_pares,353,338.0,33 seções com >=100 habilitações no mesmo município e zona; mediana=280.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0059,o03221am9841800510059-log.jez,volume_habilitacoes_acima_pares,360,319.0,90 seções com >=100 habilitações no mesmo município e zona; mediana=195.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0060,o03221am9841800510060-log.jez,volume_habilitacoes_acima_pares,358,319.0,90 seções com >=100 habilitações no mesmo município e zona; mediana=195.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0065,o03221am9841800510065-log.jez,volume_habilitacoes_acima_pares,342,319.0,90 seções com >=100 habilitações no mesmo município e zona; mediana=195.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0072,o03221am9841800510072-log.jez,volume_habilitacoes_acima_pares,332,319.0,90 seções com >=100 habilitações no mesmo município e zona; mediana=195.000000. Sem ajuste por eleitores aptos ou perfil biométrico.
+AM,98418,PRESIDENTE FIGUEIREDO,0051,0118,o03221am9841800510118-log.jez,volume_habilitacoes_acima_pares,353,319.0,90 seções com >=100 habilitações no mesmo município e zona; mediana=195.000000. Sem ajuste por eleitores aptos ou perfil biométrico.

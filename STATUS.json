@@ -4,7 +4,9 @@
   "status_execucao": "revisao_e_reprocessamento",
   "acuracia_certificada": null,
   "validacao_independente": "pendente",
-  "ufs_reprocessadas_atuais": [],
+  "ufs_reprocessadas_atuais": [
+    "AM"
+  ],
   "alertas_v21_retirados_de_uso": {
     "proporcao_mesario_acima_pares": 422,
     "volume_habilitacoes_acima_pares": 64
@@ -18,5 +20,51 @@
     "testes_executados": 32,
     "testes_aprovados": 31,
     "testes_pulados": 1
-  }
+  },
+  "arquivos_reprocessados_motor_atual": 8157,
+  "ufs_pendentes_reprocessamento": [
+    "AC",
+    "AL",
+    "AP",
+    "BA",
+    "CE",
+    "DF",
+    "ES",
+    "GO",
+    "MA",
+    "MG",
+    "MS",
+    "MT",
+    "PA",
+    "PB",
+    "PE",
+    "PI",
+    "PR",
+    "RJ",
+    "RN",
+    "RO",
+    "RR",
+    "RS",
+    "SC",
+    "SE",
+    "SP",
+    "TO",
+    "ZZ"
+  ],
+  "reprocessamento_AM": {
+    "habilitacoes": 2192230,
+    "votos_computados": 2192059,
+    "indefinida": 0,
+    "avisos": 17,
+    "suspensas_sem_voto": 154,
+    "ciclos_sem_desfecho_explicado": 17,
+    "arquivos_admissiveis_estatistica": 8125,
+    "arquivos_em_quarentena": 32
+  },
+  "conferencia_independente_AM": {
+    "logs": 8036,
+    "divergencias": 0,
+    "tipo": "contagem literal de habilitações e votos; não acurácia semântica"
+  },
+  "pacote_integral_v3_publicado_em_release": false
 }
