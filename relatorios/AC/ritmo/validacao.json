@@ -1,0 +1,8 @@
+{
+  "maximos_conferidos": 4540,
+  "sequencias_com_intervalos_recalculados": 9792,
+  "casos_com_trechos_conferidos_linha_a_linha": 8,
+  "secoes_com_log_integral_no_anexo": 46,
+  "referencia_rapidez": "Percentil 10 biométrico da mesma seção; mínimo 30 pares; série >=3; qualidade admissível",
+  "observacao": "Sem ajuste de significância, fila, horário ou perfil individual; seleção exploratória."
+}

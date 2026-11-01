@@ -1,0 +1,32 @@
+C05 | RIO BRANCO | Zona 0001 | Seção 0830
+Arquivo: o03221ac0139200010830-log.jez
+Origem: raiz!logd.dat
+Linhas 7790-7816, sem omitir eventos intermediários. Prefixo numérico = linha original.
+
+007790	25/10/2026 10:11:43	INFO	02037108	VOTA	O voto do eleitor foi computado	D644FDC3EB4D704E
+007791	25/10/2026 10:11:45	INFO	02037108	VOTA	Aguardando digitação do identificador do eleitor	F7A93E43CB94DF02
+007792	25/10/2026 10:12:00	INFO	02037108	VOTA	Identificador do eleitor digitado pelo mesário	976EBFB0BFD021EB
+007793	25/10/2026 10:12:00	INFO	02037108	VOTA	Identificador digitado pelo mesário foi: (Título de eleitor)	D55B47512BD01A41
+007794	25/10/2026 10:12:09	INFO	02037108	VOTA	Ano de nascimento digitado é igual ao do cadastro	43E793B24E9231C7
+007795	25/10/2026 10:12:12	INFO	02037108	VOTA	Eleitor foi habilitado	571BC3311E18F739
+007796	25/10/2026 10:12:19	INFO	02037108	VOTA	Tecla indevida pressionada	BEF9E6B398AFF7D4
+007797	25/10/2026 10:12:19	INFO	02037108	VOTA	Voto confirmado para [Governador]	15B06229D962C593
+007798	25/10/2026 10:12:23	INFO	02037108	VOTA	Voto confirmado para [Presidente]	B13C45BCE6F2B5F0
+007799	25/10/2026 10:12:23	INFO	02037108	VOTA	O voto do eleitor foi computado	D8E7D3B757CAA7E2
+007800	25/10/2026 10:12:24	INFO	02037108	VOTA	Aguardando digitação do identificador do eleitor	27B715E844D20CBE
+007801	25/10/2026 10:12:45	INFO	02037108	VOTA	Identificador do eleitor digitado pelo mesário	50F23082E41AE0C8
+007802	25/10/2026 10:12:45	INFO	02037108	VOTA	Identificador digitado pelo mesário foi: (Título de eleitor)	3793138A6ADE9BD6
+007803	25/10/2026 10:12:51	INFO	02037108	VOTA	Ano de nascimento digitado é igual ao do cadastro	43FF29696C851E44
+007804	25/10/2026 10:12:55	INFO	02037108	VOTA	Eleitor foi habilitado	A89C459A5FDAA9E1
+007805	25/10/2026 10:13:03	INFO	02037108	VOTA	Tecla indevida pressionada	D1435263DEEA3A6D
+007806	25/10/2026 10:13:07	INFO	02037108	VOTA	Voto confirmado para [Governador]	D60C86EFA292D861
+007807	25/10/2026 10:13:12	INFO	02037108	VOTA	Voto confirmado para [Presidente]	46451D936CE48018
+007808	25/10/2026 10:13:13	INFO	02037108	VOTA	O voto do eleitor foi computado	129EEEA64A1B0B5C
+007809	25/10/2026 10:13:14	INFO	02037108	VOTA	Aguardando digitação do identificador do eleitor	F9BCF6BF2C579E50
+007810	25/10/2026 10:13:41	INFO	02037108	VOTA	Identificador do eleitor digitado pelo mesário	F997450E8956929B
+007811	25/10/2026 10:13:41	INFO	02037108	VOTA	Identificador digitado pelo mesário foi: (CPF)	810BC6EA1BCB4358
+007812	25/10/2026 10:13:49	INFO	02037108	VOTA	Ano de nascimento digitado é igual ao do cadastro	2A097530767921A1
+007813	25/10/2026 10:13:51	INFO	02037108	VOTA	Eleitor foi habilitado	636EE55E77F3C385
+007814	25/10/2026 10:14:02	INFO	02037108	VOTA	Voto confirmado para [Governador]	DC85DB2D80DDE40D
+007815	25/10/2026 10:14:06	INFO	02037108	VOTA	Voto confirmado para [Presidente]	FA79E923D38C8838
+007816	25/10/2026 10:14:06	INFO	02037108	VOTA	O voto do eleitor foi computado	F4B824792A7A1B00

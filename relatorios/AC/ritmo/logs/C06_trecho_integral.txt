@@ -1,0 +1,30 @@
+C06 | RIO BRANCO | Zona 0009 | Seção 0443
+Arquivo: o03221ac0139200090443-log.jez
+Origem: raiz!logd.dat
+Linhas 9808-9832, sem omitir eventos intermediários. Prefixo numérico = linha original.
+
+009808	25/10/2026 13:28:55	INFO	02286933	VOTA	O voto do eleitor foi computado	7ECCAA3012996260
+009809	25/10/2026 13:28:56	INFO	02286933	VOTA	Aguardando digitação do identificador do eleitor	727E49DD4D807C6F
+009810	25/10/2026 13:29:04	INFO	02286933	VOTA	Identificador do eleitor digitado pelo mesário	6EC4591CD7E48618
+009811	25/10/2026 13:29:04	INFO	02286933	VOTA	Identificador digitado pelo mesário foi: (Título de eleitor)	2424D7565CAC3EAE
+009812	25/10/2026 13:29:10	INFO	02286933	VOTA	Ano de nascimento digitado é igual ao do cadastro	721D14756057E680
+009813	25/10/2026 13:29:11	INFO	02286933	VOTA	Eleitor foi habilitado	33210B65E49FE265
+009814	25/10/2026 13:29:16	INFO	02286933	VOTA	Voto confirmado para [Governador]	41364CE751A87C0E
+009815	25/10/2026 13:29:20	INFO	02286933	VOTA	Voto confirmado para [Presidente]	81CBC9274E8213B4
+009816	25/10/2026 13:29:21	INFO	02286933	VOTA	O voto do eleitor foi computado	028567514995196E
+009817	25/10/2026 13:29:22	INFO	02286933	VOTA	Aguardando digitação do identificador do eleitor	58FCFC309168DA56
+009818	25/10/2026 13:29:35	INFO	02286933	VOTA	Identificador do eleitor digitado pelo mesário	2A87D62A1D955676
+009819	25/10/2026 13:29:35	INFO	02286933	VOTA	Identificador digitado pelo mesário foi: (Título de eleitor)	FA88C94843003E3F
+009820	25/10/2026 13:29:40	INFO	02286933	VOTA	Ano de nascimento digitado é igual ao do cadastro	7BAEF66F3BF468C9
+009821	25/10/2026 13:29:41	INFO	02286933	VOTA	Eleitor foi habilitado	2094C0E6E3178627
+009822	25/10/2026 13:30:16	INFO	02286933	VOTA	Voto confirmado para [Governador]	1B130AB59DEA4AAF
+009823	25/10/2026 13:30:19	INFO	02286933	VOTA	Voto confirmado para [Presidente]	DF94FDC07050FCBA
+009824	25/10/2026 13:30:20	INFO	02286933	VOTA	O voto do eleitor foi computado	4FE2D722D5B51FE8
+009825	25/10/2026 13:30:21	INFO	02286933	VOTA	Aguardando digitação do identificador do eleitor	3F0F6008635AF899
+009826	25/10/2026 13:30:42	INFO	02286933	VOTA	Identificador do eleitor digitado pelo mesário	BF4E74039FCC22EE
+009827	25/10/2026 13:30:42	INFO	02286933	VOTA	Identificador digitado pelo mesário foi: (Título de eleitor)	E8AF19E84DA31E29
+009828	25/10/2026 13:30:48	INFO	02286933	VOTA	Ano de nascimento digitado é igual ao do cadastro	7473970B23A1105B
+009829	25/10/2026 13:30:49	INFO	02286933	VOTA	Eleitor foi habilitado	B9A62D4981910C3F
+009830	25/10/2026 13:31:17	INFO	02286933	VOTA	Voto confirmado para [Governador]	2CD3919A69FD74AD
+009831	25/10/2026 13:31:21	INFO	02286933	VOTA	Voto confirmado para [Presidente]	2EBD252BD2E001E5
+009832	25/10/2026 13:31:22	INFO	02286933	VOTA	O voto do eleitor foi computado	D43510B7FA221665
