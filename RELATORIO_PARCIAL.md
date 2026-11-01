@@ -2,11 +2,11 @@
 
 **Escopo:** logs públicos do segundo turno de 25/10/2026, durante todo o dia. Motor 2.1.
 
-**Situação:** 12 de 28 UFs processadas (26 estados, Distrito Federal e exterior).
-**Arquivos de log processados:** 252.925.
-**Erros de leitura:** 0; **habilitações indefinidas:** 2.132; **avisos:** 4.920.
+**Situação:** 13 de 28 UFs processadas (26 estados, Distrito Federal e exterior).
+**Arquivos de log processados:** 260.026.
+**Erros de leitura:** 0; **habilitações indefinidas:** 2.200; **avisos:** 5.115.
 
-**UFs pendentes:** AL, AM, DF, ES, GO, MA, MS, MT, PB, PI, RN, RO, SC, SE, SP, TO.
+**UFs pendentes:** AM, DF, ES, GO, MA, MS, MT, PB, PI, RN, RO, SC, SE, SP, TO.
 
 ## Resultados por estado
 
@@ -15,6 +15,7 @@ As contagens abaixo são de habilitações e de eventos de voto vinculados pelo 
 | UF | Logs | Cobertura da lista principal | Habilitações com eventos de mesário | Destas, com voto vinculado | Maior série de habilitações com eventos de mesário | Maior série no grupo ampliado | Indefinidas |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | AC | 2.270 | 100.00% | 22.661 | 22.654 | 6 | 10 | 15 |
+| AL | 7.101 | 100.00% | 135.906 | 135.874 | 75 | 83 | 68 |
 | AP | 1.914 | 100.00% | 19.689 | 19.685 | 5 | 8 | 7 |
 | BA | 35.476 | 100.00% | 702.347 | 702.243 | 102 | 178 | 314 |
 | CE | 23.765 | 100.00% | 429.368 | 429.294 | 52 | 100 | 183 |
@@ -29,10 +30,10 @@ As contagens abaixo são de habilitações e de eventos de voto vinculados pelo 
 
 ## Totais das UFs processadas
 
-- Habilitações: 65.211.301.
-- Eventos de voto computado: 65.206.381.
-- Habilitações com eventos de mesário: 4.578.175; com voto vinculado: 4.577.570.
-- Grupo ampliado sem evento biométrico reconhecido: 9.210.922; com voto vinculado: 9.209.826.
+- Habilitações: 67.163.128.
+- Eventos de voto computado: 67.158.013.
+- Habilitações com eventos de mesário: 4.714.081; com voto vinculado: 4.713.444.
+- Grupo ampliado sem evento biométrico reconhecido: 9.416.783; com voto vinculado: 9.415.650.
 
 ## Quantas sequências foram identificadas
 
@@ -40,8 +41,8 @@ Contagens de séries máximas consecutivas de habilitações. Uma série de dez 
 
 | Grupo | Séries de 3 ou mais | Séries de 5 ou mais | Séries de 10 ou mais |
 |---|---:|---:|---:|
-| Com eventos de mesário | 44.109 | 2.008 | 586 |
-| Grupo ampliado sem evento biométrico | 268.475 | 22.418 | 1.992 |
+| Com eventos de mesário | 45.577 | 2.078 | 598 |
+| Grupo ampliado sem evento biométrico | 272.661 | 22.730 | 2.008 |
 
 ## Maiores sequências de habilitações com eventos de mesário
 
@@ -56,6 +57,8 @@ Ranking descritivo; não é classificação de fraude. Datas e horários são os
 | PR | TOMAZINA | 0019 / 0055 | 85 | 85 | 25/10/2026 11:42:27 | 25/10/2026 16:23:46 |
 | BA | MARAÚ | 0078 / 0158 | 78 | 78 | 25/10/2026 10:54:03 | 25/10/2026 15:17:06 |
 | RS | OSÓRIO | 0077 / 0093 | 77 | 77 | 25/10/2026 10:45:51 | 25/10/2026 13:24:41 |
+| AL | OLHO D'ÁGUA DAS FLORES | 0011 / 0119 | 75 | 75 | 25/10/2026 12:29:01 | 25/10/2026 16:30:02 |
+| AL | OLHO D'ÁGUA DAS FLORES | 0011 / 0119 | 73 | 73 | 25/10/2026 09:13:29 | 25/10/2026 11:23:15 |
 | BA | LAURO DE FREITAS | 0180 / 0232 | 72 | 72 | 25/10/2026 12:54:14 | 25/10/2026 14:29:25 |
 | BA | CANDEIAS | 0127 / 0326 | 71 | 71 | 25/10/2026 11:04:07 | 25/10/2026 12:39:13 |
 | RS | IVOTI | 0118 / 0143 | 65 | 65 | 25/10/2026 13:29:35 | 25/10/2026 15:35:47 |
@@ -67,8 +70,6 @@ Ranking descritivo; não é classificação de fraude. Datas e horários são os
 | MG | SÃO MIGUEL DO ANTA | 0268 / 0068 | 59 | 59 | 25/10/2026 08:32:24 | 25/10/2026 10:19:00 |
 | BA | SIMÕES FILHO | 0033 / 0139 | 58 | 58 | 25/10/2026 09:22:29 | 25/10/2026 10:59:32 |
 | BA | SÃO GONÇALO DOS CAMPOS | 0108 / 0148 | 56 | 56 | 25/10/2026 08:49:55 | 25/10/2026 16:04:34 |
-| BA | TERRA NOVA | 0128 / 0190 | 54 | 54 | 25/10/2026 13:12:20 | 25/10/2026 15:29:06 |
-| PE | CARUARU | 0105 / 0390 | 54 | 54 | 25/10/2026 11:37:20 | 25/10/2026 16:46:58 |
 
 ## Como interpretar
 
