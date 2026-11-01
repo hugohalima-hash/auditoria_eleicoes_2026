@@ -1,0 +1,29 @@
+{
+  "ufs_incluidas": [
+    "AC",
+    "AL",
+    "AP",
+    "BA",
+    "CE",
+    "MG",
+    "PA",
+    "PE",
+    "PR",
+    "RJ",
+    "RR",
+    "RS",
+    "ZZ"
+  ],
+  "alertas": 18239,
+  "secoes_com_alerta": 12965,
+  "por_tipo": {
+    "multiplos_blocos_log": 5928,
+    "indefinida": 2180,
+    "avisos": 4756,
+    "habilitacoes_sem_voto_vinculado": 4756,
+    "sequencia_mesario_ge_10": 133,
+    "volume_habilitacoes_acima_pares": 64,
+    "proporcao_mesario_acima_pares": 422
+  },
+  "ressalva": "Triagem exploratória, sem conclusão de fraude. Múltiplos alertas podem pertencer à mesma seção."
+}
