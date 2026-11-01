@@ -79,6 +79,12 @@ class LifecycleTests(unittest.TestCase):
         ss,w,m=extract(raw,DAY);self.assertEqual(m['linhas_dia_malformadas'],1)
         self.assertNotIn('voto',ss[0]);self.assertEqual(m['votos_sem_habilitacao'],1)
 
+    def test_other_day_cannot_bridge_cycle(self):
+        raw=archive('\n'.join([line('08:00:00','Tipo de habilitação do eleitor [biométrica]'),line('08:00:01','Eleitor foi habilitado'),line('08:00:02','Evento').replace(DAY,'26/10/2026'),line('08:00:03','O voto do eleitor foi computado')]))
+        ss,w,m=extract(raw,DAY)
+        self.assertNotIn('voto',ss[0]);self.assertEqual(ss[0]['desfecho'],'fronteira_data')
+        self.assertEqual(m['votos_sem_habilitacao'],1);self.assertFalse(m['admissivel_estatistica'])
+
     def test_distinct_blocks_never_join_cycles_or_drop_isolated_lines(self):
         shared=line('08:00:01','Eleitor foi habilitado')
         raw=archive(shared+'\n'+line('08:00:02','O voto do eleitor foi computado'),{'old.jez':archive(line('08:00:00','Tipo de habilitação do eleitor [biométrica]')+'\n'+shared)})
@@ -131,6 +137,7 @@ class LifecycleTests(unittest.TestCase):
                 self.assertEqual(len(target),1)
                 self.assertEqual(target[0]['tipo'],case['tipo_esperado'])
                 self.assertEqual(target[0]['desfecho'],case['desfecho_esperado'])
+                self.assertEqual(bool(target[0].get('suspensao_parcial')),case.get('suspensao_parcial',False))
 
 
 class QualityGateTests(unittest.TestCase):

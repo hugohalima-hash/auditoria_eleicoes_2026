@@ -1,6 +1,6 @@
 {
   "versao_motor": "3.0",
-  "sha256_motor": "bb28fdb0ea9d4398e984d69786535aed9b977a1afcf5c40c853b019b267c7e59",
+  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9",
   "status_execucao": "revisao_e_reprocessamento",
   "acuracia_certificada": null,
   "validacao_independente": "pendente",
@@ -9,5 +9,14 @@
     "proporcao_mesario_acima_pares": 422,
     "volume_habilitacoes_acima_pares": 64
   },
-  "observacao": "Dados históricos preservados. Classificações v2.1 e alertas derivados não devem embasar conclusões antes do reprocessamento v3.0. Contagem independente e testes não certificam 99,9%."
+  "observacao": "Dados históricos preservados. Classificações v2.1 e alertas derivados não devem embasar conclusões antes do reprocessamento v3.0. Contagem independente e testes não certificam 99,9%.",
+  "validacao_desenvolvimento": {
+    "logs": 188,
+    "habilitacoes": 48473,
+    "casos_reais_congelados": 21,
+    "ciclos_gerados": 500,
+    "testes_executados": 32,
+    "testes_aprovados": 31,
+    "testes_pulados": 1
+  }
 }

@@ -5,5 +5,6 @@
   "acuracia_certificada": null,
   "resultados_v21": "retirados de uso para conclusões; reprocessamento obrigatório",
   "documentacao": "VALIDACAO_V3.md",
-  "escopo": "Classificação de logs; sem autenticação de assinaturas, identificação de eleitores ou confirmação de fraude"
+  "escopo": "Classificação de logs; sem autenticação de assinaturas, identificação de eleitores ou confirmação de fraude",
+  "sha256_motor": "5fbb30eecc64a8b2546f244d396fea691c341c58e1031800169adc5993dc1bc9"
 }

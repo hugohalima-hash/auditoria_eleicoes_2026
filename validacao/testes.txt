@@ -22,6 +22,7 @@ test_invalid_timestamp_does_not_crash_or_bridge_cycle (test_validacao.LifecycleT
 test_late_mesario_evidence (test_validacao.LifecycleTests.test_late_mesario_evidence) ... ok
 test_negated_or_quoted_authorization_is_not_evidence (test_validacao.LifecycleTests.test_negated_or_quoted_authorization_is_not_evidence) ... ok
 test_new_attempt_cannot_receive_previous_vote (test_validacao.LifecycleTests.test_new_attempt_cannot_receive_previous_vote) ... ok
+test_other_day_cannot_bridge_cycle (test_validacao.LifecycleTests.test_other_day_cannot_bridge_cycle) ... ok
 test_partial_suspension_never_invents_vote (test_validacao.LifecycleTests.test_partial_suspension_never_invents_vote) ... ok
 test_partial_suspension_waits_for_computed_event (test_validacao.LifecycleTests.test_partial_suspension_waits_for_computed_event) ... ok
 test_pre_habilitation_cancel_does_not_count_as_voter (test_validacao.LifecycleTests.test_pre_habilitation_cancel_does_not_count_as_voter) ... ok
@@ -33,6 +34,6 @@ test_old_version_and_unresolved_sections_cannot_enter_peer_analysis (test_valida
 test_tampered_or_incomplete_result_is_rejected (test_validacao.QualityGateTests.test_tampered_or_incomplete_result_is_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 31 tests in 8.988s
+Ran 32 tests in 8.565s
 
 OK (skipped=1)

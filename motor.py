@@ -149,7 +149,7 @@ def extract(raw, day):
         if active['tipo'] in ('indefinida', 'tipo_outro'):
             warn(reason, active['origem'], active['linha'])
         if outcome in ('sem_desfecho', 'interrompida', 'fronteira_origem',
-                       'fronteira_equipamento', 'regressao_relogio', 'registro_malformado'):
+                       'fronteira_equipamento', 'fronteira_data', 'regressao_relogio', 'registro_malformado'):
             warn('ciclo_' + outcome, active['origem'], active['linha'])
         if active.get('suspensao_parcial') and outcome != 'voto_computado':
             warn('suspensao_parcial_sem_computado', source, lineno)
@@ -158,6 +158,9 @@ def extract(raw, day):
     for source, lineno, line in lines:
         # Other dates are not silently joined to an election-day cycle.
         if not line.startswith(day + ' '):
+            if re.match(r'^\d{2}/\d{2}/\d{4} ',line):
+                finish('fronteira_data',source,lineno)
+                attempt={}; epoch+=1; prev_unit=None; prev_stamp=None
             continue
         sources.add(source)
         if prev_source is not None and source != prev_source:

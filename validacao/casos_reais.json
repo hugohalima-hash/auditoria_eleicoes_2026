@@ -1432,5 +1432,699 @@
     "tipo_esperado": "biometrica",
     "desfecho_esperado": "voto_computado",
     "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0200300670001-log.jez",
+    "sha256_original": "8caeebdaa982d1207ad7d81fabd73bfb7cb27a2422b72b87a5dc7e45e7a31ab0",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 7766,
+    "linha_inicio": 7738,
+    "linha_fim": 7772,
+    "hora_alvo": "25/10/2026 07:28:16",
+    "eventos": [
+      {
+        "hora": "25/10/2026 07:26:32",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 07:27:07",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 07:27:07",
+        "mensagem": "Identificador digitado pelo mesário foi: (CPF)"
+      },
+      {
+        "hora": "25/10/2026 07:27:07",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 07:27:08",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:10",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:13",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:17",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:24",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:27",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:28",
+        "mensagem": "Solicita digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:34",
+        "mensagem": "Capturada a digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:36",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:38",
+        "mensagem": "Solicita digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:44",
+        "mensagem": "Capturada a digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:47",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:27:49",
+        "mensagem": "Solicitação de dado pessoal do eleitor para habilitação manual"
+      },
+      {
+        "hora": "25/10/2026 07:27:57",
+        "mensagem": "Dado digitado confere"
+      },
+      {
+        "hora": "25/10/2026 07:27:57",
+        "mensagem": "Solicita digital do mesário"
+      },
+      {
+        "hora": "25/10/2026 07:28:08",
+        "mensagem": "Batimento de digitais retornou o score 4"
+      },
+      {
+        "hora": "25/10/2026 07:28:08",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 07:28:09",
+        "mensagem": "Batimento de digitais retornou o score 5"
+      },
+      {
+        "hora": "25/10/2026 07:28:09",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 07:28:11",
+        "mensagem": "Batimento de digitais retornou o score 10"
+      },
+      {
+        "hora": "25/10/2026 07:28:11",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 07:28:13",
+        "mensagem": "Batimento de digitais retornou o score 53"
+      },
+      {
+        "hora": "25/10/2026 07:28:13",
+        "mensagem": "Biometria do mesário 99999999 encontrada nos arquivos coletados (99999999)"
+      },
+      {
+        "hora": "25/10/2026 07:28:13",
+        "mensagem": "Mesário 99999999 habilitou o eleitor"
+      },
+      {
+        "hora": "25/10/2026 07:28:16",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 07:28:28",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 07:28:30",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 07:28:31",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 07:28:32",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 07:28:45",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 07:28:45",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "mesario_explicito",
+    "desfecho_esperado": "voto_computado",
+    "suspensao_parcial": false,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
+  },
+  {
+    "arquivo": "o03221am0200300670001-log.jez",
+    "sha256_original": "8caeebdaa982d1207ad7d81fabd73bfb7cb27a2422b72b87a5dc7e45e7a31ab0",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8539,
+    "linha_inicio": 8535,
+    "linha_fim": 8542,
+    "hora_alvo": "25/10/2026 08:12:47",
+    "eventos": [
+      {
+        "hora": "25/10/2026 08:12:17",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 08:12:32",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 08:12:32",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 08:12:44",
+        "mensagem": "Ano de nascimento digitado é igual ao do cadastro"
+      },
+      {
+        "hora": "25/10/2026 08:12:47",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 08:12:59",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 08:13:06",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 08:13:07",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "ano_nascimento_sem_evento_biometrico",
+    "desfecho_esperado": "voto_computado",
+    "suspensao_parcial": false,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
+  },
+  {
+    "arquivo": "o03221am0200300670001-log.jez",
+    "sha256_original": "8caeebdaa982d1207ad7d81fabd73bfb7cb27a2422b72b87a5dc7e45e7a31ab0",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 9085,
+    "linha_inicio": 9056,
+    "linha_fim": 9088,
+    "hora_alvo": "25/10/2026 08:45:09",
+    "eventos": [
+      {
+        "hora": "25/10/2026 08:44:01",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 08:44:16",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 08:44:16",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 08:44:16",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 08:44:21",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:27",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:29",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:31",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:35",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:37",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:38",
+        "mensagem": "Solicita digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:43",
+        "mensagem": "Capturada a digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:45",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:46",
+        "mensagem": "Solicita digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:49",
+        "mensagem": "Capturada a digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:51",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:44:54",
+        "mensagem": "Solicitação de dado pessoal do eleitor para habilitação manual"
+      },
+      {
+        "hora": "25/10/2026 08:44:57",
+        "mensagem": "Dado digitado confere"
+      },
+      {
+        "hora": "25/10/2026 08:44:57",
+        "mensagem": "Solicita digital do mesário"
+      },
+      {
+        "hora": "25/10/2026 08:45:03",
+        "mensagem": "Batimento de digitais retornou o score 3"
+      },
+      {
+        "hora": "25/10/2026 08:45:03",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 08:45:04",
+        "mensagem": "Batimento de digitais retornou o score 5"
+      },
+      {
+        "hora": "25/10/2026 08:45:04",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 08:45:05",
+        "mensagem": "Batimento de digitais retornou o score 6"
+      },
+      {
+        "hora": "25/10/2026 08:45:05",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 08:45:07",
+        "mensagem": "Batimento de digitais retornou o score 17"
+      },
+      {
+        "hora": "25/10/2026 08:45:07",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 08:45:07",
+        "mensagem": "Capturada a digital do mesário"
+      },
+      {
+        "hora": "25/10/2026 08:45:07",
+        "mensagem": "Não encontrou digital coletada em nenhum dos arquivos, vai salvar a digital em novo arquivo."
+      },
+      {
+        "hora": "25/10/2026 08:45:09",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 08:45:25",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 08:45:35",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 08:45:35",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "digital_mesario_gravada",
+    "desfecho_esperado": "voto_computado",
+    "suspensao_parcial": false,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
+  },
+  {
+    "arquivo": "o03221am0200300670001-log.jez",
+    "sha256_original": "8caeebdaa982d1207ad7d81fabd73bfb7cb27a2422b72b87a5dc7e45e7a31ab0",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 9977,
+    "linha_inicio": 9948,
+    "linha_fim": 9980,
+    "hora_alvo": "25/10/2026 09:42:57",
+    "eventos": [
+      {
+        "hora": "25/10/2026 09:41:07",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:41:39",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 09:41:39",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 09:41:39",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 09:41:48",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:41:56",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:41:59",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:00",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:06",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:08",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:18",
+        "mensagem": "Solicita digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:21",
+        "mensagem": "Capturada a digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:23",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:25",
+        "mensagem": "Solicita digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:30",
+        "mensagem": "Capturada a digital. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:32",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [4] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:33",
+        "mensagem": "Solicitação de dado pessoal do eleitor para habilitação manual"
+      },
+      {
+        "hora": "25/10/2026 09:42:45",
+        "mensagem": "Dado digitado confere"
+      },
+      {
+        "hora": "25/10/2026 09:42:45",
+        "mensagem": "Solicita digital do mesário"
+      },
+      {
+        "hora": "25/10/2026 09:42:50",
+        "mensagem": "Batimento de digitais retornou o score 5"
+      },
+      {
+        "hora": "25/10/2026 09:42:50",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 09:42:51",
+        "mensagem": "Batimento de digitais retornou o score 5"
+      },
+      {
+        "hora": "25/10/2026 09:42:51",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 09:42:53",
+        "mensagem": "Batimento de digitais retornou o score 7"
+      },
+      {
+        "hora": "25/10/2026 09:42:53",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 09:42:54",
+        "mensagem": "Batimento de digitais retornou o score 6"
+      },
+      {
+        "hora": "25/10/2026 09:42:54",
+        "mensagem": "Biometria coletada não é do mesário 99999999 (99999999)"
+      },
+      {
+        "hora": "25/10/2026 09:42:55",
+        "mensagem": "Batimento de digitais retornou o score 186"
+      },
+      {
+        "hora": "25/10/2026 09:42:55",
+        "mensagem": "Digital coletada bate com uma digital gravada após o registro inicial de mesário. Não é possível associar a habilitação a um mesário."
+      },
+      {
+        "hora": "25/10/2026 09:42:57",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 09:43:14",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 09:43:43",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 09:43:44",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "digital_mesario_sem_associacao",
+    "desfecho_esperado": "voto_computado",
+    "suspensao_parcial": false,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
+  },
+  {
+    "arquivo": "o03221am0200300670009-log.jez",
+    "sha256_original": "d29d0b39dda95e4e19bf0a8a14f2753132efcd5f032c5b1a756da0ce70c8e077",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 12983,
+    "linha_inicio": 12973,
+    "linha_fim": 12991,
+    "hora_alvo": "25/10/2026 14:49:52",
+    "eventos": [
+      {
+        "hora": "25/10/2026 14:46:11",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 14:46:30",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 14:46:30",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 14:46:30",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 14:46:35",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:46:37",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:46:39",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:46:47",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:46:50",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:49:52",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 14:49:52",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 14:50:37",
+        "mensagem": "Eleitor sem atividade por 45 segundos"
+      },
+      {
+        "hora": "25/10/2026 14:52:40",
+        "mensagem": "Mesário indagado se eleitor está votando"
+      },
+      {
+        "hora": "25/10/2026 14:52:53",
+        "mensagem": "Eleitor não está votando"
+      },
+      {
+        "hora": "25/10/2026 14:52:53",
+        "mensagem": "Solicitado título eleitoral para suspensão do eleitor"
+      },
+      {
+        "hora": "25/10/2026 14:53:13",
+        "mensagem": "Mesário digitou o título para suspender o eleitor"
+      },
+      {
+        "hora": "25/10/2026 14:53:13",
+        "mensagem": "Título 99999999 é válido para suspender a votação"
+      },
+      {
+        "hora": "25/10/2026 14:53:13",
+        "mensagem": "Eleitor foi suspenso pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 14:53:13",
+        "mensagem": "Eleitor foi suspenso e não confirmou nenhum voto"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "suspensa_sem_voto",
+    "suspensao_parcial": false,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
+  },
+  {
+    "arquivo": "o03221am0221600210078-log.jez",
+    "sha256_original": "4eb20e55838ddae165322d79dadcbc9ffe0d784476b15a5c55ae9d79b9a05d1b",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 5801,
+    "linha_inicio": 5794,
+    "linha_fim": 5816,
+    "hora_alvo": "25/10/2026 09:42:00",
+    "eventos": [
+      {
+        "hora": "25/10/2026 09:40:32",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:41:47",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 09:41:47",
+        "mensagem": "Identificador digitado pelo mesário foi: (CPF)"
+      },
+      {
+        "hora": "25/10/2026 09:41:48",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 09:41:49",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:41:57",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:42:00",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 09:42:00",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 09:42:11",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 09:42:19",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 09:42:21",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 09:42:22",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 09:42:23",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 09:43:08",
+        "mensagem": "Eleitor sem atividade por 45 segundos"
+      },
+      {
+        "hora": "25/10/2026 09:43:39",
+        "mensagem": "Mesário indagado se eleitor está votando"
+      },
+      {
+        "hora": "25/10/2026 09:43:45",
+        "mensagem": "Eleitor não está votando"
+      },
+      {
+        "hora": "25/10/2026 09:43:45",
+        "mensagem": "Solicitado título eleitoral para suspensão do eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:44:22",
+        "mensagem": "Mesário digitou o título para suspender o eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:44:22",
+        "mensagem": "Título 99999999 é válido para suspender a votação"
+      },
+      {
+        "hora": "25/10/2026 09:44:22",
+        "mensagem": "Eleitor foi suspenso pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 09:44:22",
+        "mensagem": "Atribuido voto nulo por suspensão [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 09:44:22",
+        "mensagem": "Eleitor votou parcialmente e em seguida foi suspenso"
+      },
+      {
+        "hora": "25/10/2026 09:44:23",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "suspensao_parcial": true,
+    "referencia": "Caso dirigido com mensagens explícitas revisadas; números longos substituídos por constante numérica para preservar a gramática sem republicar identificadores."
   }
 ]

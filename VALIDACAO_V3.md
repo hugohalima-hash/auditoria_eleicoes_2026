@@ -6,7 +6,7 @@ As classificações do motor 2.1 e os rankings delas derivados foram retirados d
 
 ## Defeitos constatados em logs originais
 
-1. O tipo biométrico pode ser registrado depois de “Eleitor foi habilitado”, antes do voto computado. A versão anterior classificava na abertura do ciclo e ignorava essa evidência tardia. Há 15 trechos reais de regressão em `validacao/casos_reais.json`, com hash do original, origem e linhas.
+1. O tipo biométrico pode ser registrado depois de “Eleitor foi habilitado”, antes do voto computado. A versão anterior classificava na abertura do ciclo e ignorava essa evidência tardia. Há 15 trechos reais dessa regressão, mais seis exemplos dirigidos de outras categorias e desfechos, em `validacao/casos_reais.json`, com hash do original, origem e linhas.
 2. “Eleitor foi suspenso e não confirmou nenhum voto” não era reconhecido como desfecho explícito. Isso gerava habilitação sem voto sem explicar uma suspensão registrada. A suspensão parcial é distinta: só se conta voto computado quando a mensagem correspondente existe.
 3. A deduplicação por linhas isoladas entre blocos não demonstrava que cada linha removida era uma cópia do mesmo evento. Agora somente blocos integralmente idênticos são removidos. Blocos distintos são preservados; suas fronteiras rompem ciclos e séries e a seção fica fora da comparação estatística.
 4. Faltavam barreiras completas para reinício, troca de identificador de equipamento, regressão de relógio e registros inválidos. Evidências não atravessam essas fronteiras.
@@ -37,7 +37,7 @@ Uma contagem implementada separadamente conferiu habilitações e votos em 165 l
 
 As duas interrupções restantes ocorreram nos arquivos `o03221am0229100110063-log.jez` e `o03221am0241000030230-log.jez`. O primeiro registra desligamento pela chave durante um ciclo; o segundo registra erro com mensagem de voto não registrado e desligamento. São preservados para revisão; o programa não inventa conclusão de voto nem vincula a sessão após reinício.
 
-Os testes incluem ciclos com evidência tardia, suspensão parcial e sem voto, tentativas canceladas, mudança de equipamento, relógio, arquivo truncado, repetição legítima, blocos idênticos e distintos, registros inválidos, conflito, manifesto alterado e exclusão de versões antigas. Há 500 ciclos gerados com resultados conhecidos, além dos trechos reais. O resultado integral da execução está em `validacao/testes.txt`. Um teste legado depende de arquivo externo ausente e permanece explicitamente pulado.
+Os testes incluem ciclos com evidência tardia, suspensão parcial e sem voto, tentativas canceladas, mudança de equipamento, relógio, arquivo truncado, repetição legítima, blocos idênticos e distintos, registros inválidos, conflito, manifesto alterado e exclusão de versões antigas. Há 500 ciclos gerados com resultados conhecidos, além de 21 trechos reais congelados. Os exemplos reais cobrem biometria, autorização explícita de mesário, captura de nova digital de mesário, digital sem associação a mesário, confirmação de ano de nascimento, suspensão sem voto e suspensão parcial. Identificadores numéricos longos foram substituídos nos trechos de teste; hashes e linhas apontam ao original. O resultado integral da execução está em `validacao/testes.txt`. Um teste legado depende de arquivo externo ausente e permanece explicitamente pulado.
 
 ## O que falta para sustentar 99,9%
 
