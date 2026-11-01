@@ -1,0 +1,487 @@
+uf,municipio_nome,zona,secao,alerta,valor,referencia
+AL,BARRA DE SÃO MIGUEL,0026,0149,volume_habilitacoes_acima_pares,308,306.75
+AL,CAMPO ALEGRE,0047,0014,proporcao_mesario_acima_pares,0.197581,0.194192
+AL,COITÉ DO NÓIA,0045,0130,proporcao_mesario_acima_pares,0.391473,0.381634
+AL,DELMIRO GOUVEIA,0040,0012,proporcao_mesario_acima_pares,0.513889,0.303625
+AL,DELMIRO GOUVEIA,0040,0100,proporcao_mesario_acima_pares,0.356589,0.303625
+AL,DELMIRO GOUVEIA,0040,0133,proporcao_mesario_acima_pares,0.335135,0.303625
+AL,LIMOEIRO DE ANADIA,0047,0145,proporcao_mesario_acima_pares,0.281879,0.262439
+AL,MAJOR ISIDORO,0031,0056,proporcao_mesario_acima_pares,0.323024,0.23965
+AL,OLHO D'ÁGUA DAS FLORES,0011,0119,proporcao_mesario_acima_pares,0.952991,0.38832
+AL,PALMEIRA DOS ÍNDIOS,0010,0077,proporcao_mesario_acima_pares,0.41573,0.321488
+AL,PALMEIRA DOS ÍNDIOS,0010,0271,proporcao_mesario_acima_pares,0.393502,0.321488
+AL,POÇO DAS TRINCHEIRAS,0050,0023,proporcao_mesario_acima_pares,0.351916,0.309701
+AL,POÇO DAS TRINCHEIRAS,0050,0034,proporcao_mesario_acima_pares,0.352941,0.309701
+AL,PORTO REAL DO COLÉGIO,0037,0024,proporcao_mesario_acima_pares,0.243542,0.217727
+AL,SANTANA DO IPANEMA,0019,0282,volume_habilitacoes_acima_pares,324,317.25
+AL,SÃO JOSÉ DA TAPERA,0051,0014,proporcao_mesario_acima_pares,0.358566,0.337451
+AP,AMAPÁ,0001,0020,proporcao_mesario_acima_pares,0.188841,0.180275
+AP,MAZAGÃO,0005,0001,volume_habilitacoes_acima_pares,295,291.75
+BA,DIAS D'ÁVILA,0186,0021,proporcao_mesario_acima_pares,0.931034,0.256944
+BA,DIAS D'ÁVILA,0186,0091,proporcao_mesario_acima_pares,0.857143,0.256944
+BA,DIAS D'ÁVILA,0186,0098,proporcao_mesario_acima_pares,0.316993,0.256944
+BA,DIAS D'ÁVILA,0186,0102,proporcao_mesario_acima_pares,0.471631,0.256944
+BA,DIAS D'ÁVILA,0186,0116,proporcao_mesario_acima_pares,0.264706,0.256944
+BA,DIAS D'ÁVILA,0186,0134,proporcao_mesario_acima_pares,0.968889,0.256944
+BA,ÉRICO CARDOSO,0111,0019,proporcao_mesario_acima_pares,0.197044,0.181285
+BA,ÉRICO CARDOSO,0111,0228,proporcao_mesario_acima_pares,0.248889,0.181285
+BA,ARACI,0123,0098,proporcao_mesario_acima_pares,0.356913,0.319547
+BA,BAIANÓPOLIS,0126,0114,proporcao_mesario_acima_pares,0.253731,0.22488
+BA,BARRA,0077,0176,proporcao_mesario_acima_pares,0.338235,0.317843
+BA,BARREIRAS,0070,0121,proporcao_mesario_acima_pares,0.177515,0.134104
+BA,BARREIRAS,0070,0123,proporcao_mesario_acima_pares,0.15035,0.134104
+BA,BELMONTE,0034,0012,volume_habilitacoes_acima_pares,329,305.0
+BA,BOM JESUS DA LAPA,0071,0150,proporcao_mesario_acima_pares,0.315972,0.288241
+BA,BOM JESUS DA SERRA,0059,0352,proporcao_mesario_acima_pares,0.40566,0.220099
+BA,BOM JESUS DA SERRA,0059,0357,proporcao_mesario_acima_pares,0.344186,0.220099
+BA,BREJÕES,0036,0148,proporcao_mesario_acima_pares,0.20362,0.177059
+BA,CACULÉ,0093,0153,proporcao_mesario_acima_pares,0.2,0.192857
+BA,CANDEIAS,0127,0014,proporcao_mesario_acima_pares,0.829268,0.259308
+BA,CANDEIAS,0127,0326,proporcao_mesario_acima_pares,0.88959,0.259308
+BA,CANDEIAS,0127,0335,proporcao_mesario_acima_pares,0.894904,0.259308
+BA,CANDEIAS,0127,0336,proporcao_mesario_acima_pares,0.864769,0.259308
+BA,CASA NOVA,0066,0059,proporcao_mesario_acima_pares,0.291005,0.242837
+BA,CASA NOVA,0066,0124,proporcao_mesario_acima_pares,0.315789,0.242837
+BA,CORIBE,0061,0007,proporcao_mesario_acima_pares,0.521127,0.440292
+BA,FEIRA DE SANTANA,0155,0210,proporcao_mesario_acima_pares,0.322148,0.268968
+BA,GLÓRIA,0084,0340,proporcao_mesario_acima_pares,0.741935,0.338704
+BA,IBIASSUCÊ,0093,0161,proporcao_mesario_acima_pares,0.252336,0.249427
+BA,IBITITÁ,0104,0242,proporcao_mesario_acima_pares,0.227273,0.21416
+BA,IGRAPIÚNA,0032,0178,proporcao_mesario_acima_pares,0.24375,0.240759
+BA,ILHÉUS,0025,0291,proporcao_mesario_acima_pares,0.161616,0.146753
+BA,IRECÊ,0095,0144,proporcao_mesario_acima_pares,0.165179,0.154728
+BA,IRECÊ,0095,0423,proporcao_mesario_acima_pares,0.15894,0.154728
+BA,ITAMARI,0151,0062,proporcao_mesario_acima_pares,0.220588,0.150048
+BA,ITAPARICA,0141,0016,proporcao_mesario_acima_pares,0.286486,0.252782
+BA,JAGUAQUARA,0076,0026,proporcao_mesario_acima_pares,0.228814,0.174194
+BA,JAGUARARI,0179,0069,proporcao_mesario_acima_pares,0.192593,0.171502
+BA,JEREMOABO,0051,0151,proporcao_mesario_acima_pares,0.340741,0.335352
+BA,JUAZEIRO,0047,0290,proporcao_mesario_acima_pares,0.180723,0.172354
+BA,JUAZEIRO,0048,0041,proporcao_mesario_acima_pares,0.166667,0.163589
+BA,JUAZEIRO,0048,0063,proporcao_mesario_acima_pares,0.165289,0.163589
+BA,LAURO DE FREITAS,0180,0149,proporcao_mesario_acima_pares,0.68652,0.259281
+BA,LAURO DE FREITAS,0180,0175,proporcao_mesario_acima_pares,0.766962,0.259281
+BA,LAURO DE FREITAS,0180,0202,proporcao_mesario_acima_pares,0.867816,0.259281
+BA,LAURO DE FREITAS,0180,0232,proporcao_mesario_acima_pares,0.849558,0.259281
+BA,LAURO DE FREITAS,0180,0236,proporcao_mesario_acima_pares,0.905063,0.259281
+BA,LAURO DE FREITAS,0180,0280,proporcao_mesario_acima_pares,0.898148,0.259281
+BA,LAURO DE FREITAS,0180,0331,proporcao_mesario_acima_pares,0.926752,0.259281
+BA,LAURO DE FREITAS,0180,0386,proporcao_mesario_acima_pares,0.926471,0.259281
+BA,LAURO DE FREITAS,0180,0547,proporcao_mesario_acima_pares,0.912676,0.259281
+BA,LAURO DE FREITAS,0180,0559,proporcao_mesario_acima_pares,0.314763,0.259281
+BA,MARAÚ,0078,0158,proporcao_mesario_acima_pares,0.611111,0.351457
+BA,MIRANGABA,0167,0035,proporcao_mesario_acima_pares,0.196532,0.187336
+BA,MUTUÍPE,0109,0045,volume_habilitacoes_acima_pares,336,319.0
+BA,MUTUÍPE,0109,0047,volume_habilitacoes_acima_pares,332,319.0
+BA,MUTUÍPE,0109,0049,volume_habilitacoes_acima_pares,334,319.0
+BA,MUTUÍPE,0109,0109,volume_habilitacoes_acima_pares,339,319.0
+BA,NOVA VIÇOSA,0035,0317,proporcao_mesario_acima_pares,0.163793,0.148907
+BA,OLINDINA,0081,0139,proporcao_mesario_acima_pares,0.195402,0.184486
+BA,RIBEIRA DO AMPARO,0079,0098,proporcao_mesario_acima_pares,0.206897,0.203492
+BA,SALVADOR,0002,0366,proporcao_mesario_acima_pares,0.156794,0.141836
+BA,SALVADOR,0004,0572,proporcao_mesario_acima_pares,0.156051,0.133599
+BA,SALVADOR,0008,0432,proporcao_mesario_acima_pares,0.148148,0.111549
+BA,SALVADOR,0008,0680,proporcao_mesario_acima_pares,0.147222,0.111549
+BA,SALVADOR,0010,0625,proporcao_mesario_acima_pares,0.155063,0.14053
+BA,SALVADOR,0010,0658,proporcao_mesario_acima_pares,0.164557,0.14053
+BA,SALVADOR,0011,0527,proporcao_mesario_acima_pares,0.171975,0.123187
+BA,SALVADOR,0013,0160,proporcao_mesario_acima_pares,0.227273,0.176638
+BA,SALVADOR,0019,0529,proporcao_mesario_acima_pares,0.15534,0.129776
+BA,SANTA BÁRBARA,0160,0139,proporcao_mesario_acima_pares,0.231884,0.23135
+BA,SANTANÓPOLIS,0074,0093,proporcao_mesario_acima_pares,0.238245,0.226159
+BA,SANTO ANTÔNIO DE JESUS,0056,0050,proporcao_mesario_acima_pares,0.16568,0.151048
+BA,SÃO FRANCISCO DO CONDE,0162,0014,proporcao_mesario_acima_pares,0.944206,0.273943
+BA,SÃO FRANCISCO DO CONDE,0162,0096,proporcao_mesario_acima_pares,0.725191,0.273943
+BA,SÃO SEBASTIÃO DO PASSÉ,0128,0003,proporcao_mesario_acima_pares,0.335689,0.255091
+BA,SÃO SEBASTIÃO DO PASSÉ,0128,0017,proporcao_mesario_acima_pares,0.854772,0.255091
+BA,SÃO SEBASTIÃO DO PASSÉ,0128,0037,proporcao_mesario_acima_pares,0.397554,0.255091
+BA,SÃO SEBASTIÃO DO PASSÉ,0128,0059,proporcao_mesario_acima_pares,0.841085,0.255091
+BA,SÃO SEBASTIÃO DO PASSÉ,0128,0144,proporcao_mesario_acima_pares,0.352349,0.255091
+BA,SENHOR DO BONFIM,0045,0288,proporcao_mesario_acima_pares,0.250923,0.185401
+BA,SENTO SÉ,0096,0014,proporcao_mesario_acima_pares,0.188776,0.175406
+BA,SENTO SÉ,0096,0028,proporcao_mesario_acima_pares,0.218579,0.175406
+BA,SIMÕES FILHO,0033,0068,proporcao_mesario_acima_pares,0.310127,0.275565
+BA,SIMÕES FILHO,0033,0086,proporcao_mesario_acima_pares,0.326007,0.275565
+BA,SIMÕES FILHO,0033,0139,proporcao_mesario_acima_pares,0.889908,0.275565
+BA,SIMÕES FILHO,0033,0204,proporcao_mesario_acima_pares,0.411184,0.275565
+BA,SIMÕES FILHO,0033,0222,proporcao_mesario_acima_pares,0.902655,0.275565
+BA,SIMÕES FILHO,0033,0228,proporcao_mesario_acima_pares,0.825939,0.275565
+BA,SIMÕES FILHO,0033,0241,proporcao_mesario_acima_pares,0.880645,0.275565
+BA,SOUTO SOARES,0174,0035,proporcao_mesario_acima_pares,0.3125,0.305219
+BA,TANQUINHO,0160,0116,proporcao_mesario_acima_pares,0.270161,0.252918
+BA,TANQUINHO,0160,0134,volume_habilitacoes_acima_pares,342,309.0
+BA,TEODORO SAMPAIO,0130,0116,proporcao_mesario_acima_pares,0.191257,0.169887
+BA,TERRA NOVA,0128,0155,proporcao_mesario_acima_pares,0.459184,0.274386
+BA,TERRA NOVA,0128,0179,proporcao_mesario_acima_pares,0.692308,0.274386
+BA,TERRA NOVA,0128,0190,proporcao_mesario_acima_pares,0.928125,0.274386
+BA,UAUÁ,0083,0120,proporcao_mesario_acima_pares,0.218935,0.211394
+BA,UNA,0116,0035,proporcao_mesario_acima_pares,0.277778,0.266941
+BA,VALENÇA,0031,0184,proporcao_mesario_acima_pares,0.217687,0.210821
+BA,VALENTE,0120,0047,proporcao_mesario_acima_pares,0.210526,0.162534
+BA,RAFAEL JAMBEIRO,0043,0087,proporcao_mesario_acima_pares,0.238532,0.219264
+BA,TANQUE NOVO,0168,0178,proporcao_mesario_acima_pares,0.925926,0.357961
+CE,APUIARÉS,0050,0220,proporcao_mesario_acima_pares,0.507519,0.366136
+CE,CAMOCIM,0032,0175,proporcao_mesario_acima_pares,0.917582,0.346544
+CE,CARIRÉ,0065,0025,proporcao_mesario_acima_pares,0.415459,0.387947
+CE,CARIRIAÇU,0071,0082,proporcao_mesario_acima_pares,0.198473,0.162939
+CE,CARIRIAÇU,0071,0090,proporcao_mesario_acima_pares,0.163121,0.162939
+CE,CEDRO,0013,0511,proporcao_mesario_acima_pares,0.26087,0.254181
+CE,CHAVAL,0108,0001,proporcao_mesario_acima_pares,0.93617,0.297213
+CE,CRATO,0027,0022,proporcao_mesario_acima_pares,0.189024,0.176524
+CE,FORTALEZA,0002,0169,proporcao_mesario_acima_pares,0.14433,0.118937
+CE,GRANJEIRO,0062,0162,proporcao_mesario_acima_pares,0.262172,0.186696
+CE,GROAÍRAS,0065,0133,proporcao_mesario_acima_pares,0.28655,0.256243
+CE,JAGUARIBE,0010,0006,proporcao_mesario_acima_pares,0.893048,0.452936
+CE,JAGUARIBE,0010,0007,proporcao_mesario_acima_pares,0.773946,0.452936
+CE,JUAZEIRO DO NORTE,0028,0139,proporcao_mesario_acima_pares,0.19084,0.185153
+CE,JUCÁS,0043,0047,proporcao_mesario_acima_pares,0.216346,0.216205
+CE,LIMOEIRO DO NORTE,0029,0052,proporcao_mesario_acima_pares,0.348039,0.304746
+CE,MASSAPÊ,0045,0089,proporcao_mesario_acima_pares,0.376923,0.352811
+CE,MOMBAÇA,0046,0053,proporcao_mesario_acima_pares,0.234146,0.215521
+CE,MORADA NOVA,0047,0036,proporcao_mesario_acima_pares,0.793722,0.330648
+CE,MORADA NOVA,0047,0050,proporcao_mesario_acima_pares,0.356808,0.330648
+CE,NOVA RUSSAS,0048,0142,proporcao_mesario_acima_pares,0.284615,0.280335
+CE,PACOTI,0005,0205,volume_habilitacoes_acima_pares,282,277.75
+CE,PARACURU,0109,0029,proporcao_mesario_acima_pares,0.207612,0.203759
+CE,PARACURU,0109,0036,proporcao_mesario_acima_pares,0.232704,0.203759
+CE,PENAFORTE,0070,0347,proporcao_mesario_acima_pares,0.2,0.18903
+CE,SÃO BENEDITO,0022,0110,proporcao_mesario_acima_pares,0.222826,0.216866
+CE,SÃO GONÇALO DO AMARANTE,0036,0088,proporcao_mesario_acima_pares,0.231047,0.213933
+CE,SENADOR POMPEU,0012,0078,proporcao_mesario_acima_pares,0.269565,0.231182
+CE,SOBRAL,0024,0081,proporcao_mesario_acima_pares,0.319865,0.27067
+CE,SOBRAL,0024,0330,proporcao_mesario_acima_pares,0.539735,0.27067
+CE,SOBRAL,0121,0298,volume_habilitacoes_acima_pares,422,413.5
+CE,TAMBORIL,0061,0022,volume_habilitacoes_acima_pares,306,304.0
+CE,URUOCA,0025,0080,proporcao_mesario_acima_pares,0.396078,0.334155
+CE,VIÇOSA DO CEARÁ,0035,0061,proporcao_mesario_acima_pares,0.221477,0.184371
+CE,MARACANAÚ,0122,0035,proporcao_mesario_acima_pares,0.164474,0.139195
+CE,FORQUILHA,0121,0220,volume_habilitacoes_acima_pares,363,359.25
+MG,ABADIA DOS DOURADOS,0096,0073,volume_habilitacoes_acima_pares,301,286.25
+MG,ABADIA DOS DOURADOS,0096,0093,volume_habilitacoes_acima_pares,303,286.25
+MG,AÇUCENA,0003,0131,volume_habilitacoes_acima_pares,259,247.75
+MG,PERIQUITO,0318,0237,proporcao_mesario_acima_pares,0.211382,0.181636
+MG,RIACHINHO,0329,0057,proporcao_mesario_acima_pares,0.166667,0.115179
+MG,SANTA BÁRBARA DO LESTE,0071,0117,volume_habilitacoes_acima_pares,318,291.5
+MG,SANTA BÁRBARA DO LESTE,0071,0118,volume_habilitacoes_acima_pares,332,291.5
+MG,SANTA BÁRBARA DO LESTE,0071,0248,volume_habilitacoes_acima_pares,308,291.5
+MG,SANTA BÁRBARA DO LESTE,0071,0360,volume_habilitacoes_acima_pares,322,291.5
+MG,ATALÉIA,0270,0015,proporcao_mesario_acima_pares,0.178322,0.164881
+MG,BELO HORIZONTE,0032,0149,proporcao_mesario_acima_pares,0.165992,0.142493
+MG,BELO HORIZONTE,0032,0271,proporcao_mesario_acima_pares,0.162791,0.142493
+MG,BELO HORIZONTE,0036,0321,proporcao_mesario_acima_pares,0.190349,0.144388
+MG,BELO HORIZONTE,0331,0120,proporcao_mesario_acima_pares,0.165138,0.152628
+MG,PATIS,0185,0034,proporcao_mesario_acima_pares,0.277778,0.233064
+MG,BOM DESPACHO,0045,0067,proporcao_mesario_acima_pares,0.38756,0.313853
+MG,SANTO ANTÔNIO DO RETIRO,0237,0395,proporcao_mesario_acima_pares,0.209524,0.184445
+MG,CHAPADA GAÚCHA,0320,0132,proporcao_mesario_acima_pares,0.178295,0.172451
+MG,CANDEIAS,0296,0019,proporcao_mesario_acima_pares,0.281513,0.263504
+MG,CARATINGA,0071,0015,proporcao_mesario_acima_pares,0.210227,0.177585
+MG,CARATINGA,0071,0070,proporcao_mesario_acima_pares,0.179104,0.177585
+MG,CARBONITA,0135,0013,proporcao_mesario_acima_pares,0.185185,0.152461
+MG,CHAPADA DO NORTE,0177,0191,proporcao_mesario_acima_pares,0.247059,0.23414
+MG,COLUNA,0257,0009,proporcao_mesario_acima_pares,0.178571,0.137281
+MG,COMERCINHO,0175,0017,volume_habilitacoes_acima_pares,273,253.0
+MG,CONCEIÇÃO DA APARECIDA,0077,0032,proporcao_mesario_acima_pares,0.181452,0.173687
+MG,CONTAGEM,0091,0012,proporcao_mesario_acima_pares,0.163743,0.163731
+MG,CORONEL FABRICIANO,0097,0024,proporcao_mesario_acima_pares,0.284615,0.283606
+MG,CURVELO,0100,0098,proporcao_mesario_acima_pares,0.322314,0.297958
+MG,DELFIM MOREIRA,0134,0009,proporcao_mesario_acima_pares,0.245552,0.232793
+MG,DIONÍSIO,0251,0016,volume_habilitacoes_acima_pares,254,243.0
+MG,DIONÍSIO,0251,0093,volume_habilitacoes_acima_pares,254,243.0
+MG,FERROS,0113,0090,volume_habilitacoes_acima_pares,270,266.25
+MG,GOVERNADOR VALADARES,0118,0025,proporcao_mesario_acima_pares,0.226601,0.204454
+MG,GOVERNADOR VALADARES,0118,0079,proporcao_mesario_acima_pares,0.238683,0.204454
+MG,GOVERNADOR VALADARES,0119,0132,proporcao_mesario_acima_pares,0.200893,0.163936
+MG,GOVERNADOR VALADARES,0318,0001,proporcao_mesario_acima_pares,0.263359,0.178561
+MG,GOVERNADOR VALADARES,0318,0041,proporcao_mesario_acima_pares,0.189024,0.178561
+MG,GOVERNADOR VALADARES,0318,0076,proporcao_mesario_acima_pares,0.184615,0.178561
+MG,GUANHÃES,0121,0088,proporcao_mesario_acima_pares,0.283133,0.201457
+MG,GURINHATÃ,0141,0052,proporcao_mesario_acima_pares,0.182482,0.174764
+MG,INHAPIM,0128,0128,proporcao_mesario_acima_pares,0.20332,0.196444
+MG,ITAOBIM,0175,0051,proporcao_mesario_acima_pares,0.242268,0.221604
+MG,ITAPAGIPE,0297,0037,volume_habilitacoes_acima_pares,319,309.0
+MG,ITAPAGIPE,0297,0039,volume_habilitacoes_acima_pares,330,309.0
+MG,ITUMIRIM,0343,0015,proporcao_mesario_acima_pares,0.281407,0.205301
+MG,ITUMIRIM,0343,0014,volume_habilitacoes_acima_pares,269,262.0
+MG,JUIZ DE FORA,0152,0036,proporcao_mesario_acima_pares,0.188235,0.163209
+MG,LARANJAL,0201,0043,proporcao_mesario_acima_pares,0.27027,0.254519
+MG,LAVRAS,0160,0116,proporcao_mesario_acima_pares,0.277512,0.271483
+MG,LUZ,0163,0030,proporcao_mesario_acima_pares,0.165644,0.160733
+MG,MAR DE ESPANHA,0170,0060,volume_habilitacoes_acima_pares,328,314.0
+MG,MATEUS LEME,0172,0045,volume_habilitacoes_acima_pares,308,302.5
+MG,MATO VERDE,0180,0150,proporcao_mesario_acima_pares,0.289474,0.192215
+MG,MINAS NOVAS,0177,0056,proporcao_mesario_acima_pares,0.28436,0.235711
+MG,MONTE ALEGRE DE MINAS,0179,0001,proporcao_mesario_acima_pares,0.177515,0.154139
+MG,MONTES CLAROS,0184,0161,proporcao_mesario_acima_pares,0.222672,0.169246
+MG,MONTES CLAROS,0185,0067,proporcao_mesario_acima_pares,0.20625,0.178046
+MG,MONTES CLAROS,0185,0123,proporcao_mesario_acima_pares,0.196226,0.178046
+MG,MONTES CLAROS,0185,0232,proporcao_mesario_acima_pares,0.185185,0.178046
+MG,MONTES CLAROS,0185,0345,proporcao_mesario_acima_pares,0.202454,0.178046
+MG,MONTES CLAROS,0317,0230,proporcao_mesario_acima_pares,0.221774,0.19347
+MG,MONTES CLAROS,0317,0299,proporcao_mesario_acima_pares,0.204225,0.19347
+MG,MURIAÉ,0187,0159,proporcao_mesario_acima_pares,0.193548,0.187851
+MG,PARACATU,0203,0244,proporcao_mesario_acima_pares,0.157025,0.125308
+MG,PATOS DE MINAS,0330,0188,proporcao_mesario_acima_pares,0.153153,0.126052
+MG,PEÇANHA,0212,0061,proporcao_mesario_acima_pares,0.278008,0.180205
+MG,PIRAPORA,0218,0352,proporcao_mesario_acima_pares,0.168478,0.142919
+MG,PORTEIRINHA,0226,0062,proporcao_mesario_acima_pares,0.181818,0.170939
+MG,PORTO FIRME,0217,0046,proporcao_mesario_acima_pares,0.839695,0.311267
+MG,RIACHO DOS MACHADOS,0226,0159,volume_habilitacoes_acima_pares,288,248.0
+MG,RIACHO DOS MACHADOS,0226,0220,volume_habilitacoes_acima_pares,283,248.0
+MG,RIACHO DOS MACHADOS,0226,0224,volume_habilitacoes_acima_pares,276,248.0
+MG,RIACHO DOS MACHADOS,0226,0236,volume_habilitacoes_acima_pares,257,248.0
+MG,RIBEIRÃO DAS NEVES,0321,0114,proporcao_mesario_acima_pares,0.185022,0.166048
+MG,RIBEIRÃO DAS NEVES,0321,0220,proporcao_mesario_acima_pares,0.166667,0.166048
+MG,RIO PIRACICABA,0150,0243,proporcao_mesario_acima_pares,0.26,0.234408
+MG,SALINAS,0244,0089,proporcao_mesario_acima_pares,0.255682,0.185877
+MG,SALINAS,0244,0220,proporcao_mesario_acima_pares,0.195455,0.185877
+MG,SANTA MARIA DO SUAÇUÍ,0247,0016,proporcao_mesario_acima_pares,0.164286,0.163401
+MG,SANTA MARIA DO SUAÇUÍ,0247,0024,proporcao_mesario_acima_pares,0.173333,0.163401
+MG,SANTANA DO MANHUAÇU,0167,0123,proporcao_mesario_acima_pares,0.192,0.171148
+MG,SANTA RITA DO ITUETO,0233,0088,volume_habilitacoes_acima_pares,287,190.0
+MG,SANTA RITA DO ITUETO,0233,0089,volume_habilitacoes_acima_pares,229,190.0
+MG,SANTO ANTÔNIO DO JACINTO,0144,0062,proporcao_mesario_acima_pares,0.154472,0.153621
+MG,SÃO FRANCISCO DE SALES,0297,0006,proporcao_mesario_acima_pares,0.205674,0.189138
+MG,SÃO GONÇALO DO RIO ABAIXO,0022,0097,proporcao_mesario_acima_pares,0.493827,0.297753
+MG,SÃO LOURENÇO,0259,0189,proporcao_mesario_acima_pares,0.191781,0.171723
+MG,SÃO MIGUEL DO ANTA,0268,0068,proporcao_mesario_acima_pares,0.35743,0.293761
+MG,SERRO,0262,0042,proporcao_mesario_acima_pares,0.268571,0.259848
+MG,SETE LAGOAS,0322,0183,proporcao_mesario_acima_pares,0.188312,0.177527
+MG,UBÁ,0275,0097,proporcao_mesario_acima_pares,0.240964,0.235381
+MG,UBÁ,0275,0161,proporcao_mesario_acima_pares,0.270492,0.235381
+MG,UBÁ,0275,0200,proporcao_mesario_acima_pares,0.236559,0.235381
+MG,UBERABA,0276,0325,proporcao_mesario_acima_pares,0.206061,0.174522
+MG,UBERABA,0276,0334,proporcao_mesario_acima_pares,0.177419,0.174522
+MG,UBERABA,0326,0177,proporcao_mesario_acima_pares,0.181818,0.166303
+MG,UBERABA,0326,0226,proporcao_mesario_acima_pares,0.196,0.166303
+MG,UBERABA,0326,0378,proporcao_mesario_acima_pares,0.192308,0.166303
+MG,UBERLÂNDIA,0278,0020,proporcao_mesario_acima_pares,0.195238,0.146763
+MG,UBERLÂNDIA,0278,0494,proporcao_mesario_acima_pares,0.153846,0.146763
+MG,UBERLÂNDIA,0278,0515,proporcao_mesario_acima_pares,0.160448,0.146763
+MG,UBERLÂNDIA,0279,0033,proporcao_mesario_acima_pares,0.148472,0.146825
+MG,UBERLÂNDIA,0314,0052,proporcao_mesario_acima_pares,0.186813,0.145278
+MG,UBERLÂNDIA,0335,0041,proporcao_mesario_acima_pares,0.223602,0.145468
+PA,ALTAMIRA,0018,0234,proporcao_mesario_acima_pares,0.183036,0.138377
+PA,ANAJÁS,0090,0001,proporcao_mesario_acima_pares,0.178723,0.155979
+PA,ANANINDEUA,0043,0142,proporcao_mesario_acima_pares,0.155642,0.155312
+PA,IPIXUNA DO PARÁ,0049,0138,proporcao_mesario_acima_pares,0.142077,0.140929
+PA,BAGRE,0015,0005,proporcao_mesario_acima_pares,0.18254,0.175101
+PA,BELÉM,0030,0878,proporcao_mesario_acima_pares,0.148551,0.13979
+PA,BELÉM,0076,0329,proporcao_mesario_acima_pares,0.16,0.1559
+PA,BELÉM,0098,0140,proporcao_mesario_acima_pares,0.17037,0.159087
+PA,BONITO,0041,0229,proporcao_mesario_acima_pares,0.162393,0.156507
+PA,BONITO,0041,0254,proporcao_mesario_acima_pares,0.164251,0.156507
+PA,ULIANÓPOLIS,0084,0179,proporcao_mesario_acima_pares,0.177215,0.170318
+PA,BRAGANÇA,0013,0447,proporcao_mesario_acima_pares,0.192469,0.171754
+PA,CHAVES,0017,0006,proporcao_mesario_acima_pares,0.191083,0.169804
+PA,FARO,0089,0031,proporcao_mesario_acima_pares,0.154589,0.144253
+PA,IRITUIA,0011,0507,proporcao_mesario_acima_pares,0.205128,0.189609
+PA,CANAÃ DOS CARAJÁS,0075,0664,proporcao_mesario_acima_pares,0.147541,0.132957
+PA,ITAITUBA,0034,0472,proporcao_mesario_acima_pares,0.178344,0.17819
+PA,JACUNDÁ,0069,0016,proporcao_mesario_acima_pares,0.170213,0.151851
+PA,BELTERRA,0104,0053,proporcao_mesario_acima_pares,0.162921,0.154977
+PA,MARACANÃ,0031,0035,proporcao_mesario_acima_pares,0.315068,0.243837
+PA,ÓBIDOS,0022,0069,proporcao_mesario_acima_pares,0.25641,0.231797
+PA,ORIXIMINÁ,0038,0117,proporcao_mesario_acima_pares,0.150215,0.142819
+PA,ORIXIMINÁ,0038,0225,proporcao_mesario_acima_pares,0.178571,0.142819
+PA,ORIXIMINÁ,0038,0260,proporcao_mesario_acima_pares,0.171053,0.142819
+PA,PARAGOMINAS,0042,0321,proporcao_mesario_acima_pares,0.492308,0.19155
+PA,SANTA MARIA DO PARÁ,0004,0440,proporcao_mesario_acima_pares,0.362069,0.245046
+PA,SANTA MARIA DO PARÁ,0004,0443,proporcao_mesario_acima_pares,0.6,0.245046
+PA,SANTA MARIA DO PARÁ,0004,0449,proporcao_mesario_acima_pares,0.335593,0.245046
+PA,SANTA MARIA DO PARÁ,0004,0465,proporcao_mesario_acima_pares,0.521739,0.245046
+PA,SANTARÉM,0083,0195,proporcao_mesario_acima_pares,0.192982,0.172062
+PA,SANTARÉM,0104,0318,proporcao_mesario_acima_pares,0.179245,0.16677
+PA,SANTO ANTÔNIO DO TAUÁ,0036,0424,proporcao_mesario_acima_pares,0.883929,0.270882
+PA,SÃO DOMINGOS DO CAPIM,0050,0102,proporcao_mesario_acima_pares,0.518692,0.397217
+PA,SÃO DOMINGOS DO CAPIM,0050,0423,proporcao_mesario_acima_pares,0.432558,0.397217
+PA,SÃO DOMINGOS DO CAPIM,0050,0424,proporcao_mesario_acima_pares,0.415842,0.397217
+PA,SÃO DOMINGOS DO CAPIM,0050,0425,proporcao_mesario_acima_pares,0.441341,0.397217
+PA,SOURE,0003,0112,proporcao_mesario_acima_pares,0.209091,0.164266
+PA,TOMÉ-AÇU,0039,0179,proporcao_mesario_acima_pares,0.139344,0.127204
+PA,RONDON DO PARÁ,0051,0136,volume_habilitacoes_acima_pares,306,300.25
+PA,CONCÓRDIA DO PARÁ,0087,0008,proporcao_mesario_acima_pares,0.241259,0.204217
+PA,DOM ELISEU,0084,0035,proporcao_mesario_acima_pares,0.819767,0.215233
+PE,ALTINHO,0048,0037,proporcao_mesario_acima_pares,0.329588,0.280122
+PE,ARARIPINA,0084,0034,proporcao_mesario_acima_pares,0.196,0.191855
+PE,BARREIROS,0042,0046,proporcao_mesario_acima_pares,0.925532,0.250597
+PE,BELO JARDIM,0045,0106,proporcao_mesario_acima_pares,0.259669,0.23829
+PE,BOM CONSELHO,0061,0039,proporcao_mesario_acima_pares,0.310734,0.309901
+PE,BUÍQUE,0060,0026,proporcao_mesario_acima_pares,0.22069,0.207219
+PE,CARUARU,0105,0324,proporcao_mesario_acima_pares,0.915408,0.242105
+PE,CARUARU,0105,0377,proporcao_mesario_acima_pares,0.243077,0.242105
+PE,CARUARU,0105,0390,proporcao_mesario_acima_pares,0.971223,0.242105
+PE,EXU,0079,0007,proporcao_mesario_acima_pares,0.195946,0.187737
+PE,JABOATÃO DOS GUARARAPES,0118,0355,proporcao_mesario_acima_pares,0.150568,0.138045
+PE,JATAÚBA,0054,0185,proporcao_mesario_acima_pares,0.821086,0.35349
+PE,JOAQUIM NABUCO,0038,0104,proporcao_mesario_acima_pares,0.207273,0.161942
+PE,LAGOA DOS GATOS,0086,0082,proporcao_mesario_acima_pares,0.208556,0.20639
+PE,LAGOA DOS GATOS,0086,0103,proporcao_mesario_acima_pares,0.30303,0.20639
+PE,MORENO,0014,0014,proporcao_mesario_acima_pares,0.164384,0.140709
+PE,OROCÓ,0077,0078,volume_habilitacoes_acima_pares,332,326.0
+PE,OROCÓ,0077,0079,volume_habilitacoes_acima_pares,336,326.0
+PE,OROCÓ,0077,0080,volume_habilitacoes_acima_pares,339,326.0
+PE,OROCÓ,0077,0091,volume_habilitacoes_acima_pares,331,326.0
+PE,OROCÓ,0077,0094,volume_habilitacoes_acima_pares,327,326.0
+PE,OROCÓ,0077,0097,volume_habilitacoes_acima_pares,328,326.0
+PE,PASSIRA,0091,0021,proporcao_mesario_acima_pares,0.169014,0.159487
+PE,PETROLINA,0083,0532,proporcao_mesario_acima_pares,0.191336,0.165751
+PE,PETROLINA,0083,0535,proporcao_mesario_acima_pares,0.185455,0.165751
+PE,PETROLINA,0083,0537,proporcao_mesario_acima_pares,0.246377,0.165751
+PE,PETROLINA,0145,0033,proporcao_mesario_acima_pares,0.17193,0.166802
+PE,PETROLINA,0145,0155,proporcao_mesario_acima_pares,0.193939,0.166802
+PE,RECIFE,0007,0402,proporcao_mesario_acima_pares,0.164659,0.161149
+PE,RIACHO DAS ALMAS,0041,0205,proporcao_mesario_acima_pares,0.24898,0.236923
+PE,SALGUEIRO,0075,0057,proporcao_mesario_acima_pares,0.206349,0.184045
+PE,SALGUEIRO,0075,0097,proporcao_mesario_acima_pares,0.203822,0.184045
+PE,SANTA CRUZ DO CAPIBARIBE,0109,0051,proporcao_mesario_acima_pares,0.146825,0.128431
+PE,SERTÂNIA,0062,0039,proporcao_mesario_acima_pares,0.276382,0.261964
+PE,SIRINHAÉM,0026,0153,proporcao_mesario_acima_pares,0.919753,0.347439
+PE,VERDEJANTE,0075,0148,volume_habilitacoes_acima_pares,320,317.0
+PE,VERDEJANTE,0075,0149,volume_habilitacoes_acima_pares,328,317.0
+PE,VERDEJANTE,0075,0151,volume_habilitacoes_acima_pares,320,317.0
+PE,VITÓRIA DE SANTO ANTÃO,0018,0075,proporcao_mesario_acima_pares,0.168224,0.152155
+PR,ITAPERUÇU,0156,0272,proporcao_mesario_acima_pares,0.170886,0.161221
+PR,CAMPINA DA LAGOA,0169,0040,proporcao_mesario_acima_pares,0.222772,0.219953
+PR,CAPANEMA,0107,0035,volume_habilitacoes_acima_pares,338,330.0
+PR,CAPITÃO LEÔNIDAS MARQUES,0165,0010,volume_habilitacoes_acima_pares,369,324.0
+PR,CAPITÃO LEÔNIDAS MARQUES,0165,0079,volume_habilitacoes_acima_pares,353,324.0
+PR,VENTANIA,0017,0047,volume_habilitacoes_acima_pares,352,325.5
+PR,CASCAVEL,0068,0453,proporcao_mesario_acima_pares,0.165289,0.151299
+PR,CASTRO,0016,0083,proporcao_mesario_acima_pares,0.252101,0.145446
+PR,CATANDUVAS,0166,0023,volume_habilitacoes_acima_pares,304,258.0
+PR,CENTENÁRIO DO SUL,0159,0009,proporcao_mesario_acima_pares,0.937799,0.226604
+PR,CORBÉLIA,0126,0107,volume_habilitacoes_acima_pares,382,326.0
+PR,CRUZEIRO DO OESTE,0086,0026,proporcao_mesario_acima_pares,0.285714,0.261765
+PR,CRUZEIRO DO OESTE,0086,0041,proporcao_mesario_acima_pares,0.282158,0.261765
+PR,FAXINAL,0110,0101,volume_habilitacoes_acima_pares,277,273.0
+PR,FLORESTÓPOLIS,0065,0006,proporcao_mesario_acima_pares,0.63786,0.239811
+PR,FOZ DO IGUAÇU,0046,0030,proporcao_mesario_acima_pares,0.165775,0.145324
+PR,FRANCISCO BELTRÃO,0069,0198,proporcao_mesario_acima_pares,0.167464,0.158775
+PR,FRANCISCO BELTRÃO,0069,0285,proporcao_mesario_acima_pares,0.19403,0.158775
+PR,GUARAPUAVA,0043,0379,proporcao_mesario_acima_pares,0.222222,0.201355
+PR,GUARAPUAVA,0044,0387,proporcao_mesario_acima_pares,0.21,0.184476
+PR,IBIPORÃ,0080,0083,proporcao_mesario_acima_pares,0.429553,0.228948
+PR,JACAREZINHO,0024,0061,proporcao_mesario_acima_pares,0.239837,0.236491
+PR,LONDRINA,0157,0300,proporcao_mesario_acima_pares,0.156379,0.143997
+PR,MANDAGUAÇU,0102,0008,proporcao_mesario_acima_pares,0.468354,0.207337
+PR,PALMITAL,0134,0082,proporcao_mesario_acima_pares,0.207317,0.20329
+PR,PRIMEIRO DE MAIO,0040,0050,proporcao_mesario_acima_pares,0.205882,0.18896
+PR,QUATRO BARRAS,0195,0149,proporcao_mesario_acima_pares,0.194139,0.155211
+PR,QUATRO BARRAS,0195,0159,proporcao_mesario_acima_pares,0.209459,0.155211
+PR,QUATRO BARRAS,0195,0162,proporcao_mesario_acima_pares,0.170213,0.155211
+PR,RIBEIRÃO DO PINHAL,0082,0046,volume_habilitacoes_acima_pares,302,299.0
+PR,RIBEIRÃO DO PINHAL,0082,0048,volume_habilitacoes_acima_pares,303,299.0
+PR,RIBEIRÃO DO PINHAL,0082,0053,volume_habilitacoes_acima_pares,321,299.0
+PR,RIBEIRÃO DO PINHAL,0082,0064,volume_habilitacoes_acima_pares,320,299.0
+PR,RIBEIRÃO DO PINHAL,0082,0075,volume_habilitacoes_acima_pares,342,299.0
+PR,SANTA ISABEL DO IVAÍ,0094,0024,proporcao_mesario_acima_pares,0.706806,0.31827
+PR,SANTA MARIANA,0109,0002,proporcao_mesario_acima_pares,0.8107,0.271607
+PR,SANTO ANTÔNIO DA PLATINA,0022,0044,proporcao_mesario_acima_pares,0.300752,0.289429
+PR,SÃO JOSÉ DOS PINHAIS,0199,0126,proporcao_mesario_acima_pares,0.153571,0.134958
+PR,SÃO SEBASTIÃO DA AMOREIRA,0035,0064,proporcao_mesario_acima_pares,0.285714,0.266265
+PR,SENGÉS,0054,0027,proporcao_mesario_acima_pares,0.165354,0.16236
+PR,SIQUEIRA CAMPOS,0021,0064,volume_habilitacoes_acima_pares,353,350.25
+PR,TAPEJARA,0086,0218,proporcao_mesario_acima_pares,0.874286,0.288199
+PR,TIBAGI,0017,0019,proporcao_mesario_acima_pares,0.163842,0.156151
+PR,TIJUCAS DO SUL,0199,0117,proporcao_mesario_acima_pares,0.221698,0.158937
+PR,TOLEDO,0075,0403,proporcao_mesario_acima_pares,0.261682,0.233916
+PR,TOLEDO,0075,0423,proporcao_mesario_acima_pares,0.292818,0.233916
+PR,TOMAZINA,0019,0052,proporcao_mesario_acima_pares,0.914692,0.294388
+PR,TOMAZINA,0019,0055,proporcao_mesario_acima_pares,0.991189,0.294388
+PR,UBIRATÃ,0098,0100,proporcao_mesario_acima_pares,0.971014,0.272665
+PR,UMUARAMA,0089,0194,proporcao_mesario_acima_pares,0.326007,0.253265
+PR,ASSIS CHATEAUBRIAND,0113,0024,proporcao_mesario_acima_pares,0.271967,0.271303
+PR,CÉU AZUL,0118,0076,proporcao_mesario_acima_pares,0.175862,0.171393
+PR,MISSAL,0114,0096,proporcao_mesario_acima_pares,0.242678,0.219515
+RJ,ANGRA DOS REIS,0147,0085,proporcao_mesario_acima_pares,0.1875,0.180932
+RJ,ARARUAMA,0092,0285,volume_habilitacoes_acima_pares,359,350.0
+RJ,BELFORD ROXO,0153,0057,proporcao_mesario_acima_pares,0.16129,0.158124
+RJ,BELFORD ROXO,0153,0145,proporcao_mesario_acima_pares,0.165049,0.158124
+RJ,BARRA MANSA,0091,0088,proporcao_mesario_acima_pares,0.262411,0.193216
+RJ,CABO FRIO,0256,0127,proporcao_mesario_acima_pares,0.190114,0.188415
+RJ,JAPERI,0139,0038,proporcao_mesario_acima_pares,0.243243,0.219348
+RJ,JAPERI,0139,0047,proporcao_mesario_acima_pares,0.223529,0.219348
+RJ,CAMPOS DOS GOYTACAZES,0075,0053,proporcao_mesario_acima_pares,0.29386,0.266029
+RJ,IGUABA GRANDE,0181,0015,proporcao_mesario_acima_pares,0.212687,0.20043
+RJ,DUAS BARRAS,0042,0118,proporcao_mesario_acima_pares,0.179592,0.154864
+RJ,DUQUE DE CAXIAS,0128,0009,proporcao_mesario_acima_pares,0.181507,0.174756
+RJ,MESQUITA,0150,0100,proporcao_mesario_acima_pares,0.309091,0.293455
+RJ,MAGÉ,0148,0106,proporcao_mesario_acima_pares,0.181319,0.171723
+RJ,MAGÉ,0148,0183,proporcao_mesario_acima_pares,0.175074,0.171723
+RJ,MIRACEMA,0112,0030,proporcao_mesario_acima_pares,0.202532,0.16831
+RJ,NILÓPOLIS,0221,0154,proporcao_mesario_acima_pares,0.327645,0.295746
+RJ,NILÓPOLIS,0221,0178,proporcao_mesario_acima_pares,0.87037,0.295746
+RJ,NOVA IGUAÇU,0156,0004,proporcao_mesario_acima_pares,0.337165,0.179455
+RJ,NOVA IGUAÇU,0157,0101,proporcao_mesario_acima_pares,0.190476,0.166731
+RJ,PETRÓPOLIS,0065,0312,proporcao_mesario_acima_pares,0.161435,0.16086
+RJ,PIRAÍ,0030,0003,proporcao_mesario_acima_pares,0.189922,0.17755
+RJ,SÃO JOÃO DE MERITI,0088,0075,proporcao_mesario_acima_pares,0.184906,0.179352
+RJ,SÃO JOÃO DE MERITI,0088,0282,proporcao_mesario_acima_pares,0.223938,0.179352
+RJ,SÃO JOÃO DE MERITI,0186,0006,proporcao_mesario_acima_pares,0.190955,0.189929
+RJ,SÃO JOÃO DE MERITI,0187,0111,proporcao_mesario_acima_pares,0.206667,0.170504
+RJ,SÃO JOÃO DE MERITI,0187,0139,proporcao_mesario_acima_pares,0.179039,0.170504
+RJ,TERESÓPOLIS,0195,0223,proporcao_mesario_acima_pares,0.202847,0.20164
+RJ,VOLTA REDONDA,0131,0321,proporcao_mesario_acima_pares,0.401606,0.209484
+RJ,RIO DE JANEIRO,0004,0342,proporcao_mesario_acima_pares,0.213058,0.186321
+RJ,RIO DE JANEIRO,0007,0495,proporcao_mesario_acima_pares,0.313492,0.300825
+RJ,RIO DE JANEIRO,0008,0074,proporcao_mesario_acima_pares,0.896667,0.257437
+RJ,RIO DE JANEIRO,0009,0262,proporcao_mesario_acima_pares,0.589971,0.267201
+RJ,RIO DE JANEIRO,0010,0232,proporcao_mesario_acima_pares,0.337621,0.266356
+RJ,RIO DE JANEIRO,0010,0302,proporcao_mesario_acima_pares,0.772436,0.266356
+RJ,RIO DE JANEIRO,0014,0446,proporcao_mesario_acima_pares,0.349835,0.244453
+RJ,RIO DE JANEIRO,0016,0272,proporcao_mesario_acima_pares,0.20398,0.180082
+RJ,RIO DE JANEIRO,0024,0700,proporcao_mesario_acima_pares,0.214047,0.164463
+RJ,RIO DE JANEIRO,0119,0419,volume_habilitacoes_acima_pares,452,442.0
+RJ,RIO DE JANEIRO,0119,0439,volume_habilitacoes_acima_pares,481,442.0
+RJ,RIO DE JANEIRO,0161,0198,proporcao_mesario_acima_pares,0.277228,0.237739
+RJ,RIO DE JANEIRO,0167,0040,proporcao_mesario_acima_pares,0.352159,0.261503
+RJ,RIO DE JANEIRO,0169,0052,proporcao_mesario_acima_pares,0.252788,0.24397
+RJ,RIO DE JANEIRO,0180,0113,proporcao_mesario_acima_pares,0.61194,0.255613
+RJ,RIO DE JANEIRO,0180,0150,proporcao_mesario_acima_pares,0.261128,0.255613
+RJ,RIO DE JANEIRO,0188,0082,proporcao_mesario_acima_pares,0.847584,0.280592
+RJ,RIO DE JANEIRO,0204,0204,proporcao_mesario_acima_pares,0.266129,0.258983
+RJ,RIO DE JANEIRO,0214,0325,proporcao_mesario_acima_pares,0.686275,0.260816
+RJ,RIO DE JANEIRO,0234,0171,proporcao_mesario_acima_pares,0.202658,0.178332
+RJ,RIO DE JANEIRO,0234,0191,proporcao_mesario_acima_pares,0.194118,0.178332
+RJ,RIO DE JANEIRO,0243,0190,volume_habilitacoes_acima_pares,445,435.0
+RR,BOA VISTA,0001,0065,proporcao_mesario_acima_pares,0.164835,0.13179
+RR,MUCAJAÍ,0006,0036,proporcao_mesario_acima_pares,0.162791,0.159766
+RR,SÃO JOÃO DA BALIZA,0004,0061,volume_habilitacoes_acima_pares,261,260.5
+RS,BAGÉ,0007,0017,proporcao_mesario_acima_pares,0.32287,0.309513
+RS,BAGÉ,0007,0050,proporcao_mesario_acima_pares,0.683258,0.309513
+RS,BARRA DO RIBEIRO,0151,0007,proporcao_mesario_acima_pares,0.254658,0.206839
+RS,CATUÍPE,0023,0368,volume_habilitacoes_acima_pares,376,375.0
+RS,CAXIAS DO SUL,0016,0005,proporcao_mesario_acima_pares,0.176136,0.164397
+RS,CAXIAS DO SUL,0169,0224,proporcao_mesario_acima_pares,0.195946,0.177357
+RS,DOIS IRMÃOS,0153,0052,proporcao_mesario_acima_pares,0.287293,0.249284
+RS,FARROUPILHA,0061,0039,proporcao_mesario_acima_pares,0.393443,0.272024
+RS,FARROUPILHA,0061,0094,proporcao_mesario_acima_pares,0.406015,0.272024
+RS,FREDERICO WESTPHALEN,0094,0025,proporcao_mesario_acima_pares,0.227723,0.214308
+RS,GUAÍBA,0090,0001,proporcao_mesario_acima_pares,0.219731,0.178592
+RS,GUAÍBA,0090,0008,proporcao_mesario_acima_pares,0.183267,0.178592
+RS,IBIRUBÁ,0121,0018,proporcao_mesario_acima_pares,0.188679,0.148996
+RS,IJUÍ,0023,0099,proporcao_mesario_acima_pares,0.252294,0.197869
+RS,IVOTI,0118,0143,proporcao_mesario_acima_pares,0.422961,0.271192
+RS,IVOTI,0118,0198,proporcao_mesario_acima_pares,0.323699,0.271192
+RS,LAGOA VERMELHA,0028,0081,proporcao_mesario_acima_pares,0.248,0.231412
+RS,LAJEADO,0029,0018,proporcao_mesario_acima_pares,0.325,0.323281
+RS,MONTENEGRO,0031,0062,proporcao_mesario_acima_pares,0.198198,0.184983
+RS,OSÓRIO,0077,0093,proporcao_mesario_acima_pares,0.883117,0.323504
+RS,PELOTAS,0034,0036,proporcao_mesario_acima_pares,0.22973,0.223647
+RS,PORTO ALEGRE,0113,0093,proporcao_mesario_acima_pares,0.164038,0.159128
+RS,PORTO ALEGRE,0113,0238,proporcao_mesario_acima_pares,0.159864,0.159128
+RS,XANGRI-LÁ,0150,0037,proporcao_mesario_acima_pares,0.319489,0.259142
+RS,RIO PARDO,0038,0004,proporcao_mesario_acima_pares,0.22,0.213951
+RS,SANTA MARIA,0041,0548,proporcao_mesario_acima_pares,0.198157,0.188212
+RS,SANT'ANA DO LIVRAMENTO,0030,0094,proporcao_mesario_acima_pares,0.226601,0.212355
+RS,SÃO JOSÉ DO OURO,0103,0014,proporcao_mesario_acima_pares,0.299145,0.279239
+RS,SÃO LEOPOLDO,0051,0032,proporcao_mesario_acima_pares,0.168675,0.168333
+RS,SÃO LEOPOLDO,0073,0459,proporcao_mesario_acima_pares,0.190647,0.183889
+RS,SÃO SEPÉ,0082,0066,proporcao_mesario_acima_pares,0.327869,0.326383
+RS,SAPIRANGA,0131,0116,proporcao_mesario_acima_pares,0.190789,0.18359
+RS,SAPUCAIA DO SUL,0108,0021,proporcao_mesario_acima_pares,0.173267,0.160912
+RS,SAPUCAIA DO SUL,0108,0404,proporcao_mesario_acima_pares,0.161765,0.160912
+RS,TENENTE PORTELA,0101,0016,proporcao_mesario_acima_pares,0.223881,0.223134
+RS,VERANÓPOLIS,0088,0018,proporcao_mesario_acima_pares,0.316901,0.310893
+RS,PAROBÉ,0055,0331,proporcao_mesario_acima_pares,0.446809,0.24499
