@@ -1,0 +1,111 @@
+name: Relatórios nacionais - ritmo e logs
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/relatorios-nacionais.yml']
+permissions:
+  contents: read
+concurrency:
+  group: relatorios-nacionais-ritmo
+  cancel-in-progress: false
+jobs:
+  preparar:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    outputs:
+      release: ${{ steps.release.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir regras e motor
+        run: python3 -m unittest -v test_motor test_lote test_validacao test_relatorios_nacionais
+      - name: Congelar fonte e abrir publicação
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          tag="relatorios-ritmo-${GITHUB_RUN_ID}"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          gh api repos/${GITHUB_REPOSITORY}/releases/tags/auditoria-v3-41263277696 > fonte_relatorios.json
+          python3 - <<'PY'
+          import json,zipfile
+          from pathlib import Path
+          d=json.loads(Path('fonte_relatorios.json').read_text())
+          names={a['name'] for a in d['assets']}
+          from lote import UFS
+          assert all(f'{uf}-tentativa1.zip' in names for uf in UFS)
+          with zipfile.ZipFile('fontes_relatorios.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for pattern in ['relatorios_nacionais/*.py','test_relatorios_nacionais.py','DIRETRIZES_RELATORIOS.md','fonte_relatorios.json','.github/workflows/relatorios-nacionais.yml']:
+                  for p in Path('.').glob(pattern):z.write(p,str(p))
+          PY
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" --prerelease --title "Relatórios estaduais: intervalos e logs" --notes "Complemento à execução nacional v3: 28 unidades, intervalos entre liberações, referência biométrica local, totais e concentração. Publicação progressiva; o índice nacional só é produzido após as 28 unidades concluídas. Triagem exploratória, não prova de fraude."
+          fi
+          gh release upload "$tag" fontes_relatorios.zip fonte_relatorios.json --clobber
+  estados:
+    needs: preparar
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar executor
+        run: |
+          sudo rm -rf -- /usr/share/dotnet /usr/local/lib/android /opt/ghc
+          python3 -m venv .venv-relatorios
+          .venv-relatorios/bin/pip install reportlab==4.4.9 pypdf==6.10.0 pdfplumber==0.11.9
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-dejavu-core poppler-utils
+      - name: Obter referência congelada
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ needs.preparar.outputs.release }}
+        run: gh release download "$TAG" --pattern fonte_relatorios.json
+      - name: Analisar seção por seção e produzir relatório
+        env:
+          UF: ${{ matrix.uf }}
+          MALLOC_ARENA_MAX: '2'
+        run: .venv-relatorios/bin/python -m relatorios_nacionais.executar "$UF"
+      - name: Preservar relatórios e diagnóstico
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ needs.preparar.outputs.release }}
+          UF: ${{ matrix.uf }}
+        run: |
+          set -euo pipefail
+          folder="trabalho_relatorios/$UF/entrega"
+          if [ ! -f "$folder/${UF}_status.json" ]; then
+            mkdir -p "$folder"
+            echo "{\"uf\":\"$UF\",\"status\":\"falhou\",\"erro\":\"Execução interrompida antes do diagnóstico final\"}" > "$folder/${UF}_status.json"
+          fi
+          gh release upload "$TAG" "$folder/${UF}_status.json" --clobber
+          for path in "$folder/Relatorio_$UF.pdf" "$folder/Relatorio_$UF.md" "$folder/${UF}_Dados_e_Trechos.zip" "$folder/${UF}_Logs_Integrais.zip" "$folder/${UF}_resumo.json"; do
+            if [ -f "$path" ]; then gh release upload "$TAG" "$path" --clobber; fi
+          done
+  consolidar:
+    needs: [preparar, estados]
+    if: ${{ always() && needs.preparar.result == 'success' }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir conclusão das 28 unidades
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ needs.preparar.outputs.release }}
+        run: |
+          set -euo pipefail
+          mkdir recebidos
+          gh release download "$TAG" --pattern '*_status.json' --pattern '*_resumo.json' --dir recebidos
+          python3 -m relatorios_nacionais.consolidar recebidos consolidado_ritmo
+          gh release upload "$TAG" consolidado_ritmo/* --clobber

@@ -44,3 +44,7 @@ O workflow [Auditoria nacional v3](.github/workflows/auditoria-nacional.yml) pro
 ## Relatórios estaduais
 
 - [Acre: habilitação por mesário e ano de nascimento](relatorios/AC/README.md), com totais, concentrações, sequências, tempos e dados integrais das 37.979 votações do conjunto. O relatório seleciona ocorrências para conferência documental, sem classificar o universo como fraude.
+
+## Relatórios estaduais de intervalos e logs
+
+O complemento nacional aplica a todas as 28 unidades o método de intervalos entre liberações validado no Acre. [Escopo, entregas e reprodução](RELATORIOS_NACIONAIS.md). A execução persistente está no fluxo [Relatórios nacionais - ritmo e logs](https://github.com/hugohalima-hash/auditoria_eleicoes_2026/actions/workflows/relatorios-nacionais.yml).

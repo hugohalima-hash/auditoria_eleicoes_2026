@@ -1,0 +1,26 @@
+{
+  "data": "2026-11-01",
+  "testes_unitarios": {
+    "executados": 42,
+    "aprovados": 41,
+    "ignorados": 1,
+    "falhas": 0,
+    "observacao": "Amostra externa legada ausente, conforme suíte original."
+  },
+  "regressao_acre": {
+    "logs": 2270,
+    "maximos_sequencias_conferidos": 4540,
+    "totais_e_distribuicoes": "iguais ao relatório aprovado",
+    "series_mesario_ge2": 1316,
+    "series_mesario_ge3": 103,
+    "series_mesario_rapidas": 0,
+    "series_conjunto_ge2": 3580,
+    "series_conjunto_ge3": 557,
+    "series_conjunto_rapidas": 1,
+    "secoes_concentradas": 41,
+    "votos_conjunto_nessas_secoes": 2458,
+    "pdf_paginas": 25,
+    "exemplos_pdf": 8
+  },
+  "limite": "Validação de consistência e regressão; não certificação de acurácia semântica ou de probabilidade de fraude."
+}
