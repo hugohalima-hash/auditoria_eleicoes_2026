@@ -1,0 +1,11 @@
+﻿uf,municipio,municipio_nome,zona,secao,arquivo,motivo
+AC,01007,BUJARI,0009,0002,o03221ac0100700090002-log.jez,blocos_distintos=2
+AC,01023,PORTO ACRE,0001,0608,o03221ac0102300010608-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01074,CRUZEIRO DO SUL,0004,0394,o03221ac0107400040394-log.jez,blocos_distintos=2
+AC,01074,CRUZEIRO DO SUL,0004,0482,o03221ac0107400040482-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01082,RODRIGUES ALVES,0004,0368,o03221ac0108200040368-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01392,RIO BRANCO,0001,0554,o03221ac0139200010554-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01392,RIO BRANCO,0009,0053,o03221ac0139200090053-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01457,SENA MADUREIRA,0003,0001,o03221ac0145700030001-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1
+AC,01457,SENA MADUREIRA,0003,0084,o03221ac0145700030084-log.jez,avisos=1; ciclos_sem_desfecho_explicado=1; blocos_distintos=2
+AC,01538,SENADOR GUIOMARD,0008,0082,o03221ac0153800080082-log.jez,blocos_distintos=2

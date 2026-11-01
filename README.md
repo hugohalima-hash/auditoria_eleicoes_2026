@@ -40,3 +40,7 @@ Para repetir a verificação do corpus, baixe o pacote do AM da fonte registrada
 ## Execução nacional persistente
 
 O workflow [Auditoria nacional v3](.github/workflows/auditoria-nacional.yml) processa as 28 unidades em executores padrão do repositório público, com duas simultâneas. Cada estado gera um pacote em uma Release da execução, inclusive diagnóstico em falha. A consolidação nacional só roda após sucesso das 28 unidades. Consulte [EXECUCAO_NACIONAL.md](EXECUCAO_NACIONAL.md). A exportação estadual de séries agora é feita por arquivo para reduzir memória; o ranking nacional continua ordenado por tamanho. Essa mudança gera novo fingerprint e invalida caches anteriores.
+
+## Relatórios estaduais
+
+- [Acre: relatório completo e anexos](relatorios/AC/README.md), com cobertura, sete interrupções, 39 seções com múltiplos blocos e dez em quarentena. A análise é documental e não certifica fraude ou regularidade integral.

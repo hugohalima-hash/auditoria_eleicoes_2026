@@ -1,0 +1,54 @@
+﻿uf,municipio,municipio_nome,zona,secao,arquivo,alerta,valor,referencia,contexto
+AC,01007,BUJARI,0009,0002,o03221ac0100700090002-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01007,BUJARI,0009,0437,o03221ac0100700090437-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01007,BUJARI,0009,0476,o03221ac0100700090476-log.jez,multiplos_blocos_log,3,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01015,CAPIXABA,0002,0079,o03221ac0101500020079-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01015,CAPIXABA,0002,0093,o03221ac0101500020093-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01023,PORTO ACRE,0001,0608,o03221ac0102300010608-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01023,PORTO ACRE,0001,0608,o03221ac0102300010608-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01023,PORTO ACRE,0001,0797,o03221ac0102300010797-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01058,BRASILÉIA,0006,0033,o03221ac0105800060033-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01058,BRASILÉIA,0006,0099,o03221ac0105800060099-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01074,CRUZEIRO DO SUL,0004,0198,o03221ac0107400040198-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01074,CRUZEIRO DO SUL,0004,0308,o03221ac0107400040308-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01074,CRUZEIRO DO SUL,0004,0394,o03221ac0107400040394-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01074,CRUZEIRO DO SUL,0004,0482,o03221ac0107400040482-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01074,CRUZEIRO DO SUL,0004,0482,o03221ac0107400040482-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01082,RODRIGUES ALVES,0004,0148,o03221ac0108200040148-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01082,RODRIGUES ALVES,0004,0349,o03221ac0108200040349-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01082,RODRIGUES ALVES,0004,0368,o03221ac0108200040368-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01082,RODRIGUES ALVES,0004,0368,o03221ac0108200040368-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01090,MÂNCIO LIMA,0004,0090,o03221ac0109000040090-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01090,MÂNCIO LIMA,0004,0346,o03221ac0109000040346-log.jez,multiplos_blocos_log,3,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01104,JORDÃO,0005,0125,o03221ac0110400050125-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01120,ACRELÂNDIA,0008,0072,o03221ac0112000080072-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01120,ACRELÂNDIA,0008,0205,o03221ac0112000080205-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01139,FEIJÓ,0007,0004,o03221ac0113900070004-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01139,FEIJÓ,0007,0075,o03221ac0113900070075-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0097,o03221ac0139200010097-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0441,o03221ac0139200010441-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0500,o03221ac0139200010500-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0551,o03221ac0139200010551-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0554,o03221ac0139200010554-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01392,RIO BRANCO,0001,0554,o03221ac0139200010554-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01392,RIO BRANCO,0001,0685,o03221ac0139200010685-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0770,o03221ac0139200010770-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0852,o03221ac0139200010852-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0001,0863,o03221ac0139200010863-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0009,0053,o03221ac0139200090053-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01392,RIO BRANCO,0009,0053,o03221ac0139200090053-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01392,RIO BRANCO,0009,0082,o03221ac0139200090082-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0009,0104,o03221ac0139200090104-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0009,0308,o03221ac0139200090308-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01392,RIO BRANCO,0009,0403,o03221ac0139200090403-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01457,SENA MADUREIRA,0003,0001,o03221ac0145700030001-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01457,SENA MADUREIRA,0003,0001,o03221ac0145700030001-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01457,SENA MADUREIRA,0003,0002,o03221ac0145700030002-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01457,SENA MADUREIRA,0003,0008,o03221ac0145700030008-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01457,SENA MADUREIRA,0003,0084,o03221ac0145700030084-log.jez,avisos,1,,Alerta técnico; pode exigir revisão do analisador ou do registro.
+AC,01457,SENA MADUREIRA,0003,0084,o03221ac0145700030084-log.jez,ciclos_sem_desfecho_explicado,1,,"Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático."
+AC,01457,SENA MADUREIRA,0003,0084,o03221ac0145700030084-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01473,TARAUACÁ,0005,0010,o03221ac0147300050010-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01473,TARAUACÁ,0005,0015,o03221ac0147300050015-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01538,SENADOR GUIOMARD,0008,0082,o03221ac0153800080082-log.jez,multiplos_blocos_log,3,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
+AC,01554,MANOEL URBANO,0003,0126,o03221ac0155400030126-log.jez,multiplos_blocos_log,2,,Contexto de possível substituição; múltiplos blocos não provam troca de urna.
