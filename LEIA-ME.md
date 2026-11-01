@@ -1,12 +1,14 @@
-# Auditor Eleitoral Independente 2026 — versão 2.1
+# Auditor Eleitoral Independente 2026 — versão 3.0
 
 Análise exploratória dos **logs públicos do segundo turno de 25/10/2026**, durante todo o dia. Detecta sequências consecutivas de habilitações, registra os eventos de voto computado e verifica a cobertura contra o cadastro oficial de seções principais.
 
 O programa foi criado nesta conversa e corrigido após a validação do arquivo enviado pelo usuário. Não executa o DataUrnas-BR nem incorpora código desse projeto. Utiliza a biblioteca padrão do Python 3.11 ou posterior. É uma auditoria computacional de registros públicos, não uma perícia física nem uma autenticação da identidade dos votantes.
 
+**Revisão de validade:** as classificações e triagens do motor 2.1 foram retiradas de uso para conclusões até reprocessamento. Leia [VALIDACAO_V3.md](VALIDACAO_V3.md). Nenhuma acurácia de 99,9% foi certificada.
+
 ## Executar
 
-Mantenha `auditar.py`, `motor.py` e `lote.py` na mesma pasta.
+Mantenha os módulos Python do repositório juntos, incluindo `integridade.py`. Use uma pasta nova (`resultados_corrigidos`) para o reprocessamento.
 
 ```powershell
 python auditar.py --ufs AC --saida resultados
@@ -53,7 +55,7 @@ A coluna `inicios_esperados_ge_max_*` é o número esperado de inícios de sequ�
 - `checkpoint.sqlite`: retomada local, sem publicação de identificadores pessoais.
 - `habilitacoes.jsonl`: opcional, gerado no modo local com `--eventos`.
 
-A extração lê `logd.dat` e os arquivos .jez aninhados, incluindo logs de equipamentos substituídos. Cópias idênticas de linhas entre arquivos são eliminadas por multiplicidade máxima, preservando repetições existentes no mesmo arquivo. O CRC-32 dos membros é verificado pela biblioteca ZIP. Há limite de 256 MiB descompactados por pacote de log e de seis níveis de aninhamento.
+A extração lê `logd.dat` e os arquivos .jez aninhados, incluindo logs de equipamentos substituídos. Apenas blocos integralmente idênticos são removidos. Linhas repetidas em blocos distintos são preservadas, pois não há prova de duplicidade. Fronteiras de origem interrompem ciclos e séries; seções com múltiplas origens distintas ficam fora da comparação estatística. O CRC-32 dos membros é verificado pela biblioteca ZIP. Há limite de 256 MiB descompactados por pacote de log e de seis níveis de aninhamento.
 
 ## Cobertura e limitações
 
@@ -67,7 +69,7 @@ https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-pa
 ## Validação
 
 ```powershell
-python -m unittest -v test_motor test_lote
+python -m unittest -v test_motor test_lote test_validacao
 ```
 
 Os testes verificam as mensagens alternativas de mesário, o isolamento de tentativas canceladas, a interrupção das sequências por categoria desconhecida, a deduplicação de logs aninhados e a fórmula de referência estatística por enumeração exata. O teste da amostra externa depende da presença do arquivo enviado e é pulado quando a amostra não está disponível.
@@ -81,4 +83,4 @@ Use `python consolidar.py --resultados resultados --saida entrega` para gerar o 
 
 No Linux: `MALLOC_ARENA_MAX=2 python auditar.py --brasil --saida resultados --estados-simultaneos 1 --conexoes 4 --processos 1 --limite-memoria-mib 1536 --apagar-pacotes`. O processo principal fica limitado a 1,5 GiB de memória virtual, sem processos auxiliares. As threads reservam pilhas de 1 MiB e a configuração MALLOC_ARENA_MAX reduz reservas virtuais do alocador glibc. Não existem cópias duplicadas dos pacotes em outra pasta temporária. O cache de cada UF é removido após processamento sem erros de leitura.
 
-Os testes de memória identificaram e corrigiram uma referência cíclica no leitor. Em uma validação local sequencial de 5.000 logs reais do RJ, com limite de 1 GiB, o pico RSS permaneceu em 166,6 MiB. Nove testes de regressão foram aprovados. O limite de memória usa o módulo resource quando disponível; esse módulo não existe em algumas plataformas, inclusive Windows.
+Os testes de memória identificaram e corrigiram uma referência cíclica no leitor. Em uma validação local sequencial de 5.000 logs reais do RJ, com limite de 1 GiB, o pico RSS permaneceu em 166,6 MiB. Esse resultado pertence ao motor anterior e não certifica a versão 3.0. Os resultados atuais estão em `validacao/testes.txt`. O limite de memória usa o módulo resource quando disponível; esse módulo não existe em algumas plataformas, inclusive Windows.

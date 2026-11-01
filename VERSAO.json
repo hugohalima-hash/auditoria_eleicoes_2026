@@ -1,7 +1,9 @@
 {
   "nome": "Auditor Eleitoral Independente 2026",
-  "versao": "2.1",
-  "sha256_auditar_v1": "14257cf82955af133dac4bc0977f5489867ae01753ab5d26c6a4fe2afeba83c9",
-  "escopo": "Logs públicos, segundo turno de 25/10/2026; não verifica assinaturas nem identidade dos votantes",
-  "fontes": "Pacotes estaduais e cadastro de seções do TSE"
+  "versao": "3.0",
+  "status": "correcao_em_validacao",
+  "acuracia_certificada": null,
+  "resultados_v21": "retirados de uso para conclusões; reprocessamento obrigatório",
+  "documentacao": "VALIDACAO_V3.md",
+  "escopo": "Classificação de logs; sem autenticação de assinaturas, identificação de eleitores ou confirmação de fraude"
 }

@@ -11,7 +11,8 @@ import time
 import urllib.request
 import zipfile
 from pathlib import Path
-from motor import analyze, section, summarize, write_csv, VERSION
+from motor import analyze, section, summarize, write_csv, VERSION, CACHE_VERSION, ENGINE_SHA256
+from integridade import manifest, verified
 
 UFS='AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO ZZ'.split()
 URL='https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_{uf}.zip'
@@ -165,6 +166,7 @@ def config_state(uf,out):
 
 def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
     out.mkdir(parents=True,exist_ok=True)
+    (out/'manifesto.json').unlink(missing_ok=True)
     con=sqlite3.connect(out/'checkpoint.sqlite')
     con.execute('CREATE TABLE IF NOT EXISTS results (name TEXT PRIMARY KEY, crc INTEGER, size INTEGER, version TEXT, day TEXT, row TEXT, runs TEXT, warnings TEXT)')
     con.execute('CREATE TABLE IF NOT EXISTS errors (name TEXT PRIMARY KEY, message TEXT)')
@@ -183,7 +185,7 @@ def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
             crc=info.CRC if info else -1
             size=info.file_size if info else path.stat().st_size
             previous=con.execute('SELECT crc,size,version,day FROM results WHERE name=?',(name,)).fetchone()
-            if previous==(crc,size,VERSION,day):
+            if previous==(crc,size,CACHE_VERSION,day):
                 processed+=1;continue
             tasks.append(info)
         def sequential():
@@ -213,7 +215,7 @@ def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
             try:
                 if error:raise ValueError(error)
                 con.execute('INSERT OR REPLACE INTO results VALUES (?,?,?,?,?,?,?,?)',
-                    (name,crc,size,VERSION,day,json.dumps(row,ensure_ascii=False),json.dumps(runs,ensure_ascii=False),json.dumps(warnings,ensure_ascii=False)))
+                    (name,crc,size,CACHE_VERSION,day,json.dumps(row,ensure_ascii=False),json.dumps(runs,ensure_ascii=False),json.dumps(warnings,ensure_ascii=False)))
                 con.execute('DELETE FROM errors WHERE name=?',(name,))
                 fresh+=1
             except Exception as e:
@@ -229,7 +231,7 @@ def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
         con.commit()
         names={i.filename if i else path.name for i in infos}
         rows=[];runs=[];warnings=[];errors=[]
-        for name,row,rs,ws in con.execute('SELECT name,row,runs,warnings FROM results WHERE version=? AND day=?',(VERSION,day)):
+        for name,row,rs,ws in con.execute('SELECT name,row,runs,warnings FROM results WHERE version=? AND day=?',(CACHE_VERSION,day)):
             if name in names:
                 rows.append(json.loads(row));runs.extend(json.loads(rs))
                 warnings.extend({'arquivo':name,**w} for w in json.loads(ws))
@@ -267,8 +269,9 @@ def process_archive(path,out,day,uf='LOCAL',keep_events=False,processes=1):
             except Exception as e:
                 result['erro_cobertura_oficial']=str(e)
         write_csv(out/'lacunas_cobertura.csv',missing,['municipio','zona','secao','motivo'])
-        result['status']='processado_com_ressalvas' if errors or missing or result['indefinida'] or result.get('erro_cobertura_oficial') or result['avisos'] else 'processado'
+        result['status']='processado_com_ressalvas' if errors or missing or result['indefinida'] or result.get('erro_cobertura_oficial') or result['avisos'] or result['arquivos_em_quarentena'] else 'processado'
         atomic_json(out/'resumo.json',result)
+        atomic_json(out/'manifesto.json',manifest(out,ENGINE_SHA256))
         atomic_json(out/'progresso.json',{'status':result['status'],'processados':len(rows),'total_logs_pacote':len(infos)})
         print(f"{uf}: FINALIZADO logs={len(rows)} erros={len(errors)} "
               f"cobertura={result.get('cobertura_config_pct','NA')}% "
@@ -288,6 +291,8 @@ def execute_state(uf,root,downloads,day,workers,delete=False,processes=1):
         if saved.exists():
             result=json.loads(saved.read_text())
             if (result.get('versao_motor')==VERSION and result.get('data')==day
+                    and result.get('sha256_motor')==ENGINE_SHA256
+                    and verified(out,ENGINE_SHA256)
                     and result.get('erros')==0
                     and result.get('arquivos_processados')==result.get('logs_no_pacote')
                     and (out/'urnas.csv').exists() and (out/'sequencias.csv').exists()):
@@ -312,6 +317,7 @@ def execute_state(uf,root,downloads,day,workers,delete=False,processes=1):
         # Hash completo do pacote não é necessário para conferir CRC dos membros;
         # SHA-256 de cada log é registrado. Nenhuma assinatura é autenticada.
         atomic_json(out/'resumo.json',result)
+        atomic_json(out/'manifesto.json',manifest(out,ENGINE_SHA256))
         if delete and not result['erros']:
             path.unlink()
         return result

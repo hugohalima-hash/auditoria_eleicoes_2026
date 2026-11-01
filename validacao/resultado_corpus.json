@@ -1,0 +1,1725 @@
+{
+  "sha256_motor": "bb28fdb0ea9d4398e984d69786535aed9b977a1afcf5c40c853b019b267c7e59",
+  "amostras": 188,
+  "logs_com_contagem_independente": 165,
+  "totais_v21": {
+    "habilitacoes": 48473,
+    "votos_computados": 48422,
+    "votos_vinculados": 48422,
+    "indefinida": 15,
+    "avisos": 51,
+    "suspensas_sem_voto": 0,
+    "canceladas_sem_voto": 0,
+    "ciclos_sem_desfecho_explicado": 0,
+    "votos_sem_habilitacao": 0
+  },
+  "totais_v3": {
+    "habilitacoes": 48473,
+    "votos_computados": 48422,
+    "votos_vinculados": 48422,
+    "indefinida": 0,
+    "avisos": 2,
+    "suspensas_sem_voto": 49,
+    "canceladas_sem_voto": 0,
+    "ciclos_sem_desfecho_explicado": 2,
+    "votos_sem_habilitacao": 0
+  },
+  "falhas_reconciliacao": [],
+  "arquivos": [
+    {
+      "arquivo": "o03221am0200300670001-log.jez",
+      "sha256": "8caeebdaa982d1207ad7d81fabd73bfb7cb27a2422b72b87a5dc7e45e7a31ab0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670002-log.jez",
+      "sha256": "23c80b92d256a260236d32890b91b1b3d136867513f0d3f289999b3cbe9faf22",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670003-log.jez",
+      "sha256": "e53cd1512060fb55314d471e35efc84e80a5bcbd7f9bd4351fb8c6f864498726",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670005-log.jez",
+      "sha256": "56357aa8c4178a24fc6990b4e384ca4ad303df9ad947c32edda4427b06a03c74",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670007-log.jez",
+      "sha256": "8642943412cca008575808afcb0b994efdbbd39a916d4d83cd8f2898baff1b23",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670008-log.jez",
+      "sha256": "026515273e10ebc7b6045cd8c6e24948e29b8da3dcff881d8a6f7c15991cfdd0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670009-log.jez",
+      "sha256": "d29d0b39dda95e4e19bf0a8a14f2753132efcd5f032c5b1a756da0ce70c8e077",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670011-log.jez",
+      "sha256": "97d88ac7f73f45df23b0d4fc6b97290816505c88006769c5314cce750b56e9ed",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670013-log.jez",
+      "sha256": "2af189255f5d1693fe37968bae10f86d27acb5945286c1744deedee9d248aa36",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0200300670015-log.jez",
+      "sha256": "344f02a37dcd67ddf8903c88dfd68dda9249804f39c55692306f465b85f197d4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0202000450016-log.jez",
+      "sha256": "e8f78ada977815b4f2a4d8076eb1ed9e4d2dc895c26928e2ea22a128df47832e",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0202000450022-log.jez",
+      "sha256": "4ce8c94fd938635924e66524ddd1e47eccc051d69725eae219f72b34c269acf2",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0203800330019-log.jez",
+      "sha256": "b7c75acb815336ae46898b11f68b7dc8ec3d502c7eab3a7a9f00f4b1dd9cf80b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0203800330040-log.jez",
+      "sha256": "4ebf6953cddc2f3b1bf49069afdbf148713040155840fe92097fa6c557b51d51",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0203800330045-log.jez",
+      "sha256": "227ddd783a265ad08a407750d3e1789901203f4217b45941d0ec58419be1818e",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0204600310760-log.jez",
+      "sha256": "0af7b3e81d7c4f3bdfd793fe42c92aa3c3e587c37562b8a9ca76956c58334dcc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0205400420006-log.jez",
+      "sha256": "6ecddd94926a259b16ea47c0f48a854dbf086d36187a96486a1d7870a5e8610c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350005-log.jez",
+      "sha256": "ea87c2286fa1c4894123bd439afcbc6735c76df98f3b0f30e197f6edb7ad65f4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350009-log.jez",
+      "sha256": "9987fe6d83022da197249aae39ae2f1a6659675a38f17be23c3807609b6e15d1",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350012-log.jez",
+      "sha256": "6bf6369db0a4195194a2d07181193b011b23608346338d244ba467d8dee32a88",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350034-log.jez",
+      "sha256": "e0b307c87ec776751391e3e79256847a97f637a2ca317576c05e2291106f9c67",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350042-log.jez",
+      "sha256": "eb2dbe73ef151353714ac4bfcefdd4b270eef670d8154aba4c2e49ae88e3d4af",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350051-log.jez",
+      "sha256": "e043bda76345a00b0fe85fb696cd3395cb883d182c759b61aa4c3bb4874f063f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350072-log.jez",
+      "sha256": "daa15abe4e84eaddfd51dd7dce86c2b80e0f7b559e9597d2932cb11db7117e2f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350075-log.jez",
+      "sha256": "8d6cc5e1773ad54ca33b2f4b59415b4b3a5fc4040c5c65a9510c30ea05ac6c9e",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0207000350170-log.jez",
+      "sha256": "56add5e6dae6d8e5ae421f37102cbd5200146dd83371e87d50b584ecfe81973b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0209700180006-log.jez",
+      "sha256": "49a300e8c1f4354f4e4f2a3efea63ed256dec5e70211c7d9168a5902efeb5331",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0209700180014-log.jez",
+      "sha256": "fb1a06900e95f951ee02673a64156d25841e75681ebddbd2dadc28900a866260",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0209700180020-log.jez",
+      "sha256": "6f95d0e7e3ea40d89fb8d0dae4d764a021474b39fe484df31cd3346959eadc8b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0209700180032-log.jez",
+      "sha256": "ed45271206f11f98e354ef8fbb0c984cc39a47d6d6f2c0268bf26cd38d118dcd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0211900260001-log.jez",
+      "sha256": "d16e8eb00570cd81f6f3946c2886bcedf0e6df526097bd28f12421ccde7da040",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0211900260044-log.jez",
+      "sha256": "4ded2a12aaa5aac77b72377eaeddd557f7a0336a83a341742aadeee78a524bec",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0211900260045-log.jez",
+      "sha256": "a7cd7af9ce80a31d0d088835335844fc04d0fa02e99261e17a5d6267fa493b9f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0213500200009-log.jez",
+      "sha256": "7fa65597c030507a0b8ff7ed95b3307820a1bf9c52f119bef83d55fe31d0ab24",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0213500200068-log.jez",
+      "sha256": "cfd09caa29c50e8d234a774fe588c668658533e8269d345647f7724073885acb",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0217800150011-log.jez",
+      "sha256": "8e0656f87604cb9aa9f0244489d60d8bd0291b03d4d9718959ab4a5ac50702f4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0217800150019-log.jez",
+      "sha256": "fdc6ee9f48326375f0065ff05f214a82175396c9733e7a22eedbbdc88aca3a9c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0217800150031-log.jez",
+      "sha256": "599fe61e60d188c20c269bb0b98df85e96e3f0bc431d93d08ff5daf4685f84e4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0217800150037-log.jez",
+      "sha256": "aa43d96e31e5bc55dd98ff5b8bc3aeb5efe35bbdd7a89e68ec1d6513b8de2707",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0217800150063-log.jez",
+      "sha256": "0c1c61f45a6186fa27e11e6b0196c4ba4af08cdb719b308b1dcd9a1f796a1b73",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0219400130031-log.jez",
+      "sha256": "43343f70cb23b40573641c12522b46ddbd3f958246eb5eb44fbd91778328940b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 2,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0219400130046-log.jez",
+      "sha256": "d54ab388dc41b015d960cda31bde809ee3e5375559438dbce3f36366bc7ac42f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0219400130047-log.jez",
+      "sha256": "c89212f9f6b95cfaa34f0b87bb84f0ad547850548129627e1eb7ff1d27925aa3",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210009-log.jez",
+      "sha256": "f643b082675c1826c9ba7d11945c3155c3f3d2ef63d2b44035338c4f0c674398",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210012-log.jez",
+      "sha256": "49711ff31fc67f5748b08cd34e4368335121da80223dbc229241b73044daeafe",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210017-log.jez",
+      "sha256": "d754b87b84223f272c1383aeced76bf2a46d9a12ad35ad02f13dabac1d0ebc45",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210069-log.jez",
+      "sha256": "17fb8e377650e2a2cfc7bf52bc1a001f2cc589df6d2d35362fec19b6446f0b82",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210078-log.jez",
+      "sha256": "4eb20e55838ddae165322d79dadcbc9ffe0d784476b15a5c55ae9d79b9a05d1b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210095-log.jez",
+      "sha256": "3d7b1466c17d5f06b70bcf99ef6e8745d40fa4f7ca76b00c880e81174c17b125",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210105-log.jez",
+      "sha256": "0e27beb1e5d8671bc0445f6d77cf1b58a88fa985aa2b001f5843b3055736052b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 4,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210111-log.jez",
+      "sha256": "59db13e60ca3fb38f7aee3d329d279b3b87312abf170713371105efaf3ddcfdb",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0221600210113-log.jez",
+      "sha256": "5ee6a165e05960ba249fc6f3b0e8470f281dc5f9b9d954a20aa7c50851403fdd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0223200230104-log.jez",
+      "sha256": "7bb648f8c8c4d0a16b9927acac200c4db644478950e50cec32a1311cdd6c0b96",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0223200230140-log.jez",
+      "sha256": "01aa6afb5de5965837596b55eb89d3eb98fbdb46a3e522458d874e9a744c5f15",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0223200230214-log.jez",
+      "sha256": "66ec87c448eeb9ccde7f55d3524f8d8ea8b4362b5fe14deb4c26d829610c1b2a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080017-log.jez",
+      "sha256": "0b8cfc725e608bf47a16a9b0891222aa9ab3e7b922bb1186b95020a5908e966b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080053-log.jez",
+      "sha256": "adde28ab2ea56cbd2ac692389bea7de12bdc6dd9a9575fbbc902ac9d521d3d0a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080094-log.jez",
+      "sha256": "5008c0f917c4d59a73297f548935e52382a73780fc55c40836926147328fb208",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080104-log.jez",
+      "sha256": "6baf0e16793983ec907d6ebdad341138382ea7fc71417bbd4ca1db1ce26df094",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080129-log.jez",
+      "sha256": "9b3b73515890dd7acb68463c5d2b36c04566bfa44136efa6332bfde6e0edc7a7",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080146-log.jez",
+      "sha256": "7e6a6a5b6e390c1337c35a3fd23ef3d256143500b52c3541d10f7c3d5f279edd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0225900080174-log.jez",
+      "sha256": "fe16b0df57eed671a5fcc02bd5a97421ec15b01afc879f808ae5dedeb125f88b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0227500070027-log.jez",
+      "sha256": "5f487b224a9324e108a404577973bbf73d12f90020e7b31e7ce5ea28862d24f6",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0227500070034-log.jez",
+      "sha256": "66781eaf86a25e45a3f5cf8137431181b37cc7632785ff82517d28840a487602",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0227500070045-log.jez",
+      "sha256": "777f3dba86081c91f1cff18a67f3b7237a14edea1dfe0429fe59946cf46dedfa",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0229100110005-log.jez",
+      "sha256": "c04d9e24bc5556d22e11b9f85cbf18a68fc08398b911ee356744d4952c40d208",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0229100110063-log.jez",
+      "sha256": "9e0ecee1646734bced4f2b60f9a504f73a321b4fbb0977882736b0a192655c4d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 1,
+      "admissivel_estatistica": false
+    },
+    {
+      "arquivo": "o03221am0231300460030-log.jez",
+      "sha256": "a19cabc9a3decbad6724374a57f453624b70f2a2eb610ca692fb2738d8d31960",
+      "classificacoes_indefinidas_v21": 2,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0233000100047-log.jez",
+      "sha256": "bda22a3e2083514b5cecb7ab4407bf6d86ddf43ade6802276f58d65ea77ef37d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170005-log.jez",
+      "sha256": "11774e3afd11c04e555f17e4f46aa4769f7db26e53f183706d1fb5f6b193b3b9",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170006-log.jez",
+      "sha256": "57903fd4f8fb78d0711526dc65cc2ef9a6942457616fdcd71638b12ac7fa63ea",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170044-log.jez",
+      "sha256": "698cf589d658a238930846f10ae8876874e656b5fb5416fd7268a2438433beea",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170071-log.jez",
+      "sha256": "f7c5b2175ddd59cea259a86d6bd7a6abda29bc0c8965a01dc304d7a8db8b098a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170078-log.jez",
+      "sha256": "83f58719a4c7d81cf871facd11d5977a0b044b7630bdc90fafc151e926cf67c6",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170082-log.jez",
+      "sha256": "768627a204018c99e212a09f5967294c31cfea98db4702d43ad58a09844e5342",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0235600170102-log.jez",
+      "sha256": "7ff5ea30b09e64807f852223181733e3d3356d9f30844d2ba3cc52134e459adc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0237200300001-log.jez",
+      "sha256": "d1fb2dc4d5fbaf0079292ecf98310eebf58b376ef0010aaacadc68064ba5b6c2",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 2,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0237200300014-log.jez",
+      "sha256": "81e372246f4c1d801dbd2ec945ac35139c71bc44bff145f9eea301bddab519e4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0237200300020-log.jez",
+      "sha256": "95877a45e5d5c7393a45757bc08007171847ee26aac42ebe2d1f2a9f37aadebb",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0237200300031-log.jez",
+      "sha256": "285fc8e0e4c48a47fcd28c31fbe248c8628843e29e6e43b943f46c2f8b4c346e",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0239900450034-log.jez",
+      "sha256": "d674753d3482485f972c7b5563e37f73f3297213608ba30fe04c025e25eceeb0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0239900450057-log.jez",
+      "sha256": "387a3a1a8b47ca4709c30d2dadbac5d1d62ecafc7ca155a2ec7229c3bed6482f",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0239900450063-log.jez",
+      "sha256": "806a93d582881592f76e578bdea29491e98289abafeff1bb2dc3a7d91df5b8cd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030090-log.jez",
+      "sha256": "cc8ed7f67213d2b599e9a99041694300fe50806b4d2409f3a37f4c6de56c488b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030098-log.jez",
+      "sha256": "05fe2db5e27ed994f5639021ac75af98a7c880887f7e549ad71a138a1787cc1e",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030124-log.jez",
+      "sha256": "6a8c0ff8eaba2397ab8e27714f85bbfea24c29b9910f14e2edd56af2334d7f60",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030132-log.jez",
+      "sha256": "c886af885c17e6e672bae4d70833b7aeee2a7852322ba1e0e2dc12fef7a47b96",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030208-log.jez",
+      "sha256": "9777618d5f869b390670cd2da461923ca860a012bfb5a4ad4f19c4733799ef47",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030209-log.jez",
+      "sha256": "f57a39d92ff6d9adf5decd555e18037690ed86200b648beb132d2ee4a1e99ef7",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030230-log.jez",
+      "sha256": "3c12107a2a1ca85f769458da7dc23d4cc8a820bc7881341fca7e77efcecd7433",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 1,
+      "admissivel_estatistica": false
+    },
+    {
+      "arquivo": "o03221am0241000030282-log.jez",
+      "sha256": "77c901ab195c8e923f4126ebd5765a19b2eb1dcc77bb62413b0354782c5d06f0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0241000030294-log.jez",
+      "sha256": "cfe32cedb712ced0ea2430b9e9257189fb4a9f8a0a1853373a9c54197eb72e3a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0243700240003-log.jez",
+      "sha256": "5a4e184699c82c104bee510ec8727bad22db5a969e2dc68aaf82465d9c4e4a97",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0243700240023-log.jez",
+      "sha256": "e3c751cdf11e6033b0e3c6f6df224492355b707f06e733d23922c64806d26852",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0243700240032-log.jez",
+      "sha256": "261567da0bfd2e36254a34c0d421e786684e3696d50e497b9b06f4af9c7ca995",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0247000500004-log.jez",
+      "sha256": "4c332091c99f5711fe597a843a32a0eb574656ad4a9f9bbcd98c4b41d5da7451",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0247000500012-log.jez",
+      "sha256": "bd6dc714e8b194ca054dfed71e233005f987f9a3c297b6c136ce1c32ae106f5e",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 3,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0247000500031-log.jez",
+      "sha256": "42cc07213eee9f0a92bd5003c85504904b27ad8917a60c23b6e8ca41bc073e7d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0249600410002-log.jez",
+      "sha256": "d38ed4e9c4240fe7ab839ed4458f698eea18151fd35963dcc7b1184dda308383",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0249600410011-log.jez",
+      "sha256": "3e55dec037d2bd1f2d356b10fc6a5fe422866160d697415ef12abcab8ef58185",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120004-log.jez",
+      "sha256": "87cbecf26648d3203b31eb7b5c1953cc23578f0de6df3c461c89654e6138e12f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120013-log.jez",
+      "sha256": "788ee57f67688cbd10c0afed3773fa97bae846a0416905386826770bd0796e6d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120042-log.jez",
+      "sha256": "907f0de3a46adb68f08018550c527dbfdcac84012b37d84180516f2b2877bc6c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120048-log.jez",
+      "sha256": "cd3b3850fee34497a31640257bc54e4edd9ef357f9c3015bccf74a76777c243a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120057-log.jez",
+      "sha256": "9093ef586f560b5b0ab136adf7ae0a35f0ce0c1a91b411ae37129176751aafc5",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120072-log.jez",
+      "sha256": "f04a4aa98005683c9f856d4528d50d6755220ccb1858804881a6c1950a76a57a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120073-log.jez",
+      "sha256": "b5d75eb27cab53b631bf4f9649d48afe897e02a38b54719412d3f2623c1a5774",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120106-log.jez",
+      "sha256": "68c1b29733a4ee2e9be5c88ac4414dd0137eb460f7378c137cdc7ee3a3df24d0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0251800120110-log.jez",
+      "sha256": "4faac30a8381ca5cecd3360a126529834aeb4170436196f28a3d26cee732ef61",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": false
+    },
+    {
+      "arquivo": "o03221am0253400060005-log.jez",
+      "sha256": "126b158cf0d027062946f66d8326bbc35d48840937c83621b629406611b50941",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060007-log.jez",
+      "sha256": "04f0586c80f7972760fccba0430730e1fd1850c6e177806a0e74fe638ad901a4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060009-log.jez",
+      "sha256": "3314213f8a2edc4ef19b6b84c5b5be617f1affacbc739c6980eb36ad78c4c39b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 1,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060021-log.jez",
+      "sha256": "dcf9b1810fb05ff3d5709b7ce1ea927086403187e5c8eaec2b309b2ca47fb07a",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060112-log.jez",
+      "sha256": "8e88efb11727b540f15e761c25d74ef72d7060bac23f778ebb47ea326bcc6554",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060119-log.jez",
+      "sha256": "8106b9c29c34858118a8cb53ef91d86128a297972ca5feecdecd427e6b5477dc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060137-log.jez",
+      "sha256": "1ec6e2042988b4d1d0e5eeba02768ca7cd560fceec6ae66579aa723679603627",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060142-log.jez",
+      "sha256": "4cf5f380f15796e9d19fd36a5db21c536e6ca58bb3a2cd0fe025e87eb665d4ef",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060174-log.jez",
+      "sha256": "2c5ca345da5dce1f9d18b56d0e8616b783bc49bce32dbd11dea251168f0997ab",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060184-log.jez",
+      "sha256": "f44c809a551219bb429dd99de780670bf0f67b1ff4d1f5f4dce6687532f5588c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060197-log.jez",
+      "sha256": "d2b05d8a1b4b370ec5bf8aa2f70cfc26f8bb7f33aa6b4743fc07dc61b7e38a2e",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060227-log.jez",
+      "sha256": "99c4f0975fbf088cce76a7607cf1ea3521a817ff28f3ed9a5f0474fb194aaf91",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0253400060307-log.jez",
+      "sha256": "af1ae66ff8f736e1ee580cf0e380618c6fe4a77a40680a92e303fb77b19df2dc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000010645-log.jez",
+      "sha256": "7d37fdbc9c8c60009c8e9709487cf59c2784d0331e712e1fbbeeef02d11098e3",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000010754-log.jez",
+      "sha256": "e511969902cbedae7f2146739b7ba01f6427970cc1f456ac5cb031e00c4737e8",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000010893-log.jez",
+      "sha256": "779a941ac5bbb2c495bfb1bf382b9ccd360efdd339dadbbd7884618c1c955d2d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000020618-log.jez",
+      "sha256": "a8878e7bd09d69a0edbed2cf2988696d5a7344edbe4b2ae1612e79aa1cf506c0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000310502-log.jez",
+      "sha256": "4a67b220a5e4a1ac6229cdaec5aea9035a6efdf32e57b451ef9c337214943438",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320638-log.jez",
+      "sha256": "2709de13b6e7f22d1ec3df79c21a1256b8db26cc02948d91c51c3af3a2fe9065",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320670-log.jez",
+      "sha256": "d78991ed8c37f5be12374d4146eb978d0b5447fa07fa0736fd0f4914f4e013e9",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320705-log.jez",
+      "sha256": "74e01b2c5426f2fbbc83b2c533093d128a0961cb6a779730035eab15e137e30f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320731-log.jez",
+      "sha256": "ce751e387b05b0f8258122b9022790da9c6b4a45f1f8f2981a533b21285de81a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320751-log.jez",
+      "sha256": "b6d12aa3a4128a5c2871d6dfa9cc8f20ebb36c387d7a3bac5c3b21a6200ef564",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320769-log.jez",
+      "sha256": "20bd01a976ed3ccfc2adc88388cc76a7ab9e15baebb6d1b0a826a17130195597",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320782-log.jez",
+      "sha256": "57860744778500599677f901783535de08daf1b62441ace44338a8ee97a22dca",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320788-log.jez",
+      "sha256": "19e9c23d7ab3fdd983a3fe5712440e1769e3fb346d89677ad1fb2dbac100b12c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320866-log.jez",
+      "sha256": "8ae7bad67aefb8f6786ac84da34967f479e36773659fcab764c50be76f9fedf8",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000320926-log.jez",
+      "sha256": "6b43e700b6e6ccbabfa260dc31d8341c86701c580c2b1aaec0712f1acdc2e2b4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000370520-log.jez",
+      "sha256": "40501dde72a1d5459f6e22956a2c5a6f7e298016e46488c75ee3f120f8c12eb7",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000370630-log.jez",
+      "sha256": "22b1da11574837606a3286252deea0ed6280ffe7b13653901356042720b81485",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000370699-log.jez",
+      "sha256": "e492a7c6802bf13a8db84ea938d81d8c0bb129eede3b287c7c0cd0f82216bf42",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000400356-log.jez",
+      "sha256": "56a59669a55e923fa102fb892700b0a3bc3ffd00d34d5dfe8f39afdda8bf28e9",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000400532-log.jez",
+      "sha256": "3d8e123d4951aaa695a9c702abf845cbb0c9b4e391dbcd906601f4f9d142019d",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000580803-log.jez",
+      "sha256": "37b65e93d4523c624043953e7f6f002b9f27cd4a0da1420bce202ef3684a3977",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000580810-log.jez",
+      "sha256": "59985a3f472a46dcd23e206f4db795105013bd0ba7ce71f1860e62c09a327081",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000580937-log.jez",
+      "sha256": "612c6b4b9f07a41259de23221b449ef2dab2a00f39964d001c310232b2901e88",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000590552-log.jez",
+      "sha256": "c021199d72a50797145482e2e2d11a4b15011644b12eafd110190d270fdbeb73",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000590556-log.jez",
+      "sha256": "7264951b08dfabe24cf2000021c4793e95b0bc6265644affe13b9326e09bbf0b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000590684-log.jez",
+      "sha256": "8cefaf92861114513fc91b897e37a03007deea79fe0d6f4775ad4db62df6e714",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000590762-log.jez",
+      "sha256": "a4cf3b305deae2f5989190ae4d47638bd4649244a4edd3c3f50809ba42f5e4b8",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000620377-log.jez",
+      "sha256": "eadbb44e390e320abfaeede6f7510e8b7a3ad6e66863d6d1b681386fba3b0a96",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000620402-log.jez",
+      "sha256": "2677a6dae202dcd35f4d0d050b683b0c64052983c76b1c4fef5403134a6cdb04",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000620406-log.jez",
+      "sha256": "a202e74071f86b740422632e9fbae64cf98079700096b2e375f7f517ad579205",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000620489-log.jez",
+      "sha256": "84139efeb3040f6097d16331bd248e3949db68a13092f6ea474045c32559b502",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000620571-log.jez",
+      "sha256": "a828a01cc9701ee2330744a9ce78629ec72f92907e459ba6e3b5e424512d62e1",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000621033-log.jez",
+      "sha256": "d886b3eeddb6ccd9a6fd886f4ca056e59959219244f9375633ad5cbc3a345bcd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000630655-log.jez",
+      "sha256": "622ea85fe7d2a97df0d1ab0f5a1e10264d5a4fdd4f124c37ce903fe9a35023d3",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000630676-log.jez",
+      "sha256": "dae2a4eb2efdb1277bb39b12439c13a1be9b2a5dcfa6b43c1119467751fc68b4",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000630822-log.jez",
+      "sha256": "b5a08ce13938102fafef7f92841fa4251858c472d01de7944a9761a2cab677ed",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650221-log.jez",
+      "sha256": "8a308c4c610d22ac60d3db6be1d8c52b2089a71989b551a1352bd8f4e3b943b2",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650390-log.jez",
+      "sha256": "e739277efac2e2875651cbf1a0c3dbfd06a72e771b2579054fea981d1d6d7b02",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650416-log.jez",
+      "sha256": "45b2b6008ed9cb5aa99a070ba6178b9985eca16baf963fe9180513d9cd25852f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650474-log.jez",
+      "sha256": "f5e40d1095cf7c2b9fb8227268b6a92656c3fb28b986caaf2c820d915a8a324b",
+      "classificacoes_indefinidas_v21": 1,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650537-log.jez",
+      "sha256": "6bbfbd59de949c6b665e787bc74f334d405ff22dd0e5cba670ac92924a4551de",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000650664-log.jez",
+      "sha256": "c3f16008959005ab9f53561cfc96f8bf9ad41b328f512b70bf0ea89ad8c6805b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000700741-log.jez",
+      "sha256": "c48a8257882301b15237ed3dd4d3bec117154bafbdb22260d81e8f517556bfa0",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0255000700799-log.jez",
+      "sha256": "1a3bea5562f27281c19d8a85335512411c55be3c4b48c05eb5eb7918f1f40e3f",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0257700160115-log.jez",
+      "sha256": "a4a057e300bcddfad410156b70410bcb7086b765b58c7446fc5672b898a715dc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0261500050004-log.jez",
+      "sha256": "e60392374e9558bba8fc2bf3b599b667a2628e14bf069fa79c94a4182adfbd64",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0261500050005-log.jez",
+      "sha256": "e3a3c966d921552ca5b3ecfa6ab3584f649f32529327437591a8110b74990f75",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0261500050103-log.jez",
+      "sha256": "492fd5ba10974ace2ad2c764090b547efab761e0f919deb38041f156b37831d2",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0263100430005-log.jez",
+      "sha256": "e305c05dd42dd35eaf7115a80231427e10ec2165a314dd2a5587d57792315fbd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0267400290015-log.jez",
+      "sha256": "4274440cfe52712d071363eda761020a93f531501613f59f8ff1b3edc0559e8c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0269000040016-log.jez",
+      "sha256": "404f79e9bc5d8a28e541486f51361c663e3ebb78d30ce0a441afdad495257dae",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0269000040082-log.jez",
+      "sha256": "ed2471b4fb514e5910680aa901aba851a95875288623da0a22aec23559db7a77",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0277100240047-log.jez",
+      "sha256": "2e8107b76a62c37334d30f0efa2604f51dcfddcea1a81a9156b1a10889068556",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0281000090082-log.jez",
+      "sha256": "48c25c2a16afc0bfa788c27593a3c197730bb6d08cb6b051a5ec52f137f50ea9",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0281000090140-log.jez",
+      "sha256": "4b85d4d9c7b3dffa324155d5d4398aaa275bc0cedd50bd7c2c56b5b902811b24",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0283600190028-log.jez",
+      "sha256": "25ac1315073a22d3f80f99ee19bcf5cb7af5e08befad93d8bfb3e1c0d947b070",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0283600190033-log.jez",
+      "sha256": "c2bb3f03bb5cda4a20177a9608746d964d7a5fb076da84dc93982c33e2b62d2a",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0289500600059-log.jez",
+      "sha256": "aac5c4eadbcddd5c89a7eaa30a5943dccf7ff3d6ad71dec8b1f5e6ef5faa56cd",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0293300060282-log.jez",
+      "sha256": "31b925727c2cba513cce77272e2ddd2f6d2ad51814c6b1577ab115fc9876aac5",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0297600050154-log.jez",
+      "sha256": "517acdf7f13fd6a78af4b82cb5393e3a6af1e5f3ce30d6f294078d834f234071",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am0299200060246-log.jez",
+      "sha256": "f3ee59319ad0e121b9d3c9013ed5e88a6a12398e274fb7ffaedbb60229428d2c",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am9841800510093-log.jez",
+      "sha256": "aff4eb45c810362737ab201390ee82d998168a0b060ff25cd79eadaad856d95b",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am9841800510114-log.jez",
+      "sha256": "62d73b6cd76c013e41fdb009c10c83ab0ed25868eb451dca63a5d7df4a309f63",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am9841800510118-log.jez",
+      "sha256": "5131489bfabc5c7086d289c7f16e97938f80a63d42937250b5d0e414d4a03aab",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am9847700360005-log.jez",
+      "sha256": "61a779612ca2e22ae207d44478808c1510e6401a99e86ec132d1dd382aae4bf1",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    },
+    {
+      "arquivo": "o03221am9847700360121-log.jez",
+      "sha256": "0558e91673aea3635b0e87b8d130c01619f1ee0f392ef70df3cbb86270eeaafc",
+      "classificacoes_indefinidas_v21": 0,
+      "classificacoes_indefinidas_v3": 0,
+      "avisos_v21": 0,
+      "avisos_v3": 0,
+      "admissivel_estatistica": true
+    }
+  ],
+  "acuracia_classificacao_certificada": null,
+  "base_referencia_independente_rotulada": false,
+  "limitacao": "Amostra de desenvolvimento: casos problemáticos e controles do Amazonas. Concordância de contagens não mede acurácia semântica, não certifica 99,9% e não representa todos os estados."
+}

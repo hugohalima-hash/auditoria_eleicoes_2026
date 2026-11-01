@@ -1,0 +1,1436 @@
+[
+  {
+    "arquivo": "o03221am0202000450022-log.jez",
+    "sha256_original": "4ce8c94fd938635924e66524ddd1e47eccc051d69725eae219f72b34c269acf2",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 6551,
+    "linha_inicio": 6538,
+    "linha_fim": 6560,
+    "hora_alvo": "25/10/2026 08:23:47",
+    "eventos": [
+      {
+        "hora": "25/10/2026 08:22:47",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 08:23:10",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 08:23:11",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 08:23:11",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 08:23:13",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:23:24",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:23:27",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:23:30",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:23:43",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Espaço livre na MV [353.8 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Espaço utilizado na MI [23.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Espaço utilizado na MV [23.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Quantidade de memória usada [406.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:23:47",
+        "mensagem": "Urna ligada conectada na rede CA em [125.53V] e na Bateria Interna com [13.51V/0A]"
+      },
+      {
+        "hora": "25/10/2026 08:24:02",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 08:24:06",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 08:24:11",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 08:24:12",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0207000350009-log.jez",
+    "sha256_original": "9987fe6d83022da197249aae39ae2f1a6659675a38f17be23c3807609b6e15d1",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8093,
+    "linha_inicio": 8081,
+    "linha_fim": 8102,
+    "hora_alvo": "25/10/2026 15:24:44",
+    "eventos": [
+      {
+        "hora": "25/10/2026 15:23:57",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 15:24:26",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 15:24:26",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 15:24:26",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 15:24:27",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 15:24:32",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 15:24:34",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 15:24:36",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 15:24:39",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Espaço livre na MV [349.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Espaço utilizado na MI [27.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Espaço utilizado na MV [28.0 MB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Quantidade de memória livre [3.2 GB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Quantidade de memória usada [422.6 MB]"
+      },
+      {
+        "hora": "25/10/2026 15:24:44",
+        "mensagem": "Urna ligada conectada na rede CA em [123.01V] e na Bateria Interna com [13.38V/0A]"
+      },
+      {
+        "hora": "25/10/2026 15:24:54",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 15:25:24",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 15:25:24",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0207000350042-log.jez",
+    "sha256_original": "eb2dbe73ef151353714ac4bfcefdd4b270eef670d8154aba4c2e49ae88e3d4af",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 7841,
+    "linha_inicio": 7825,
+    "linha_fim": 7846,
+    "hora_alvo": "25/10/2026 13:34:24",
+    "eventos": [
+      {
+        "hora": "25/10/2026 13:31:54",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 13:33:45",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 13:33:45",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 13:33:45",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 13:34:06",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:34:12",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:34:14",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:34:16",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:34:21",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Espaço livre na MV [352.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Espaço utilizado na MI [24.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Espaço utilizado na MV [24.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Quantidade de memória usada [415.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 13:34:24",
+        "mensagem": "Urna ligada conectada na rede CA em [125.53V] e na Bateria Interna com [13.46V/0A]"
+      },
+      {
+        "hora": "25/10/2026 13:34:32",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 13:34:36",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 13:34:37",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0207000350075-log.jez",
+    "sha256_original": "8d6cc5e1773ad54ca33b2f4b59415b4b3a5fc4040c5c65a9510c30ea05ac6c9e",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 9633,
+    "linha_inicio": 9623,
+    "linha_fim": 9642,
+    "hora_alvo": "25/10/2026 14:10:43",
+    "eventos": [
+      {
+        "hora": "25/10/2026 14:10:23",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 14:10:36",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 14:10:36",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 14:10:36",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 14:10:37",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:10:39",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Espaço livre na MV [345.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Espaço utilizado na MI [31.6 MB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Espaço utilizado na MV [32.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Quantidade de memória livre [3.2 GB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Quantidade de memória usada [430.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 14:10:43",
+        "mensagem": "Urna ligada conectada na rede CA em [122.32V] e na Bateria Interna com [13.45V/0A]"
+      },
+      {
+        "hora": "25/10/2026 14:10:48",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 14:10:51",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 14:10:54",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 14:10:54",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0211900260001-log.jez",
+    "sha256_original": "d16e8eb00570cd81f6f3946c2886bcedf0e6df526097bd28f12421ccde7da040",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8617,
+    "linha_inicio": 8604,
+    "linha_fim": 8623,
+    "hora_alvo": "25/10/2026 08:00:27",
+    "eventos": [
+      {
+        "hora": "25/10/2026 08:00:05",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 08:00:16",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 08:00:16",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 08:00:17",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 08:00:19",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:00:23",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Espaço livre na MV [345.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Espaço utilizado na MI [31.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Espaço utilizado na MV [32.0 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Quantidade de memória usada [409.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 08:00:27",
+        "mensagem": "Urna ligada conectada na rede CA em [137.99V] e na Bateria Interna com [13.76V/0A]"
+      },
+      {
+        "hora": "25/10/2026 08:00:35",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 08:00:39",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 08:00:44",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 08:00:45",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0229100110005-log.jez",
+    "sha256_original": "c04d9e24bc5556d22e11b9f85cbf18a68fc08398b911ee356744d4952c40d208",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8090,
+    "linha_inicio": 8077,
+    "linha_fim": 8095,
+    "hora_alvo": "25/10/2026 07:23:24",
+    "eventos": [
+      {
+        "hora": "25/10/2026 07:22:52",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 07:23:08",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 07:23:08",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 07:23:08",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 07:23:15",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:23:21",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Espaço livre na MV [351.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Espaço utilizado na MI [25.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Espaço utilizado na MV [25.8 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Quantidade de memória usada [401.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 07:23:24",
+        "mensagem": "Urna ligada conectada na rede CA em [125.08V] e na Bateria Interna com [13.42V/0A]"
+      },
+      {
+        "hora": "25/10/2026 07:23:36",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 07:23:41",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 07:23:42",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0231300460030-log.jez",
+    "sha256_original": "a19cabc9a3decbad6724374a57f453624b70f2a2eb610ca692fb2738d8d31960",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8692,
+    "linha_inicio": 8679,
+    "linha_fim": 8698,
+    "hora_alvo": "25/10/2026 09:27:24",
+    "eventos": [
+      {
+        "hora": "25/10/2026 09:26:51",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:27:14",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 09:27:14",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 09:27:14",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 09:27:16",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:27:20",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Espaço livre na MV [349.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Espaço utilizado na MI [27.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Espaço utilizado na MV [28.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Quantidade de memória usada [419.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 09:27:24",
+        "mensagem": "Urna ligada conectada na rede CA em [120.59V] e na Bateria Interna com [13.35V/0A]"
+      },
+      {
+        "hora": "25/10/2026 09:27:32",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 09:27:35",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 09:27:36",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 09:27:37",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0231300460030-log.jez",
+    "sha256_original": "a19cabc9a3decbad6724374a57f453624b70f2a2eb610ca692fb2738d8d31960",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 9994,
+    "linha_inicio": 9984,
+    "linha_fim": 10002,
+    "hora_alvo": "25/10/2026 13:27:24",
+    "eventos": [
+      {
+        "hora": "25/10/2026 13:15:09",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 13:27:08",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 13:27:08",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 13:27:08",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 13:27:12",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:27:18",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Espaço livre na MV [345.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Espaço utilizado na MI [31.3 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Espaço utilizado na MV [31.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Quantidade de memória livre [3.2 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Quantidade de memória usada [434.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:27:24",
+        "mensagem": "Urna ligada conectada na rede CA em [120.00V] e na Bateria Interna com [13.36V/0A]"
+      },
+      {
+        "hora": "25/10/2026 13:27:32",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 13:27:35",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 13:27:35",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0235600170005-log.jez",
+    "sha256_original": "11774e3afd11c04e555f17e4f46aa4769f7db26e53f183706d1fb5f6b193b3b9",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 9020,
+    "linha_inicio": 9010,
+    "linha_fim": 9030,
+    "hora_alvo": "25/10/2026 13:52:38",
+    "eventos": [
+      {
+        "hora": "25/10/2026 13:52:11",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 13:52:25",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 13:52:25",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 13:52:25",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 13:52:28",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:52:34",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Espaço livre na MV [348.6 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Espaço utilizado na MI [28.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Espaço utilizado na MV [28.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Quantidade de memória livre [3.2 GB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Quantidade de memória usada [430.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 13:52:38",
+        "mensagem": "Urna ligada conectada na rede CA em [124.42V] e na Bateria Interna com [13.90V/0A]"
+      },
+      {
+        "hora": "25/10/2026 13:52:45",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 13:52:49",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 13:52:53",
+        "mensagem": "Tecla indevida pressionada"
+      },
+      {
+        "hora": "25/10/2026 13:52:54",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 13:52:55",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0235600170082-log.jez",
+    "sha256_original": "768627a204018c99e212a09f5967294c31cfea98db4702d43ad58a09844e5342",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 7089,
+    "linha_inicio": 7076,
+    "linha_fim": 7097,
+    "hora_alvo": "25/10/2026 07:09:03",
+    "eventos": [
+      {
+        "hora": "25/10/2026 07:08:27",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 07:08:41",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 07:08:41",
+        "mensagem": "Identificador digitado pelo mesário foi: (CPF)"
+      },
+      {
+        "hora": "25/10/2026 07:08:41",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 07:08:42",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:08:48",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:08:50",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:08:55",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:08:57",
+        "mensagem": "Capturada a digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Espaço livre na MV [352.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Espaço utilizado na MI [24.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Espaço utilizado na MV [24.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Quantidade de memória usada [381.6 MB]"
+      },
+      {
+        "hora": "25/10/2026 07:09:03",
+        "mensagem": "Urna ligada conectada na rede CA em [128.26V] e na Bateria Interna com [13.46V/1.27A]"
+      },
+      {
+        "hora": "25/10/2026 07:09:12",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 07:09:17",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 07:09:18",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0237200300031-log.jez",
+    "sha256_original": "285fc8e0e4c48a47fcd28c31fbe248c8628843e29e6e43b943f46c2f8b4c346e",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 11114,
+    "linha_inicio": 11105,
+    "linha_fim": 11123,
+    "hora_alvo": "25/10/2026 11:43:05",
+    "eventos": [
+      {
+        "hora": "25/10/2026 11:42:10",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 11:42:50",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 11:42:50",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 11:42:50",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 11:42:56",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:43:00",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Espaço livre na MV [338.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Espaço utilizado na MI [37.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Espaço utilizado na MV [38.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Quantidade de memória livre [3.2 GB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Quantidade de memória usada [435.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:43:05",
+        "mensagem": "Urna ligada conectada na rede CA em [120.76V] e na Bateria Interna com [13.40V/0A]"
+      },
+      {
+        "hora": "25/10/2026 11:43:15",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 11:43:22",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 11:43:22",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0239900450057-log.jez",
+    "sha256_original": "387a3a1a8b47ca4709c30d2dadbac5d1d62ecafc7ca155a2ec7229c3bed6482f",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 5974,
+    "linha_inicio": 5961,
+    "linha_fim": 5979,
+    "hora_alvo": "25/10/2026 09:29:40",
+    "eventos": [
+      {
+        "hora": "25/10/2026 09:28:14",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 09:29:20",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 09:29:20",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 09:29:20",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 09:29:28",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:29:34",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Espaço livre na MV [357.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Espaço utilizado na MI [19.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Espaço utilizado na MV [19.6 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Quantidade de memória usada [403.0 MB]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 09:29:40",
+        "mensagem": "Urna ligada conectada na rede CA em [141.36V] e na Bateria Interna com [13.76V/0A]"
+      },
+      {
+        "hora": "25/10/2026 09:29:47",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 09:29:50",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 09:29:51",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0253400060021-log.jez",
+    "sha256_original": "dcf9b1810fb05ff3d5709b7ce1ea927086403187e5c8eaec2b309b2ca47fb07a",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 5503,
+    "linha_inicio": 5494,
+    "linha_fim": 5512,
+    "hora_alvo": "25/10/2026 08:17:09",
+    "eventos": [
+      {
+        "hora": "25/10/2026 08:16:36",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 08:16:58",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 08:16:58",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 08:16:58",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 08:17:00",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:17:05",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Espaço livre na MI [3.4 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Espaço livre na MV [359.5 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Espaço utilizado na MI [17.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Espaço utilizado na MV [17.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Quantidade de memória total [3.7 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Quantidade de memória livre [3.3 GB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Quantidade de memória usada [392.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 08:17:09",
+        "mensagem": "Urna ligada conectada na rede CA em [139.99V] e na Bateria Interna com [13.48V/0A]"
+      },
+      {
+        "hora": "25/10/2026 08:17:18",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 08:17:23",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 08:17:23",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0255000010645-log.jez",
+    "sha256_original": "7d37fdbc9c8c60009c8e9709487cf59c2784d0331e712e1fbbeeef02d11098e3",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 8925,
+    "linha_inicio": 8913,
+    "linha_fim": 8930,
+    "hora_alvo": "25/10/2026 10:20:45",
+    "eventos": [
+      {
+        "hora": "25/10/2026 10:20:22",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 10:20:35",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 10:20:35",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 10:20:36",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 10:20:38",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 10:20:40",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Espaço livre na MI [202.0 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Espaço livre na MV [348.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Espaço utilizado na MI [28.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Espaço utilizado na MV [28.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Quantidade de memória total [486.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:44",
+        "mensagem": "Quantidade de memória livre [125.8 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:45",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 10:20:45",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 10:20:45",
+        "mensagem": "Quantidade de memória usada [360.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 10:20:54",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 10:20:57",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 10:20:59",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  },
+  {
+    "arquivo": "o03221am0255000650474-log.jez",
+    "sha256_original": "f5e40d1095cf7c2b9fb8227268b6a92656c3fb28b986caaf2c820d915a8a324b",
+    "origem": "raiz!logd.dat",
+    "linha_alvo": 10993,
+    "linha_inicio": 10975,
+    "linha_fim": 10997,
+    "hora_alvo": "25/10/2026 11:41:08",
+    "eventos": [
+      {
+        "hora": "25/10/2026 11:39:41",
+        "mensagem": "Aguardando digitação do identificador do eleitor"
+      },
+      {
+        "hora": "25/10/2026 11:39:55",
+        "mensagem": "Identificador do eleitor digitado pelo mesário"
+      },
+      {
+        "hora": "25/10/2026 11:39:55",
+        "mensagem": "Identificador digitado pelo mesário foi: (Título de eleitor)"
+      },
+      {
+        "hora": "25/10/2026 11:39:55",
+        "mensagem": "Foto do eleitor apresentada"
+      },
+      {
+        "hora": "25/10/2026 11:40:09",
+        "mensagem": "Solicita digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:40:14",
+        "mensagem": "Capturada a digital. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:40:16",
+        "mensagem": "Número de tentativas de reconhecimento do dedo. Tentativa [1] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:40:29",
+        "mensagem": "Solicita digital. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:40:44",
+        "mensagem": "Timeout de reconhecimento do dedo. Tentativa [2] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:40:49",
+        "mensagem": "Solicita digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:41:04",
+        "mensagem": "Capturada a digital. Tentativa [3] de [4]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Espaço livre na MI [199.7 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Espaço livre na MV [346.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Espaço utilizado na MI [30.4 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Espaço utilizado na MV [30.8 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Quantidade de memória total [486.1 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:07",
+        "mensagem": "Quantidade de memória livre [122.2 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:08",
+        "mensagem": "Quantidade de memória usada [363.9 MB]"
+      },
+      {
+        "hora": "25/10/2026 11:41:08",
+        "mensagem": "Eleitor foi habilitado"
+      },
+      {
+        "hora": "25/10/2026 11:41:08",
+        "mensagem": "Tipo de habilitação do eleitor [biométrica]"
+      },
+      {
+        "hora": "25/10/2026 11:41:27",
+        "mensagem": "Voto confirmado para [Governador]"
+      },
+      {
+        "hora": "25/10/2026 11:41:31",
+        "mensagem": "Voto confirmado para [Presidente]"
+      },
+      {
+        "hora": "25/10/2026 11:41:32",
+        "mensagem": "O voto do eleitor foi computado"
+      }
+    ],
+    "tipo_esperado": "biometrica",
+    "desfecho_esperado": "voto_computado",
+    "referencia": "Mensagem explícita de tipo biométrico após habilitação, antes do voto computado; caso de regressão, não amostra de certificação."
+  }
+]

@@ -12,3 +12,8 @@ resultados/
 entrega/
 release-assets/
 *.zip
+
+resultados_*/
+entrega_*/
+validacao/amostras/
+alertas/

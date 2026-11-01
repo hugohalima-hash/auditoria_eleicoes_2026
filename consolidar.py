@@ -7,7 +7,8 @@ import time
 import zipfile
 from pathlib import Path
 from lote import UFS, atomic_json
-from motor import VERSION, write_csv, section
+from motor import VERSION, ENGINE_SHA256, write_csv, section
+from integridade import verified
 
 def number(n):
     return f'{n:,}'.replace(',','.')
@@ -19,7 +20,8 @@ def consolidate(root,destination):
         p=root/uf/'resumo.json'
         if not p.exists():continue
         result=json.loads(p.read_text())
-        if result.get('versao_motor')!=VERSION:continue
+        if result.get('versao_motor')!=VERSION or result.get('sha256_motor')!=ENGINE_SHA256:continue
+        if not verified(root/uf,ENGINE_SHA256):continue
         results.append(result)
         names={}
         config=root/uf/'config_oficial.json'
@@ -45,7 +47,7 @@ def consolidate(root,destination):
                 dist['secoes_ge_'+str(threshold)]=len({r['arquivo'] for r in matching})
             distribution.append(dist)
     pending=sorted(set(UFS)-{r['uf'] for r in results})
-    summary={'versao_motor':VERSION,'atualizacao_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
+    summary={'versao_motor':VERSION,'sha256_motor':ENGINE_SHA256,'acuracia_certificada':None,'validacao_independente':'pendente','atualizacao_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),
         'ufs_processadas':[r['uf'] for r in results],'ufs_pendentes':pending,
         'status_execucao':'todas_ufs_processadas' if not pending else 'parcial',
         'ressalva':'Processamento de logs não equivale a auditoria integral da eleição; leia a metodologia.'}
@@ -107,7 +109,7 @@ def consolidate(root,destination):
         '',
         'A cobertura compara as seções identificadas nos logs com as seções principais da configuração oficial. Seções agregadas são separadas. Seções não instaladas ou com apuração por cédulas podem exigir exame distinto. Uma cobertura de 100% não elimina ressalvas de classificação.',
         '',
-        'O processamento lê logs aninhados de equipamentos substituídos e elimina cópias de linhas por multiplicidade máxima. São registrados CRC de leitura e SHA-256 por log. Não há autenticação de assinaturas criptográficas nesta ferramenta.',
+        'O processamento lê logs aninhados, elimina apenas blocos integralmente idênticos e rompe ciclos nas fronteiras de origem. Blocos distintos não são presumidos como equipamentos diferentes. São registrados CRC de leitura e SHA-256 por log. Não há autenticação de assinaturas criptográficas nesta ferramenta.',
         '',
         '**Limites da conclusão:** sequências e frequências descrevem os registros publicados. Não demonstram a identidade ou a presença física dos votantes, não revelam o candidato escolhido e não comprovam fraude. Este trabalho não verifica hardware, software instalado, documentos de identificação, assinaturas dos cadernos de votação ou intenção de voto.',
         '',

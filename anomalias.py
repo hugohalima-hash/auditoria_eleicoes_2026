@@ -5,7 +5,8 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 from statistics import median, quantiles
-from motor import write_csv
+from motor import write_csv, VERSION, ENGINE_SHA256
+from integridade import verified
 
 
 def upper(values):
@@ -19,16 +20,26 @@ def scan(root, out):
     alerts = []
     stats = []
     completed = []
+    excluded_versions = []
+    excluded_integrity = []
+    quarantine = []
     for folder in sorted(root.iterdir()):
         if not (folder / 'resumo.json').exists() or not (folder / 'urnas.csv').exists():
             continue
         summary = json.loads((folder / 'resumo.json').read_text())
+        if summary.get('versao_motor') != VERSION or summary.get('sha256_motor') != ENGINE_SHA256:
+            excluded_versions.append(folder.name)
+            continue
+        if not verified(folder,ENGINE_SHA256):
+            excluded_integrity.append(folder.name)
+            continue
         if summary.get('arquivos_processados') != summary.get('logs_no_pacote'):
             continue
         completed.append(folder.name)
         with (folder / 'urnas.csv').open(encoding='utf-8-sig') as f:
             rows = list(csv.DictReader(f))
         groups = defaultdict(list)
+        admitted = set()
         names = {}
         config = folder / 'config_oficial.json'
         if config.exists():
@@ -45,20 +56,26 @@ def scan(root, out):
             def n(key):
                 return int(row.get(key, 0) or 0)
             total = n('habilitacoes')
-            if total >= 100:
-                groups[(row['municipio'], row['zona'])].append(row)
+            quality_ok = str(row.get('admissivel_estatistica', '')).lower() == 'true'
+            if quality_ok:
+                admitted.add(row['arquivo'])
+                if total >= 100:
+                    groups[(row['municipio'], row['zona'])].append(row)
+            else:
+                quarantine.append(dict(uf=folder.name, arquivo=row['arquivo'],
+                    motivo='Seção com registros não resolvidos, fronteiras de origem, relógio ou avisos; excluída da triagem estatística.'))
             for key in ('eventos_ajuste_relogio', 'linhas_dia_malformadas', 'indefinida', 'avisos'):
                 if n(key):
                     emit(row, key, n(key), context='Alerta técnico; pode exigir revisão do analisador ou do registro.')
             if n('votos_computados') != n('votos_vinculados'):
                 emit(row, 'votos_sem_vinculo_no_analisador', n('votos_computados') - n('votos_vinculados'))
-            if total != n('votos_vinculados'):
-                emit(row, 'habilitacoes_sem_voto_vinculado', total - n('votos_vinculados'),
-                    context='Pode incluir cancelamentos ou registros incompletos; não é contagem de votos irregulares.')
+            if n('ciclos_sem_desfecho_explicado'):
+                emit(row, 'ciclos_sem_desfecho_explicado', n('ciclos_sem_desfecho_explicado'),
+                    context='Suspensões explícitas sem voto e cancelamentos explícitos são contabilizados separadamente, sem alerta automático.')
             if n('blocos_log') > 1:
                 emit(row, 'multiplos_blocos_log', n('blocos_log'),
                     context='Contexto de possível substituição; múltiplos blocos não provam troca de urna.')
-            if n('maior_sequencia_mesario') >= 10:
+            if quality_ok and n('maior_sequencia_mesario') >= 10:
                 emit(row, 'sequencia_mesario_ge_10', n('maior_sequencia_mesario'),
                     context='Limiar de triagem fixo; não é probabilidade de fraude.')
         for key, peers in groups.items():
@@ -83,6 +100,8 @@ def scan(root, out):
                             f'{len(peers)} seções com >=100 habilitações no mesmo município e zona; mediana={baseline:.6f}. Sem ajuste por eleitores aptos ou perfil biométrico.')
         with (folder / 'sequencias.csv').open(encoding='utf-8-sig') as f:
             for run in csv.DictReader(f):
+                if run['arquivo'] not in admitted:
+                    continue
                 if run['grupo'] != 'mesario' or int(run['tamanho']) < 10:
                     continue
                 count = int(run['tamanho'])
@@ -96,10 +115,15 @@ def scan(root, out):
                         f"Série de {count}; {run['inicio']} a {run['fim']}; linhas {run['linha_inicio']}–{run['linha_fim']}. Não mede o tempo de cada voto.")
     fields = ['uf', 'municipio', 'municipio_nome', 'zona', 'secao', 'arquivo', 'alerta', 'valor', 'referencia', 'contexto']
     write_csv(out / 'alertas.csv', alerts, fields)
+    write_csv(out / 'quarentena.csv', quarantine, ['uf','arquivo','motivo'])
     write_csv(out / 'referencias_comparacao.csv', stats,
         ['uf', 'municipio', 'zona', 'metrica', 'secoes', 'mediana', 'limite_superior'])
     counts = Counter(r['alerta'] for r in alerts)
-    result = {'ufs_incluidas': completed, 'alertas': len(alerts),
+    result = {'versao_motor': VERSION, 'ufs_incluidas': completed,
+        'ufs_excluidas_versao_antiga': excluded_versions,
+        'ufs_excluidas_integridade':excluded_integrity,
+        'secoes_em_quarentena':len(quarantine), 'acuracia_certificada':None,
+        'validacao_independente':'pendente', 'alertas': len(alerts),
         'secoes_com_alerta': len({(r['uf'], r['arquivo']) for r in alerts}),
         'por_tipo': dict(counts), 'ressalva': 'Triagem exploratória, sem conclusão de fraude. Múltiplos alertas podem pertencer à mesma seção.'}
     (out / 'resumo.json').write_text(json.dumps(result, ensure_ascii=False, indent=2))

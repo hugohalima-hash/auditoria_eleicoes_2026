@@ -1,3 +1,5 @@
+> **RELATÓRIO HISTÓRICO DO MOTOR 2.1 — RETIRADO DE USO PARA CONCLUSÕES.** Foram identificados defeitos no classificador. Números e rankings abaixo aguardam reprocessamento. Consulte `VALIDACAO_V3.md` e `STATUS.json`.
+
 # Auditor Eleitoral Independente 2026 — relatório de execução
 
 **Escopo:** logs públicos do segundo turno de 25/10/2026, durante todo o dia. Motor 2.1.
