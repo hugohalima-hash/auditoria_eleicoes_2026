@@ -4,15 +4,27 @@ on:
   push:
     branches: [auditoria-eleitor-ja-votou]
     paths: ['.github/workflows/auditoria-ocorrencias.yml']
+concurrency:
+  group: auditoria-ocorrencias-segundo-turno
+  cancel-in-progress: true
 permissions:
-  contents: read
+  contents: write
 jobs:
+  preparar:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Abrir publicação da execução
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "ocorrencias-2t-${GITHUB_RUN_ID}" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --title "Ocorrências no segundo turno" --notes "Relatórios por unidade. Confira os diagnósticos de cobertura antes de usar os resultados."
   auditar:
-    runs-on: ubuntu-latest
-    timeout-minutes: 180
+    needs: preparar
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
     strategy:
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 2
       matrix:
         uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
     env:
@@ -22,10 +34,13 @@ jobs:
       - name: Baixar pacote oficial e analisar
         run: |
           set -euo pipefail
-          curl -fL --retry 4 --retry-all-errors "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_${UF}.zip" -o pacote.zip
-          python3 auditoria_ocorrencias/scan.py pacote.zip resultado "$UF" 2
-      - uses: actions/upload-artifact@v4
-        with:
-          name: ocorrencias-${{ matrix.uf }}-2t
-          path: resultado/
-          if-no-files-found: error
+          python3 -c 'import sys; from pathlib import Path; from lote import download; p=download(sys.argv[1], Path("downloads"), workers=4); p.rename("pacote.zip")' "$UF"
+          PYTHONPATH=. python3 auditoria_ocorrencias/scan.py pacote.zip resultado "$UF" 2
+      - name: Publicar relatório e diagnóstico
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p resultado
+          test -f "resultado/$UF-status.json" || printf '{"uf":"%s","status":"falhou"}\n' "$UF" > "resultado/$UF-status.json"
+          gh release upload "ocorrencias-2t-${GITHUB_RUN_ID}" resultado/* --clobber
