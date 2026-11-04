@@ -1,0 +1,31 @@
+name: Ocorrências de identificação - segundo turno
+on:
+  workflow_dispatch:
+  push:
+    branches: [auditoria-eleitor-ja-votou]
+    paths: ['.github/workflows/auditoria-ocorrencias.yml']
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    env:
+      UF: ${{ matrix.uf }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar pacote oficial e analisar
+        run: |
+          set -euo pipefail
+          curl -fL --retry 4 --retry-all-errors "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_${UF}.zip" -o pacote.zip
+          python3 auditoria_ocorrencias/scan.py pacote.zip resultado "$UF" 2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ocorrencias-${{ matrix.uf }}-2t
+          path: resultado/
+          if-no-files-found: error
