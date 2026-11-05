@@ -1,0 +1,24 @@
+name: Recuperar Minas Gerais - ocorrências 2T
+on:
+  push:
+    branches: [auditoria-eleitor-ja-votou]
+    paths: ['.github/workflows/recuperar-ocorrencias-mg.yml']
+permissions:
+  contents: write
+jobs:
+  auditar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Liberar espaço e analisar o pacote oficial de MG
+        run: |
+          set -euo pipefail
+          sudo rm -rf -- /usr/share/dotnet /usr/local/lib/android /opt/ghc
+          df -h .
+          python3 -c 'from pathlib import Path; from lote import download; download("MG", Path("downloads"), workers=4).rename("pacote.zip")'
+          PYTHONPATH=. python3 auditoria_ocorrencias/scan.py pacote.zip resultado MG 2
+      - name: Publicar na mesma Release da auditoria nacional
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload ocorrencias-2t-41887046670 resultado/* --clobber
